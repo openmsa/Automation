@@ -22,7 +22,7 @@ Based on cloud connection set, retrieve last pricing table and raise the top mig
 ### Shadow IT detection & policies
 Daily, Weekly, or Monthly based, detect unused environments and propose smart cleaning based on policies
 
-### Smart power on in working hours
+### Smart power on / off in working hours
 For cost optimization, mainly for hyperscalers, power on / off environments to be used in working period
 
 ### Dynamic ressources scaling

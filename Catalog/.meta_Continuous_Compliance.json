@@ -11,7 +11,7 @@
       "name" : "Discovery",
       "tenantPrefix" : "NCL"
     } ],
-    "imageUri" : "Automation/Catalog/thumbnail/MSA-2.8.3.png",
+    "imageUri" : "Automation/Catalog/thumbnail/Continuous_Compliance.png",
     "description" : "Efficiently scope, manage, and communicate your compliance posture, empowering InfoSec and IT Compliance professionals to automate regulatory guidance, reinforce program governance, and maintain audit readiness.",
     "fileType" : "BPMN_AUTOMATION",
     "directoryRoot" : "AUTOMATION",

@@ -1,0 +1,27 @@
+{
+    "uri" : "Automation/Catalog/`Optimized_Inventory_Check`.bpmn",
+    "displayName" : "Optimized asset inventory checks",
+    "fileOwner" : "NCL",
+    "defaultTags" : [ {
+      "type" : "SOURCE",
+      "name" : "Community",
+      "tenantPrefix" : "NCL"
+    }, {
+      "type" : "CATEGORY",
+      "name" : "Discovery",
+      "tenantPrefix" : "NCL"
+    } ],
+    "imageUri" : "Automation/Catalog/thumbnail/MSA-2.8.3.png",
+    "description" : "Schedule regular assert inventory checked and refresh dashboard both orhanization & environment level",
+    "fileType" : "BPMN_AUTOMATION",
+    "directoryRoot" : "AUTOMATION",
+    "tenantAccess" : [ "NCL" ],
+    "extraData" : {
+      "creationDate" : 1730889682192,
+      "createdBy" : "admin",
+      "lastUpdated" : 1730889682192
+    },
+    "createdDate" : "2024-11-15T09:41:22.192682245+01:00",
+    "lastModifiedDate" : "2024-11-15T09:41:22.192682245+01:00"
+  }
+  

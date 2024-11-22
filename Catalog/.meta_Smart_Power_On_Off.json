@@ -11,7 +11,7 @@
       "name" : "Discovery",
       "tenantPrefix" : "NCL"
     } ],
-    "imageUri" : "Automation/Catalog/thumbnail/MSA-2.8.3.png",
+    "imageUri" : "Automation/Catalog/thumbnail/Smart_Power_On_Off.png",
     "description" : "For cost optimization, mainly for hyperscalers, power on / off environments to be used in working period",
     "fileType" : "BPMN_AUTOMATION",
     "directoryRoot" : "AUTOMATION",

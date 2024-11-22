@@ -11,7 +11,7 @@
       "name" : "Discovery",
       "tenantPrefix" : "NCL"
     } ],
-    "imageUri" : "Automation/Catalog/thumbnail/MSA-2.8.3.png",
+    "imageUri" : "Automation/Catalog/thumbnail/Migration_Cost_Optimization.png",
     "description" : "Based on cloud connection set, retrieve last pricing table and raise the top migration plan to move your environments",
     "fileType" : "BPMN_AUTOMATION",
     "directoryRoot" : "AUTOMATION",

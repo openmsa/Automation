@@ -11,7 +11,7 @@
       "name" : "Discovery",
       "tenantPrefix" : "NCL"
     } ],
-    "imageUri" : "Automation/Catalog/thumbnail/MSA-2.8.3.png",
+    "imageUri" : "Automation/Catalog/thumbnail/Optimized_Inventory_Check.png",
     "description" : "Schedule regular assert inventory checked and refresh dashboard both orhanization & environment level",
     "fileType" : "BPMN_AUTOMATION",
     "directoryRoot" : "AUTOMATION",

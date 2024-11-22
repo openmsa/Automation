@@ -11,7 +11,7 @@
       "name" : "Discovery",
       "tenantPrefix" : "NCL"
     } ],
-    "imageUri" : "Automation/Catalog/thumbnail/MSA-2.8.3.png",
+    "imageUri" : "Automation/Catalog/thumbnail/Dynamic_Resource_Scaling.png",
     "description" : "Applicable on a set of environments, collect cloud ressources and check real usability. Notificy and guide a user to increase or decrease ressources to be optimized",
     "fileType" : "BPMN_AUTOMATION",
     "directoryRoot" : "AUTOMATION",

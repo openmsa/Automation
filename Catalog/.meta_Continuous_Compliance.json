@@ -8,9 +8,13 @@
       "tenantPrefix" : "NCL"
     }, {
       "type" : "CATEGORY",
-      "name" : "Discovery",
+      "name" : "Compliance",
       "tenantPrefix" : "NCL"
-    } ],
+    }, {
+      "type" : "TAGS",
+      "name" : "KubeBench",
+      "tenantPrefix" : "NCL"
+    }],
     "imageUri" : "/opt/fmc_repository/Automation/Catalog/thumbnail/Continuous_Compliance.png",
     "description" : "Efficiently scope, manage, and communicate your compliance posture, empowering InfoSec and IT Compliance professionals to automate regulatory guidance, reinforce program governance, and maintain audit readiness.",
     "fileType" : "BPMN_AUTOMATION",

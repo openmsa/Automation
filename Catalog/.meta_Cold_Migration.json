@@ -8,7 +8,7 @@
       "tenantPrefix" : "NCL"
     }, {
       "type" : "CATEGORY",
-      "name" : "Discovery",
+      "name" : "Migration",
       "tenantPrefix" : "NCL"
     } ],
     "imageUri" : "/opt/fmc_repository/Automation/Catalog/thumbnail/Cold_Migration.png",

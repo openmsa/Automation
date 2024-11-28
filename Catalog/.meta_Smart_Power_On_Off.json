@@ -8,7 +8,7 @@
       "tenantPrefix" : "NCL"
     }, {
       "type" : "CATEGORY",
-      "name" : "Discovery",
+      "name" : "Green IT",
       "tenantPrefix" : "NCL"
     } ],
     "imageUri" : "/opt/fmc_repository/Automation/Catalog/thumbnail/Smart_Power_On_Off.png",

@@ -8,7 +8,7 @@
       "tenantPrefix" : "NCL"
     }, {
       "type" : "CATEGORY",
-      "name" : "Discovery",
+      "name" : "Scaling",
       "tenantPrefix" : "NCL"
     } ],
     "imageUri" : "/opt/fmc_repository/Automation/Catalog/thumbnail/Dynamic_Resource_Scaling.png",

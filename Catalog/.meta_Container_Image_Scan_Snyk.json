@@ -8,9 +8,13 @@
     "tenantPrefix" : "NCL"
   }, {
     "type" : "CATEGORY",
-    "name" : "Discovery",
+    "name" : "Security",
     "tenantPrefix" : "NCL"
-  } ],
+  }, {
+    "type" : "TAGS",
+    "name" : "Snyk",
+    "tenantPrefix" : "NCL"
+  }],
   "imageUri" : "/opt/fmc_repository/Automation/Catalog/thumbnail/Container_Image_Scan_Snyk.png",
   "description" : "Provides curated container images with near zero CVEs, to helps you find and fix vulnerabilities in container images, based on container registry scans.",
   "fileType" : "BPMN_AUTOMATION",

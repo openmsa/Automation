@@ -11,7 +11,7 @@
       "name" : "Compliance",
       "tenantPrefix" : "NCL"
     }, {
-      "type" : "TAGS",
+      "type" : "TAG",
       "name" : "KubeBench",
       "tenantPrefix" : "NCL"
     }],

@@ -1,0 +1,27 @@
+{
+    "uri" : "Automation/Catalog/SASE/Dynamic_Pop_Swap.bpmn",
+    "displayName" : "Dynamic POP swap",
+    "fileOwner" : "NCL",
+    "defaultTags" : [ {
+      "type" : "SOURCE",
+      "name" : "Community",
+      "tenantPrefix" : "NCL"
+    }, {
+      "type" : "CATEGORY",
+      "name" : "Migration",
+      "tenantPrefix" : "NCL"
+    } ],
+    "imageUri" : "/opt/fmc_repository/Automation/Catalog/thumbnail/SASE/Dynamic_Pop_Swap.png",
+    "description" : "",
+    "fileType" : "BPMN_AUTOMATION",
+    "directoryRoot" : "AUTOMATION",
+    "tenantAccess" : [ "NCL" ],
+    "extraData" : {
+      "creationDate" : 1730889682192,
+      "createdBy" : "admin",
+      "lastUpdated" : 1730889682192
+    },
+    "createdDate" : "2024-11-15T09:41:22.192682245+01:00",
+    "lastModifiedDate" : "2024-11-28T12:22:22.192682245+01:00"
+  }
+  

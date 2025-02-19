@@ -10,6 +10,10 @@
       "type" : "CATEGORY",
       "name" : "Migration",
       "tenantPrefix" : "NCL"
+    }, {
+      "type" : "CATEGORY",
+      "name" : "SASE",
+      "tenantPrefix" : "NCL"
     } ],
     "imageUri" : "/opt/fmc_repository/Automation/Catalog/thumbnail/SASE/Dynamic_Pop_Swap.png",
     "description" : "",

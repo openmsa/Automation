@@ -8,7 +8,7 @@
       "tenantPrefix" : "NCL"
     }, {
       "type" : "CATEGORY",
-      "name" : "Migration",
+      "name" : "SASE",
       "tenantPrefix" : "NCL"
     } ],
     "imageUri" : "/opt/fmc_repository/Automation/Catalog/thumbnail/SASE/SSE_FW_White_Listing.png",

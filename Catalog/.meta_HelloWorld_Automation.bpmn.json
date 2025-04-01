@@ -3,13 +3,17 @@
   "displayName" : "Hello world",
   "fileOwner" : "NCL",
   "defaultTags" : [ {
-    "type" : "SOURCE",
-    "name" : "Community",
-    "tenantPrefix" : "NCL"
-  }, {
+    "id" : "67eba815cedd0537ff855cdb",
     "type" : "CATEGORY",
     "name" : "Discovery",
-    "tenantPrefix" : "NCL"
+    "tenantPrefix" : "NCL",
+    "systemTag" : false
+  }, {
+    "id" : "67eba616cedd0537ff855cc8",
+    "type" : "SOURCE",
+    "name" : "Community",
+    "tenantPrefix" : "NCL",
+    "systemTag" : false
   } ],
   "imageUri" : "/opt/fmc_repository/Automation/Catalog/thumbnail/automation_default.png",
   "description" : "A Hello World automation",
@@ -21,6 +25,7 @@
     "createdBy" : "admin",
     "lastUpdated" : 1730889682192
   },
-  "createdDate" : "2024-11-15T09:41:22.192682245+01:00",
-  "lastModifiedDate" : "2024-11-28T12:22:22.192682245+01:00"
+  "createdDate" : "2025-03-25T13:27:01.772Z",
+  "lastModifiedDate" : "2025-04-01T09:09:53.331Z",
+  "fileSyncStatus" : null
 }

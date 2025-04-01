@@ -1,27 +1,31 @@
 {
-    "uri" : "Automation/Catalog/Shadow_IT.bpmn",
-    "displayName" : "Shadow IT detection & policies",
-    "fileOwner" : "NCL",
-    "defaultTags" : [ {
-      "type" : "SOURCE",
-      "name" : "Community",
-      "tenantPrefix" : "NCL"
-    }, {
-      "type" : "CATEGORY",
-      "name" : "Detection",
-      "tenantPrefix" : "NCL"
-    } ],
-    "imageUri" : "/opt/fmc_repository/Automation/Catalog/thumbnail/Shadow_IT.png",
-    "description" : "Daily, Weekly, or Monthly based, detect unused environments and propose smart cleaning based on policies",
-    "fileType" : "BPMN_AUTOMATION",
-    "directoryRoot" : "AUTOMATION",
-    "tenantAccess" : [ "NCL" ],
-    "extraData" : {
-      "creationDate" : 1730889682192,
-      "createdBy" : "admin",
-      "lastUpdated" : 1730889682192
-    },
-    "createdDate" : "2024-11-15T09:41:22.192682245+01:00",
-    "lastModifiedDate" : "2024-11-28T12:22:22.192682245+01:00"
-  }
-  
+  "uri" : "Automation/Catalog/Shadow_IT.bpmn",
+  "displayName" : "Shadow IT detection & policies",
+  "fileOwner" : "NCL",
+  "defaultTags" : [ {
+    "id" : "67eba616cedd0537ff855cc8",
+    "type" : "SOURCE",
+    "name" : "Community",
+    "tenantPrefix" : "NCL",
+    "systemTag" : false
+  }, {
+    "id" : "67eba488cedd0537ff855cb6",
+    "type" : "CATEGORY",
+    "name" : "Detection",
+    "tenantPrefix" : "NCL",
+    "systemTag" : true
+  } ],
+  "imageUri" : "/opt/fmc_repository/Automation/Catalog/thumbnail/Shadow_IT.png",
+  "description" : "Daily, Weekly, or Monthly based, detect unused environments and propose smart cleaning based on policies",
+  "fileType" : "BPMN_AUTOMATION",
+  "directoryRoot" : "AUTOMATION",
+  "tenantAccess" : [ "NCL" ],
+  "extraData" : {
+    "creationDate" : 1730889682192,
+    "createdBy" : "admin",
+    "lastUpdated" : 1730889682192
+  },
+  "createdDate" : "2025-03-25T13:27:01.775Z",
+  "lastModifiedDate" : "2025-04-01T09:09:53.273Z",
+  "fileSyncStatus" : null
+}

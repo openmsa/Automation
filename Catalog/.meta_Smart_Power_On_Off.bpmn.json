@@ -1,27 +1,31 @@
 {
-    "uri" : "Automation/Catalog/Smart_Power_On_Off.bpmn",
-    "displayName" : "Smart power on / off in working hours",
-    "fileOwner" : "NCL",
-    "defaultTags" : [ {
-      "type" : "SOURCE",
-      "name" : "Community",
-      "tenantPrefix" : "NCL"
-    }, {
-      "type" : "CATEGORY",
-      "name" : "Green IT",
-      "tenantPrefix" : "NCL"
-    } ],
-    "imageUri" : "/opt/fmc_repository/Automation/Catalog/thumbnail/Smart_Power_On_Off.png",
-    "description" : "For cost optimization, mainly for hyperscalers, power on / off environments to be used in working period",
-    "fileType" : "BPMN_AUTOMATION",
-    "directoryRoot" : "AUTOMATION",
-    "tenantAccess" : [ "NCL" ],
-    "extraData" : {
-      "creationDate" : 1730889682192,
-      "createdBy" : "admin",
-      "lastUpdated" : 1730889682192
-    },
-    "createdDate" : "2024-11-15T09:41:22.192682245+01:00",
-    "lastModifiedDate" : "2024-11-28T12:22:22.192682245+01:00"
-  }
-  
+  "uri" : "Automation/Catalog/Smart_Power_On_Off.bpmn",
+  "displayName" : "Smart power on / off in working hours",
+  "fileOwner" : "NCL",
+  "defaultTags" : [ {
+    "id" : "67eba616cedd0537ff855cc8",
+    "type" : "SOURCE",
+    "name" : "Community",
+    "tenantPrefix" : "NCL",
+    "systemTag" : false
+  }, {
+    "id" : "67eba815cedd0537ff855cd8",
+    "type" : "CATEGORY",
+    "name" : "Green IT",
+    "tenantPrefix" : "NCL",
+    "systemTag" : false
+  } ],
+  "imageUri" : "/opt/fmc_repository/Automation/Catalog/thumbnail/Smart_Power_On_Off.png",
+  "description" : "For cost optimization, mainly for hyperscalers, power on / off environments to be used in working period",
+  "fileType" : "BPMN_AUTOMATION",
+  "directoryRoot" : "AUTOMATION",
+  "tenantAccess" : [ "NCL" ],
+  "extraData" : {
+    "creationDate" : 1730889682192,
+    "createdBy" : "admin",
+    "lastUpdated" : 1730889682192
+  },
+  "createdDate" : "2025-03-25T13:27:01.775Z",
+  "lastModifiedDate" : "2025-04-01T09:09:53.304Z",
+  "fileSyncStatus" : null
+}

@@ -1,27 +1,31 @@
 {
-    "uri" : "Automation/Catalog/SASE/Apps_Connectors_Updates.bpmn",
-    "displayName" : "Apps Connectors Updates",
-    "fileOwner" : "NCL",
-    "defaultTags" : [ {
-      "type" : "SOURCE",
-      "name" : "Community",
-      "tenantPrefix" : "NCL"
-    }, {
-      "type" : "CATEGORY",
-      "name" : "SASE",
-      "tenantPrefix" : "NCL"
-    } ],
-    "imageUri" : "/opt/fmc_repository/Automation/Catalog/thumbnail/SASE/Apps_Connectors_Updates.png",
-    "description" : "",
-    "fileType" : "BPMN_AUTOMATION",
-    "directoryRoot" : "AUTOMATION",
-    "tenantAccess" : [ "NCL" ],
-    "extraData" : {
-      "creationDate" : 1730889682192,
-      "createdBy" : "admin",
-      "lastUpdated" : 1730889682192
-    },
-    "createdDate" : "2024-11-15T09:41:22.192682245+01:00",
-    "lastModifiedDate" : "2024-11-28T12:22:22.192682245+01:00"
-  }
-  
+  "uri" : "Automation/Catalog/SASE/Apps_Connectors_Updates.bpmn",
+  "displayName" : "Apps Connectors Updates",
+  "fileOwner" : "NCL",
+  "defaultTags" : [ {
+    "id" : "67eba616cedd0537ff855cc8",
+    "type" : "SOURCE",
+    "name" : "Community",
+    "tenantPrefix" : "NCL",
+    "systemTag" : false
+  }, {
+    "id" : "67eba488cedd0537ff855cc6",
+    "type" : "CATEGORY",
+    "name" : "SASE",
+    "tenantPrefix" : "NCL",
+    "systemTag" : true
+  } ],
+  "imageUri" : "/opt/fmc_repository/Automation/Catalog/thumbnail/SASE/Apps_Connectors_Updates.png",
+  "description" : "",
+  "fileType" : "BPMN_AUTOMATION",
+  "directoryRoot" : "AUTOMATION",
+  "tenantAccess" : [ "NCL" ],
+  "extraData" : {
+    "creationDate" : 1730889682192,
+    "createdBy" : "admin",
+    "lastUpdated" : 1730889682192
+  },
+  "createdDate" : "2024-11-15T08:41:22.192Z",
+  "lastModifiedDate" : "2025-04-01T09:09:53.363Z",
+  "fileSyncStatus" : null
+}

@@ -1,0 +1,19 @@
+{
+  "uri" : "Automation/Catalog/JIRA_Ticketer.bpmn",
+  "displayName" : "JIRA_Ticketer",
+  "fileOwner" : "NCL",
+  "defaultTags" : [ ],
+  "imageUri" : null,
+  "description" : "Default description",
+  "fileType" : "BPMN_AUTOMATION",
+  "directoryRoot" : "AUTOMATION",
+  "tenantAccess" : [ "NCL" ],
+  "extraData" : {
+    "lastUpdated" : 1736352650507,
+    "createdBy" : "admin",
+    "creationDate" : 1736352650507
+  },
+  "createdDate" : "2025-01-08T16:10:50.507Z",
+  "lastModifiedDate" : "2025-04-01T08:39:14.537Z",
+  "fileSyncStatus" : null
+}

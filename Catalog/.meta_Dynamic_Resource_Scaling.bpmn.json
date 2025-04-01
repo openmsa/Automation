@@ -1,27 +1,31 @@
 {
-    "uri" : "Automation/Catalog/Dynamic_Resource_Scaling.bpmn",
-    "displayName" : "Dynamic ressources scaling",
-    "fileOwner" : "NCL",
-    "defaultTags" : [ {
-      "type" : "SOURCE",
-      "name" : "Community",
-      "tenantPrefix" : "NCL"
-    }, {
-      "type" : "CATEGORY",
-      "name" : "Scaling",
-      "tenantPrefix" : "NCL"
-    } ],
-    "imageUri" : "/opt/fmc_repository/Automation/Catalog/thumbnail/Dynamic_Resource_Scaling.png",
-    "description" : "Applicable on a set of environments, collect cloud ressources and check real usability. Notificy and guide a user to increase or decrease ressources to be optimized",
-    "fileType" : "BPMN_AUTOMATION",
-    "directoryRoot" : "AUTOMATION",
-    "tenantAccess" : [ "NCL" ],
-    "extraData" : {
-      "creationDate" : 1730889682192,
-      "createdBy" : "admin",
-      "lastUpdated" : 1730889682192
-    },
-    "createdDate" : "2024-11-15T09:41:22.192682245+01:00",
-    "lastModifiedDate" : "2024-11-28T12:22:22.192682245+01:00"
-  }
-  
+  "uri" : "Automation/Catalog/Dynamic_Resource_Scaling.bpmn",
+  "displayName" : "Dynamic ressources scaling",
+  "fileOwner" : "NCL",
+  "defaultTags" : [ {
+    "id" : "67eba488cedd0537ff855cbc",
+    "type" : "CATEGORY",
+    "name" : "Scaling",
+    "tenantPrefix" : "NCL",
+    "systemTag" : true
+  }, {
+    "id" : "67eba616cedd0537ff855cc8",
+    "type" : "SOURCE",
+    "name" : "Community",
+    "tenantPrefix" : "NCL",
+    "systemTag" : false
+  } ],
+  "imageUri" : "/opt/fmc_repository/Automation/Catalog/thumbnail/Dynamic_Resource_Scaling.png",
+  "description" : "Applicable on a set of environments, collect cloud ressources and check real usability. Notificy and guide a user to increase or decrease ressources to be optimized",
+  "fileType" : "BPMN_AUTOMATION",
+  "directoryRoot" : "AUTOMATION",
+  "tenantAccess" : [ "NCL" ],
+  "extraData" : {
+    "creationDate" : 1730889682192,
+    "createdBy" : "admin",
+    "lastUpdated" : 1730889682192
+  },
+  "createdDate" : "2025-03-25T13:27:01.769Z",
+  "lastModifiedDate" : "2025-04-01T09:09:53.353Z",
+  "fileSyncStatus" : null
+}

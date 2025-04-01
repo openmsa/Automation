@@ -3,15 +3,15 @@
   "displayName" : "Container image scan with Snyk",
   "fileOwner" : "NCL",
   "defaultTags" : [ {
-    "id" : "67eba616cedd0537ff855cca",
-    "type" : "TAG",
-    "name" : "Snyk",
-    "tenantPrefix" : "NCL",
-    "systemTag" : false
-  }, {
     "id" : "67eba616cedd0537ff855cc9",
     "type" : "CATEGORY",
     "name" : "Security",
+    "tenantPrefix" : "NCL",
+    "systemTag" : false
+  }, {
+    "id" : "67eba616cedd0537ff855cca",
+    "type" : "TAG",
+    "name" : "Snyk",
     "tenantPrefix" : "NCL",
     "systemTag" : false
   }, {
@@ -32,6 +32,6 @@
     "lastUpdated" : 1730889682192
   },
   "createdDate" : "2024-11-15T08:41:22.192Z",
-  "lastModifiedDate" : "2025-04-01T09:09:53.288Z",
+  "lastModifiedDate" : "2025-04-01T10:16:32.151Z",
   "fileSyncStatus" : null
 }

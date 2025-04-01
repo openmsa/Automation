@@ -3,15 +3,15 @@
   "displayName" : "Hello world",
   "fileOwner" : "NCL",
   "defaultTags" : [ {
-    "id" : "67eba815cedd0537ff855cdb",
-    "type" : "CATEGORY",
-    "name" : "Discovery",
-    "tenantPrefix" : "NCL",
-    "systemTag" : false
-  }, {
     "id" : "67eba616cedd0537ff855cc8",
     "type" : "SOURCE",
     "name" : "Community",
+    "tenantPrefix" : "NCL",
+    "systemTag" : false
+  }, {
+    "id" : "67eba815cedd0537ff855cdb",
+    "type" : "CATEGORY",
+    "name" : "Discovery",
     "tenantPrefix" : "NCL",
     "systemTag" : false
   } ],
@@ -26,6 +26,6 @@
     "lastUpdated" : 1730889682192
   },
   "createdDate" : "2025-03-25T13:27:01.772Z",
-  "lastModifiedDate" : "2025-04-01T09:09:53.331Z",
+  "lastModifiedDate" : "2025-04-01T10:16:32.453Z",
   "fileSyncStatus" : null
 }

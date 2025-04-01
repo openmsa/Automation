@@ -3,6 +3,12 @@
   "displayName" : "Cold migration",
   "fileOwner" : "NCL",
   "defaultTags" : [ {
+    "id" : "67eba488cedd0537ff855cb4",
+    "type" : "DOMAIN",
+    "name" : "Network",
+    "tenantPrefix" : "NCL",
+    "systemTag" : true
+  }, {
     "id" : "67eba488cedd0537ff855cb3",
     "type" : "DOMAIN",
     "name" : "Cloud",
@@ -14,12 +20,6 @@
     "name" : "Migration",
     "tenantPrefix" : "NCL",
     "systemTag" : true
-  }, {
-    "id" : "67eba488cedd0537ff855cb4",
-    "type" : "DOMAIN",
-    "name" : "Network",
-    "tenantPrefix" : "NCL",
-    "systemTag" : true
   } ],
   "imageUri" : "/opt/fmc_repository/Automation/Catalog/thumbnail/Cold_Migration.png",
   "description" : "A migration of powered off or suspended virtual machines between hosts across clusters, data centers, and vCenter Server instances. By using cold migration, you can also move associated disks from one datastore to another.",
@@ -28,6 +28,6 @@
   "tenantAccess" : [ "NCL" ],
   "extraData" : null,
   "createdDate" : "2025-03-25T13:27:01.763Z",
-  "lastModifiedDate" : "2025-04-01T09:09:53.347Z",
+  "lastModifiedDate" : "2025-04-01T10:16:32.486Z",
   "fileSyncStatus" : null
 }

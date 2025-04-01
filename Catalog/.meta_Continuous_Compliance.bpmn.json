@@ -3,15 +3,15 @@
   "displayName" : "Continuous compliance posture",
   "fileOwner" : "NCL",
   "defaultTags" : [ {
-    "id" : "67eba488cedd0537ff855cc1",
-    "type" : "CATEGORY",
-    "name" : "Compliance",
-    "tenantPrefix" : "NCL",
-    "systemTag" : true
-  }, {
     "id" : "67eba488cedd0537ff855cb5",
     "type" : "DOMAIN",
     "name" : "Security",
+    "tenantPrefix" : "NCL",
+    "systemTag" : true
+  }, {
+    "id" : "67eba488cedd0537ff855cc1",
+    "type" : "CATEGORY",
+    "name" : "Compliance",
     "tenantPrefix" : "NCL",
     "systemTag" : true
   }, {
@@ -25,9 +25,9 @@
   "description" : "Efficiently scope, manage, and communicate your compliance posture, empowering InfoSec and IT Compliance professionals to automate regulatory guidance, reinforce program governance, and maintain audit readiness.",
   "fileType" : "BPMN_AUTOMATION",
   "directoryRoot" : "AUTOMATION",
-  "tenantAccess" : [ "003", "NCL" ],
+  "tenantAccess" : [ "NCL" ],
   "extraData" : null,
   "createdDate" : "2025-03-25T13:27:01.8Z",
-  "lastModifiedDate" : "2025-04-01T09:10:28.835Z",
+  "lastModifiedDate" : "2025-04-01T10:16:32.559Z",
   "fileSyncStatus" : null
 }

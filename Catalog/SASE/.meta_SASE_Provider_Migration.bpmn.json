@@ -3,6 +3,12 @@
   "displayName" : "SASE Provider Migration",
   "fileOwner" : "NCL",
   "defaultTags" : [ {
+    "id" : "67eba488cedd0537ff855cc6",
+    "type" : "CATEGORY",
+    "name" : "SASE",
+    "tenantPrefix" : "NCL",
+    "systemTag" : true
+  }, {
     "id" : "67eba488cedd0537ff855cbb",
     "type" : "CATEGORY",
     "name" : "Migration",
@@ -14,12 +20,6 @@
     "name" : "Community",
     "tenantPrefix" : "NCL",
     "systemTag" : false
-  }, {
-    "id" : "67eba488cedd0537ff855cc6",
-    "type" : "CATEGORY",
-    "name" : "SASE",
-    "tenantPrefix" : "NCL",
-    "systemTag" : true
   } ],
   "imageUri" : "/opt/fmc_repository/Automation/Catalog/thumbnail/SASE/SASE_Provider_Migration.png",
   "description" : "",
@@ -32,6 +32,6 @@
     "lastUpdated" : 1730889682192
   },
   "createdDate" : "2024-11-15T08:41:22.192Z",
-  "lastModifiedDate" : "2025-04-01T09:09:53.311Z",
+  "lastModifiedDate" : "2025-04-01T10:16:32.393Z",
   "fileSyncStatus" : null
 }

@@ -2,37 +2,7 @@
   "uri" : "Automation/Catalog/JIRA_Ticketer.bpmn",
   "displayName" : "JIRA Tickete Management",
   "fileOwner" : "NCL",
-  "defaultTags" : [ {
-    "id" : "67eba488cedd0537ff855cb4",
-    "type" : "DOMAIN",
-    "name" : "Network",
-    "tenantPrefix" : "NCL",
-    "systemTag" : true
-  }, {
-    "id" : "67eba488cedd0537ff855cc5",
-    "type" : "CATEGORY",
-    "name" : "Ticketing",
-    "tenantPrefix" : "NCL",
-    "systemTag" : true
-  }, {
-    "id" : "67eba488cedd0537ff855cb5",
-    "type" : "DOMAIN",
-    "name" : "Security",
-    "tenantPrefix" : "NCL",
-    "systemTag" : true
-  }, {
-    "id" : "67eba488cedd0537ff855cb3",
-    "type" : "DOMAIN",
-    "name" : "Cloud",
-    "tenantPrefix" : "NCL",
-    "systemTag" : true
-  }, {
-    "id" : "67ebb189cedd0537ff855ce6",
-    "type" : "INTEGRATION",
-    "name" : "JIRA",
-    "tenantPrefix" : "NCL",
-    "systemTag" : false
-  } ],
+  "defaultTags" : [ ],
   "imageUri" : null,
   "description" : "Default description",
   "fileType" : "BPMN_AUTOMATION",

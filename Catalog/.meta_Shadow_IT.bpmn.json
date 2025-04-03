@@ -3,29 +3,23 @@
   "displayName" : "Shadow IT detection & policies",
   "fileOwner" : "NCL",
   "defaultTags" : [ {
-    "id" : "67eba488cedd0537ff855cb6",
+    "type" : "DOMAIN",
+    "name" : "Cloud",
+    "tenantPrefix" : "NCL",
+    "systemTag" : true
+  }, {
     "type" : "CATEGORY",
     "name" : "Detection",
     "tenantPrefix" : "NCL",
     "systemTag" : true
-  }, {
-    "id" : "67eba616cedd0537ff855cc8",
-    "type" : "SOURCE",
-    "name" : "Community",
-    "tenantPrefix" : "NCL",
-    "systemTag" : false
   } ],
   "imageUri" : "/opt/fmc_repository/Automation/Catalog/thumbnail/Shadow_IT.png",
   "description" : "Daily, Weekly, or Monthly based, detect unused environments and propose smart cleaning based on policies",
   "fileType" : "BPMN_AUTOMATION",
   "directoryRoot" : "AUTOMATION",
-  "tenantAccess" : [ "NCL" ],
-  "extraData" : {
-    "creationDate" : 1730889682192,
-    "createdBy" : "admin",
-    "lastUpdated" : 1730889682192
-  },
+  "tenantAccess" : [ "003", "NCL" ],
+  "extraData" : null,
   "createdDate" : "2025-03-25T13:27:01.775Z",
-  "lastModifiedDate" : "2025-04-01T10:16:32.1Z",
+  "lastModifiedDate" : "2025-04-03T12:48:52.11Z",
   "fileSyncStatus" : null
 }

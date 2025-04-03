@@ -2,25 +2,7 @@
   "uri" : "Automation/Catalog/`Optimized_Inventory_Check`.bpmn",
   "displayName" : "Optimized asset inventory checks",
   "fileOwner" : "NCL",
-  "defaultTags" : [ {
-    "id" : "67eba488cedd0537ff855cb4",
-    "type" : "DOMAIN",
-    "name" : "Network",
-    "tenantPrefix" : "NCL",
-    "systemTag" : true
-  }, {
-    "id" : "67eba488cedd0537ff855cb7",
-    "type" : "CATEGORY",
-    "name" : "Inventory",
-    "tenantPrefix" : "NCL",
-    "systemTag" : true
-  }, {
-    "id" : "67eba488cedd0537ff855cb3",
-    "type" : "DOMAIN",
-    "name" : "Cloud",
-    "tenantPrefix" : "NCL",
-    "systemTag" : true
-  } ],
+  "defaultTags" : [ ],
   "imageUri" : "/opt/fmc_repository/Automation/Catalog/thumbnail/Optimized_Inventory_Check.png",
   "description" : "Schedule regular assert inventory checked and refresh dashboard both orhanization & environment level",
   "fileType" : "BPMN_AUTOMATION",

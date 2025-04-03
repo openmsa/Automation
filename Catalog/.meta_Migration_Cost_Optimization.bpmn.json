@@ -3,29 +3,23 @@
   "displayName" : "Migration plan for cost optimization",
   "fileOwner" : "NCL",
   "defaultTags" : [ {
-    "id" : "67eba488cedd0537ff855cbb",
+    "type" : "DOMAIN",
+    "name" : "Cloud",
+    "tenantPrefix" : "NCL",
+    "systemTag" : true
+  }, {
     "type" : "CATEGORY",
     "name" : "Migration",
     "tenantPrefix" : "NCL",
     "systemTag" : true
-  }, {
-    "id" : "67eba616cedd0537ff855cc8",
-    "type" : "SOURCE",
-    "name" : "Community",
-    "tenantPrefix" : "NCL",
-    "systemTag" : false
   } ],
   "imageUri" : "/opt/fmc_repository/Automation/Catalog/thumbnail/Migration_Cost_Optimization.png",
   "description" : "Based on cloud connection set, retrieve last pricing table and raise the top migration plan to move your environments",
   "fileType" : "BPMN_AUTOMATION",
   "directoryRoot" : "AUTOMATION",
-  "tenantAccess" : [ "NCL" ],
-  "extraData" : {
-    "creationDate" : 1730889682192,
-    "createdBy" : "admin",
-    "lastUpdated" : 1730889682192
-  },
+  "tenantAccess" : [ "003", "NCL" ],
+  "extraData" : null,
   "createdDate" : "2025-03-25T13:27:01.773Z",
-  "lastModifiedDate" : "2025-04-01T10:16:32.541Z",
+  "lastModifiedDate" : "2025-04-03T12:48:37.605Z",
   "fileSyncStatus" : null
 }

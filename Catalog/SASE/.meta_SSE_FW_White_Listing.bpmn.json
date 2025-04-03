@@ -1,17 +1,20 @@
 {
   "uri" : "Automation/Catalog/SASE/SSE_FW_White_Listing.bpmn",
-  "displayName" : "SSE FW White Listing",
+  "displayName" : "SSE Firewall White Listing",
   "fileOwner" : "NCL",
   "defaultTags" : [ {
-    "id" : "67eba488cedd0537ff855cc6",
     "type" : "CATEGORY",
     "name" : "SASE",
     "tenantPrefix" : "NCL",
     "systemTag" : true
   }, {
-    "id" : "67eba616cedd0537ff855cc8",
-    "type" : "SOURCE",
-    "name" : "Community",
+    "type" : "DOMAIN",
+    "name" : "Security",
+    "tenantPrefix" : "NCL",
+    "systemTag" : true
+  }, {
+    "type" : "INTEGRATION",
+    "name" : "Netskope",
     "tenantPrefix" : "NCL",
     "systemTag" : false
   } ],
@@ -19,13 +22,9 @@
   "description" : "",
   "fileType" : "BPMN_AUTOMATION",
   "directoryRoot" : "AUTOMATION",
-  "tenantAccess" : [ "NCL" ],
-  "extraData" : {
-    "creationDate" : 1730889682192,
-    "createdBy" : "admin",
-    "lastUpdated" : 1730889682192
-  },
+  "tenantAccess" : [ "003", "NCL" ],
+  "extraData" : null,
   "createdDate" : "2024-11-15T08:41:22.192Z",
-  "lastModifiedDate" : "2025-04-01T10:16:32.586Z",
+  "lastModifiedDate" : "2025-04-03T12:47:28.898Z",
   "fileSyncStatus" : null
 }

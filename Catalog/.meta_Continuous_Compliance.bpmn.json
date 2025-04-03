@@ -3,31 +3,28 @@
   "displayName" : "Continuous compliance posture",
   "fileOwner" : "NCL",
   "defaultTags" : [ {
-    "id" : "67eba488cedd0537ff855cb5",
-    "type" : "DOMAIN",
-    "name" : "Security",
+    "type" : "INTEGRATION",
+    "name" : "KubeBench",
     "tenantPrefix" : "NCL",
-    "systemTag" : true
+    "systemTag" : false
   }, {
-    "id" : "67eba488cedd0537ff855cc1",
     "type" : "CATEGORY",
     "name" : "Compliance",
     "tenantPrefix" : "NCL",
     "systemTag" : true
   }, {
-    "id" : "67ebad61cedd0537ff855ce3",
-    "type" : "INTEGRATION",
-    "name" : "KubeBench",
+    "type" : "DOMAIN",
+    "name" : "Security",
     "tenantPrefix" : "NCL",
-    "systemTag" : false
+    "systemTag" : true
   } ],
   "imageUri" : "/opt/fmc_repository/Automation/Catalog/thumbnail/Continuous_Compliance.png",
   "description" : "Efficiently scope, manage, and communicate your compliance posture, empowering InfoSec and IT Compliance professionals to automate regulatory guidance, reinforce program governance, and maintain audit readiness.",
   "fileType" : "BPMN_AUTOMATION",
   "directoryRoot" : "AUTOMATION",
-  "tenantAccess" : [ "NCL" ],
+  "tenantAccess" : [ "003", "NCL" ],
   "extraData" : null,
   "createdDate" : "2025-03-25T13:27:01.8Z",
-  "lastModifiedDate" : "2025-04-01T10:16:32.559Z",
+  "lastModifiedDate" : "2025-04-03T12:48:55.708Z",
   "fileSyncStatus" : null
 }

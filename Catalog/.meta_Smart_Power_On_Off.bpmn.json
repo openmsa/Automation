@@ -3,15 +3,13 @@
   "displayName" : "Smart power on / off in working hours",
   "fileOwner" : "NCL",
   "defaultTags" : [ {
-    "id" : "67eba815cedd0537ff855cd8",
+    "type" : "DOMAIN",
+    "name" : "Cloud",
+    "tenantPrefix" : "NCL",
+    "systemTag" : true
+  }, {
     "type" : "CATEGORY",
     "name" : "Green IT",
-    "tenantPrefix" : "NCL",
-    "systemTag" : false
-  }, {
-    "id" : "67eba616cedd0537ff855cc8",
-    "type" : "SOURCE",
-    "name" : "Community",
     "tenantPrefix" : "NCL",
     "systemTag" : false
   } ],
@@ -19,13 +17,9 @@
   "description" : "For cost optimization, mainly for hyperscalers, power on / off environments to be used in working period",
   "fileType" : "BPMN_AUTOMATION",
   "directoryRoot" : "AUTOMATION",
-  "tenantAccess" : [ "NCL" ],
-  "extraData" : {
-    "creationDate" : 1730889682192,
-    "createdBy" : "admin",
-    "lastUpdated" : 1730889682192
-  },
+  "tenantAccess" : [ "003", "NCL" ],
+  "extraData" : null,
   "createdDate" : "2025-03-25T13:27:01.775Z",
-  "lastModifiedDate" : "2025-04-01T10:16:32.31Z",
+  "lastModifiedDate" : "2025-04-03T12:48:45.666Z",
   "fileSyncStatus" : null
 }

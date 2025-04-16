@@ -1,0 +1,30 @@
+{
+  "uri" : "Automation/Catalog/SASE/Tunnel_Bulk_Creation.bpmn",
+  "displayName" : "Bulk creation of Tunnels",
+  "fileOwner" : "NCL",
+  "defaultTags" : [ {
+    "type" : "CATEGORY",
+    "name" : "SASE",
+    "tenantPrefix" : "NCL",
+    "systemTag" : true
+  }, {
+    "type" : "DOMAIN",
+    "name" : "Security",
+    "tenantPrefix" : "NCL",
+    "systemTag" : true
+  }, {
+    "type" : "INTEGRATION",
+    "name" : "Netskope",
+    "tenantPrefix" : "NCL",
+    "systemTag" : false
+  } ],
+  "imageUri" : "/opt/fmc_repository/Automation/Catalog/thumbnail/SASE/Tunnel_bulk_creation.png",
+  "description" : "",
+  "fileType" : "BPMN_AUTOMATION",
+  "directoryRoot" : "AUTOMATION",
+  "tenantAccess" : [ "003", "NCL" ],
+  "extraData" : null,
+  "createdDate" : "2024-11-15T08:41:22.192Z",
+  "lastModifiedDate" : "2025-04-03T12:48:25.964Z",
+  "fileSyncStatus" : null
+}

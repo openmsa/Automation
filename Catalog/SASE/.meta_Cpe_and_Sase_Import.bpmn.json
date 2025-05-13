@@ -3,11 +3,6 @@
   "displayName" : "Import of CPE and Sase POP from a file",
   "fileOwner" : "NCL",
   "defaultTags" : [ {
-    "type" : "CATEGORY",
-    "name" : "SASE",
-    "tenantPrefix" : "NCL",
-    "systemTag" : true
-  }, {
     "type" : "DOMAIN",
     "name" : "Security",
     "tenantPrefix" : "NCL",
@@ -17,14 +12,22 @@
     "name" : "Netskope",
     "tenantPrefix" : "NCL",
     "systemTag" : false
+  }, {
+    "type" : "CATEGORY",
+    "name" : "SASE",
+    "tenantPrefix" : "NCL",
+    "systemTag" : true
   } ],
   "imageUri" : "/opt/fmc_repository/Automation/Catalog/thumbnail/SASE/Cpe_and_Sase_Import.png",
   "description" : "",
   "fileType" : "BPMN_AUTOMATION",
   "directoryRoot" : "AUTOMATION",
-  "tenantAccess" : [ "003", "NCL" ],
+  "tenantAccess" : [ "001", "NCL" ],
+  "fileStatus" : "ACTIVE",
   "extraData" : null,
   "createdDate" : "2024-11-15T08:41:22.192Z",
-  "lastModifiedDate" : "2025-04-03T12:48:25.964Z",
+  "lastModifiedDate" : "2025-05-13T12:37:56.879Z",
+  "metaCreatedDate" : "2025-05-13T12:37:56.882560071Z",
+  "metaLastModifiedDate" : "2025-05-13T12:37:56.882561668Z",
   "fileSyncStatus" : null
 }

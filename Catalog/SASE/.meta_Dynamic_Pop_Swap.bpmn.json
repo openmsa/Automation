@@ -19,7 +19,7 @@
     "systemTag" : false
   }, {
     "type" : "CATEGORY",
-    "name" : "Migration",
+    "name" : "Migrate",
     "tenantPrefix" : "NCL",
     "systemTag" : true
   }, {

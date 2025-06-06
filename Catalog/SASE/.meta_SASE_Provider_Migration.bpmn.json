@@ -9,7 +9,7 @@
     "systemTag" : true
   }, {
     "type" : "DOMAIN",
-    "name" : "Security",
+    "name" : "Migrate",
     "tenantPrefix" : "NCL",
     "systemTag" : true
   }, {

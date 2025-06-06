@@ -4,7 +4,7 @@
   "fileOwner" : "NCL",
   "defaultTags" : [ {
     "type" : "DOMAIN",
-    "name" : "Security",
+    "name" : "Deploy",
     "tenantPrefix" : "NCL",
     "systemTag" : true
   }, {

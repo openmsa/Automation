@@ -1,5 +1,5 @@
 {
-  "uri" : "Automation/Catalog/EDGE_SSE_Cisco_Netskope.bpmn",
+  "uri" : "Automation/Catalog/SASE/EDGE_SSE_Cisco_Netskope.bpmn",
   "displayName" : "Edge to SSE - Cisco / Netskope",
   "fileOwner" : "NCL",
   "defaultTags" : [ {

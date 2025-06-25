@@ -1,0 +1,35 @@
+{
+  "uri" : "Automation/Catalog/SASE/EDGE_SSE_Fortinet_Zscaler.bpmn",
+  "displayName" : "Edge to SSE - Fortinet / Zscaler",
+  "fileOwner" : "NCL",
+  "defaultTags" : [ {
+    "type" : "CATEGORY",
+    "name" : "SASE",
+    "tenantPrefix" : "NCL",
+    "systemTag" : true
+  }, {
+    "type" : "DOMAIN",
+    "name" : "Deploy",
+    "tenantPrefix" : "NCL",
+    "systemTag" : true
+  }, {
+    "type" : "INTEGRATION",
+    "name" : "Fortinet",
+    "tenantPrefix" : "NCL",
+    "systemTag" : false
+  }, {
+    "type" : "INTEGRATION",
+    "name" : "Zscaler",
+    "tenantPrefix" : "NCL",
+    "systemTag" : false
+  } ],
+  "imageUri" : "/opt/fmc_repository/Automation/Catalog/thumbnail/SASE/EDGE_SSE_Fortinet_Zscaler.png",
+  "description" : "Deploying tunnels between Fortinet CPEs at the EDGE to Zscaler SSE",
+  "fileType" : "BPMN_AUTOMATION",
+  "directoryRoot" : "AUTOMATION",
+  "tenantAccess" : [ "003", "NCL" ],
+  "extraData" : null,
+  "createdDate" : "2024-11-15T08:41:22.192Z",
+  "lastModifiedDate" : "2025-04-03T12:47:53.271Z",
+  "fileSyncStatus" : null
+}

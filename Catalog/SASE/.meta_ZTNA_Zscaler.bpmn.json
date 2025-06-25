@@ -1,6 +1,6 @@
 {
-  "uri" : "Automation/Catalog/SASE/EDGE_SSE_Fortinet_SDWAN_Zscaler.bpmn",
-  "displayName" : "Edge to SSE - Fortinet SDWAN / Zscaler",
+  "uri" : "Automation/Catalog/SASE/ZTNA_Zscaler.bpmn",
+  "displayName" : "ZTNA - Zscaler",
   "fileOwner" : "NCL",
   "defaultTags" : [ {
     "type" : "CATEGORY",
@@ -14,17 +14,12 @@
     "systemTag" : true
   }, {
     "type" : "INTEGRATION",
-    "name" : "Fortinet",
-    "tenantPrefix" : "NCL",
-    "systemTag" : false
-  }, {
-    "type" : "INTEGRATION",
     "name" : "Zscaler",
     "tenantPrefix" : "NCL",
     "systemTag" : false
   } ],
-  "imageUri" : "/opt/fmc_repository/Automation/Catalog/thumbnail/SASE/EDGE_SSE_Fortinet_SDWAN_Zscaler.png",
-  "description" : "Deploying tunnels between Fortinet SDWAN at the edge and Zscaler SSE",
+  "imageUri" : "/opt/fmc_repository/Automation/Catalog/thumbnail/SASE/ZTNA_Zscaler.png",
+  "description" : "Deploying ZTNA connectors to Zscaler",
   "fileType" : "BPMN_AUTOMATION",
   "directoryRoot" : "AUTOMATION",
   "tenantAccess" : [ "003", "NCL" ],

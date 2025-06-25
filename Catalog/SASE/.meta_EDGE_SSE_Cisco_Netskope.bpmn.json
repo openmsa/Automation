@@ -24,7 +24,7 @@
     "systemTag" : false
   } ],
   "imageUri" : "/opt/fmc_repository/Automation/Catalog/thumbnail/SASE/EDGE_SSE_Cisco_Netskope.png",
-  "description" : "",
+  "description" : "Deploying tunnels between Cisco CPEs at the edge to Netskope SSE",
   "fileType" : "BPMN_AUTOMATION",
   "directoryRoot" : "AUTOMATION",
   "tenantAccess" : [ "003", "NCL" ],

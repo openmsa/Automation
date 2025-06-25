@@ -24,7 +24,7 @@
     "systemTag" : false
   } ],
   "imageUri" : "/opt/fmc_repository/Automation/Catalog/thumbnail/SASE/EDGE_SSE_Fortinet_Zscaler.png",
-  "description" : "Deploying tunnels between Fortinet CPEs at the EDGE to Zscaler SSE",
+  "description" : "Deploying tunnels between Fortinet CPEs at the edge to Zscaler SSE",
   "fileType" : "BPMN_AUTOMATION",
   "directoryRoot" : "AUTOMATION",
   "tenantAccess" : [ "003", "NCL" ],

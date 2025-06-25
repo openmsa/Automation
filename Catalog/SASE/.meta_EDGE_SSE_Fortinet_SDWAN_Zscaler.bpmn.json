@@ -24,7 +24,7 @@
     "systemTag" : false
   } ],
   "imageUri" : "/opt/fmc_repository/Automation/Catalog/thumbnail/SASE/EDGE_SSE_Fortinet_SDWAN_Zscaler.png",
-  "description" : "",
+  "description" : "Deploying tunnels between Fortinet SDWAN at the edge and Zscaler SSE",
   "fileType" : "BPMN_AUTOMATION",
   "directoryRoot" : "AUTOMATION",
   "tenantAccess" : [ "003", "NCL" ],

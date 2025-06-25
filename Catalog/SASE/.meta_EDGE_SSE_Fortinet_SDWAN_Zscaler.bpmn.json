@@ -1,6 +1,6 @@
 {
   "uri" : "Automation/Catalog/SASE/EDGE_SSE_Fortinet_SDWAN_Zscaler.bpmn",
-  "displayName" : "Edge to SSE - Cisco / Netskope",
+  "displayName" : "Edge to SSE - Fortinet_SDWAN / Zscaler",
   "fileOwner" : "NCL",
   "defaultTags" : [ {
     "type" : "CATEGORY",

@@ -14,7 +14,7 @@
     "systemTag" : false
   }, {
     "type" : "DOMAIN",
-    "name" : "Security",
+    "name" : "Deploy",
     "tenantPrefix" : "NCL",
     "systemTag" : true
   }, {
@@ -37,7 +37,5 @@
   "extraData" : { },
   "createdDate" : "2025-05-16T14:38:52.444562517Z",
   "lastModifiedDate" : "2025-05-16T14:38:52.44456278Z",
-  "metaCreatedDate" : "2025-05-16T14:38:52.497323248Z",
-  "metaLastModifiedDate" : "2025-05-16T14:38:52.497327363Z",
   "fileSyncStatus" : null
 }

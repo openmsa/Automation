@@ -4,7 +4,7 @@
   "fileOwner" : "NCL",
   "defaultTags" : [ {
     "type" : "DOMAIN",
-    "name" : "Security",
+    "name" : "Deploy",
     "tenantPrefix" : "NCL",
     "systemTag" : true
   }, {
@@ -27,7 +27,5 @@
   "extraData" : null,
   "createdDate" : "2024-11-15T08:41:22.192Z",
   "lastModifiedDate" : "2025-05-13T12:37:56.879Z",
-  "metaCreatedDate" : "2025-05-13T12:37:56.882560071Z",
-  "metaLastModifiedDate" : "2025-05-13T12:37:56.882561668Z",
   "fileSyncStatus" : null
 }

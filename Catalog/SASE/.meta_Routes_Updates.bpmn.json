@@ -4,7 +4,7 @@
   "fileOwner" : "NCL",
   "defaultTags" : [ {
     "type" : "DOMAIN",
-    "name" : "Network",
+    "name" : "Run",
     "tenantPrefix" : "NCL",
     "systemTag" : true
   }, {

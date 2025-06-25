@@ -9,7 +9,7 @@
     "systemTag" : true
   }, {
     "type" : "DOMAIN",
-    "name" : "Security",
+    "name" : "Migrate",
     "tenantPrefix" : "NCL",
     "systemTag" : true
   }, {
@@ -17,11 +17,6 @@
     "name" : "Zscaler",
     "tenantPrefix" : "NCL",
     "systemTag" : false
-  }, {
-    "type" : "CATEGORY",
-    "name" : "Migrate",
-    "tenantPrefix" : "NCL",
-    "systemTag" : true
   }, {
     "type" : "INTEGRATION",
     "name" : "Netskope",

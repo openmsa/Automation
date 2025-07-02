@@ -1,0 +1,35 @@
+{
+  "uri" : "Automation/Catalog/SASE/EDGE_SSE_Fortinet_Netskope.bpmn",
+  "displayName" : "Edge to SSE - Fortinet / Netskope",
+  "fileOwner" : "NCL",
+  "defaultTags" : [ {
+    "type" : "CATEGORY",
+    "name" : "SASE",
+    "tenantPrefix" : "NCL",
+    "systemTag" : true
+  }, {
+    "type" : "DOMAIN",
+    "name" : "Deploy",
+    "tenantPrefix" : "NCL",
+    "systemTag" : true
+  }, {
+    "type" : "INTEGRATION",
+    "name" : "Fortinet",
+    "tenantPrefix" : "NCL",
+    "systemTag" : false
+  }, {
+    "type" : "INTEGRATION",
+    "name" : "Netskope",
+    "tenantPrefix" : "NCL",
+    "systemTag" : false
+  } ],
+  "imageUri" : "/opt/fmc_repository/Automation/Catalog/thumbnail/SASE/EDGE_SSE_Fortinet_Netskope.png",
+  "description" : "Deploying tunnels between Fortinet CPEs at the edge to Netskope SSE",
+  "fileType" : "BPMN_AUTOMATION",
+  "directoryRoot" : "AUTOMATION",
+  "tenantAccess" : [ "003", "NCL" ],
+  "extraData" : null,
+  "createdDate" : "2024-11-15T08:41:22.192Z",
+  "lastModifiedDate" : "2025-04-03T12:47:53.271Z",
+  "fileSyncStatus" : null
+}

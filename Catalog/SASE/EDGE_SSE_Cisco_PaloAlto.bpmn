@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:camunda="http://camunda.org/schema/1.0/bpmn" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" id="Definitions_1" targetNamespace="http://bpmn.io/schema/bpmn" exporter="Camunda Modeler" exporterVersion="4.2.0">
+  <bpmn:process id="PLACEHOLDER_PROCESS_ID" isExecutable="true">
+    <bpmn:startEvent id="StartEvent_1" name="">
+      <bpmn:outgoing>Flow_11fvqn2</bpmn:outgoing>
+    </bpmn:startEvent>
+    <bpmn:endEvent id="EndEvent_1" name="">
+      <bpmn:incoming>Flow_02k9oet</bpmn:incoming>
+    </bpmn:endEvent>
+    <bpmn:sequenceFlow id="Flow_11fvqn2" sourceRef="StartEvent_1" targetRef="ServiceTask_1750670889983" />
+    <bpmn:sequenceFlow id="Flow_02k9oet" sourceRef="ServiceTask_1750670889983" targetRef="EndEvent_1" />
+    <bpmn:serviceTask id="ServiceTask_1750670889983" name="Deploy Tunnel (SASE Tunnel Management)" camunda:type="external" camunda:topic="msa_workflow">
+      <bpmn:extensionElements>
+        <camunda:inputOutput>
+          <camunda:inputParameter name="workflow_data">
+            <camunda:map>
+              <camunda:entry key="ubiqubeId">
+                <camunda:value>PLACEHOLDER_UBIQUBE_ID</camunda:value>
+              </camunda:entry>
+              <camunda:entry key="serviceName">
+                <camunda:value>Process/cloudclapp-wf/SASE/Tunnel_Management/GenericSaseETunnelManagement/GenericSaseETunnelManagement</camunda:value>
+              </camunda:entry>
+              <camunda:entry key="processName">
+                <camunda:value>Process/cloudclapp-wf/SASE/Tunnel_Management/GenericSaseETunnelManagement/Process_Deploy_Tunnel</camunda:value>
+              </camunda:entry>
+              <camunda:entry key="processType">
+                <camunda:value>CREATE</camunda:value>
+              </camunda:entry>
+              <camunda:entry key="processVariables">
+                <camunda:map>
+                  <camunda:entry key="sse_provider" />
+                  <camunda:entry key="tunnel_type">
+                    <camunda:value>ipsec</camunda:value>
+                  </camunda:entry>
+                  <camunda:entry key="sse_pop_1" />
+                  <camunda:entry key="sse_pop_2" />
+                  <camunda:entry key="edge_device" />
+                  <camunda:entry key="edge_ext_interface" />
+                  <camunda:entry key="edge_device_ip" />
+                  <camunda:entry key="pre_shared_key" />
+                  <camunda:entry key="order_sse_instance_id" />
+                  <camunda:entry key="order_edge_instance_id" />
+                  <camunda:entry key="order_sse_instance_ext_ref" />
+                  <camunda:entry key="order_edge_instance_ext_ref" />
+                </camunda:map>
+              </camunda:entry>
+              <camunda:entry key="resumeOnFail">
+                <camunda:value>false</camunda:value>
+              </camunda:entry>
+              <camunda:entry key="processExecutor">
+                <camunda:value>PLACEHOLDER_EXECUTOR_ID</camunda:value>
+              </camunda:entry>
+            </camunda:map>
+          </camunda:inputParameter>
+          <camunda:inputParameter name="msa_workflow_data">
+            <camunda:map>
+              <camunda:entry key="type">MSA_WORKFLOW</camunda:entry>
+              <camunda:entry key="data" />
+              <camunda:entry key="extraProps">
+                <camunda:map>
+                  <camunda:entry key="cloudVendor" />
+                  <camunda:entry key="cloudService" />
+                </camunda:map>
+              </camunda:entry>
+            </camunda:map>
+          </camunda:inputParameter>
+        </camunda:inputOutput>
+      </bpmn:extensionElements>
+      <bpmn:incoming>Flow_11fvqn2</bpmn:incoming>
+      <bpmn:outgoing>Flow_02k9oet</bpmn:outgoing>
+    </bpmn:serviceTask>
+  </bpmn:process>
+  <bpmndi:BPMNDiagram id="BPMNDiagram_1">
+    <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="PLACEHOLDER_PROCESS_ID">
+      <bpmndi:BPMNEdge id="Flow_02k9oet_di" bpmnElement="Flow_02k9oet">
+        <di:waypoint x="290" y="118" />
+        <di:waypoint x="1000" y="118" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_11fvqn2_di" bpmnElement="Flow_11fvqn2">
+        <di:waypoint x="136" y="118" />
+        <di:waypoint x="190" y="118" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="_BPMNShape_StartEvent_2" bpmnElement="StartEvent_1">
+        <dc:Bounds x="100" y="100" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Event_0rpe2j4_di" bpmnElement="EndEvent_1">
+        <dc:Bounds x="1000" y="100" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="ServiceTask_1750859321360_di" bpmnElement="ServiceTask_1750670889983">
+        <dc:Bounds x="190" y="78" width="100" height="80" />
+      </bpmndi:BPMNShape>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</bpmn:definitions>

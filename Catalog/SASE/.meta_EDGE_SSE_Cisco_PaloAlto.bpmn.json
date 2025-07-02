@@ -1,0 +1,35 @@
+{
+  "uri" : "Automation/Catalog/SASE/EDGE_SSE_Cisco_PaloAlto.bpmn",
+  "displayName" : "Edge to SSE - Cisco / Palo Alto (Prisma Access)",
+  "fileOwner" : "NCL",
+  "defaultTags" : [ {
+    "type" : "CATEGORY",
+    "name" : "SASE",
+    "tenantPrefix" : "NCL",
+    "systemTag" : true
+  }, {
+    "type" : "DOMAIN",
+    "name" : "Deploy",
+    "tenantPrefix" : "NCL",
+    "systemTag" : true
+  }, {
+    "type" : "INTEGRATION",
+    "name" : "Cisco",
+    "tenantPrefix" : "NCL",
+    "systemTag" : false
+  }, {
+    "type" : "INTEGRATION",
+    "name" : "PaloAlto",
+    "tenantPrefix" : "NCL",
+    "systemTag" : false
+  } ],
+  "imageUri" : "/opt/fmc_repository/Automation/Catalog/thumbnail/SASE/EDGE_SSE_Cisco_PaloAlto.png",
+  "description" : "Deploying tunnels between Cisco CPEs at the edge to Palo Alto SSE",
+  "fileType" : "BPMN_AUTOMATION",
+  "directoryRoot" : "AUTOMATION",
+  "tenantAccess" : [ "003", "NCL" ],
+  "extraData" : null,
+  "createdDate" : "2024-11-15T08:41:22.192Z",
+  "lastModifiedDate" : "2025-04-03T12:47:53.271Z",
+  "fileSyncStatus" : null
+}

@@ -1,12 +1,22 @@
 {
   "uri" : "Automation/Catalog/SASE/Tunnel_Bulk_Creation.bpmn",
-  "displayName" : "Bulk creation of Tunnels",
+  "displayName" : "Create Edge to POP Tunnels ",
   "fileOwner" : "NCL",
   "defaultTags" : [ {
-    "type" : "DOMAIN",
-    "name" : "Deploy",
+    "type" : "INTEGRATION",
+    "name" : "Cisco",
     "tenantPrefix" : "NCL",
-    "systemTag" : true
+    "systemTag" : false
+  },{
+    "type" : "INTEGRATION",
+    "name" : "Fortinet",
+    "tenantPrefix" : "NCL",
+    "systemTag" : false
+  }, {
+  "type" : "INTEGRATION",
+    "name" : "PrismaSDWAN",
+    "tenantPrefix" : "NCL",
+    "systemTag" : false
   }, {
     "type" : "INTEGRATION",
     "name" : "Netskope",
@@ -17,15 +27,22 @@
     "name" : "SASE",
     "tenantPrefix" : "NCL",
     "systemTag" : true
+  }, {
+    "type" : "DOMAIN",
+    "name" : "Deploy",
+    "tenantPrefix" : "NCL",
+    "systemTag" : true
   } ],
   "imageUri" : "/opt/fmc_repository/Automation/Catalog/thumbnail/SASE/Tunnel_bulk_creation.png",
-  "description" : "",
+  "description" : "Cisco/PrismaSDWAN(Cloudgenix)/Fortigate<-->Netskope",
   "fileType" : "BPMN_AUTOMATION",
   "directoryRoot" : "AUTOMATION",
-  "tenantAccess" : [ "003", "NCL" ],
+  "tenantAccess" : [ "001", "NCL" ],
   "fileStatus" : "ACTIVE",
   "extraData" : null,
   "createdDate" : "2024-11-15T08:41:22.192Z",
-  "lastModifiedDate" : "2025-05-13T12:40:07.176Z",
+  "lastModifiedDate" : "2025-07-11T18:51:15.704Z",
+  "metaCreatedDate" : "2025-07-11T18:51:15.708701171Z",
+  "metaLastModifiedDate" : "2025-07-11T18:51:15.708701883Z",
   "fileSyncStatus" : null
 }

@@ -1,6 +1,6 @@
 {
   "uri" : "Automation/Catalog/SASE/ZTNA_Zscaler.bpmn",
-  "displayName" : "ZTNA - Zscaler",
+  "displayName" : "Install ZTNA Connectors",
   "fileOwner" : "NCL",
   "defaultTags" : [ {
     "type" : "CATEGORY",

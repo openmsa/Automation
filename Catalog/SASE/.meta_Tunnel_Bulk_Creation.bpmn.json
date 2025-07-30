@@ -1,6 +1,6 @@
 {
   "uri" : "Automation/Catalog/SASE/Tunnel_Bulk_Creation.bpmn",
-  "displayName" : "Bulk creation of Tunnels",
+  "displayName" : "Create CPE to POP Tunnels",
   "fileOwner" : "NCL",
   "defaultTags" : [ {
     "type" : "DOMAIN",
@@ -10,6 +10,21 @@
   }, {
     "type" : "INTEGRATION",
     "name" : "Netskope",
+    "tenantPrefix" : "NCL",
+    "systemTag" : false
+  }, {
+    "type" : "INTEGRATION",
+    "name" : "Fortinet",
+    "tenantPrefix" : "NCL",
+    "systemTag" : false
+  }, {
+    "type" : "INTEGRATION",
+    "name" : "Cisco",
+    "tenantPrefix" : "NCL",
+    "systemTag" : false
+  }, {
+    "type" : "INTEGRATION",
+    "name" : "PrismaSDWAN",
     "tenantPrefix" : "NCL",
     "systemTag" : false
   }, {

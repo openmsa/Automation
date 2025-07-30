@@ -1,0 +1,29 @@
+{
+  "uri" : "Automation/Catalog/SASE/Import_CPE_Inventory.bpmn",
+  "displayName" : "Import CPE Inventory",
+  "fileOwner" : "003",
+  "defaultTags" : [ {
+    "type" : "DOMAIN",
+    "name" : "Deploy",
+    "tenantPrefix" : "NCL",
+    "systemTag" : true
+  }, {
+    "type" : "CATEGORY",
+    "name" : "SASE",
+    "tenantPrefix" : "NCL",
+    "systemTag" : true
+  } ],
+  "imageUri" : null,
+  "description" : "Import CPE inventory with groups",
+  "fileType" : "BPMN_AUTOMATION",
+  "directoryRoot" : "AUTOMATION",
+  "tenantAccess" : [ "003", "NCL" ],
+  "fileStatus" : "ACTIVE",
+  "extraData" : null,
+  "createdDate" : "2025-07-24T09:55:10.464Z",
+  "lastModifiedDate" : "2025-07-24T15:21:05.241Z",
+  "metaCreatedDate" : "2025-07-24T15:21:05.244724369Z",
+  "metaLastModifiedDate" : "2025-07-24T15:21:05.24472471Z",
+  "fileSyncStatus" : null
+}
+

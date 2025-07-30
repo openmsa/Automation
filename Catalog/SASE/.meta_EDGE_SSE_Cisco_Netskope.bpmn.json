@@ -7,12 +7,7 @@
     "name" : "SASE",
     "tenantPrefix" : "NCL",
     "systemTag" : true
-  }, {
-    "type" : "DOMAIN",
-    "name" : "Deploy",
-    "tenantPrefix" : "NCL",
-    "systemTag" : true
-  }, {
+  },{
     "type" : "INTEGRATION",
     "name" : "Cisco",
     "tenantPrefix" : "NCL",

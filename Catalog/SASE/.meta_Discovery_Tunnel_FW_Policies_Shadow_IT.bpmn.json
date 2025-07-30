@@ -1,18 +1,13 @@
 {
   "uri" : "Automation/Catalog/SASE/Discovery_Tunnel_FW_Policies_Shadow_IT.bpmn",
-  "displayName" : "Discovery tynnel FW policies up to Shadow IT",
+  "displayName" : "Discovery tunnel FW policies up to Shadow IT",
   "fileOwner" : "NCL",
-  "defaultTags" : [ {
+  "defaultTags" : [{
     "type" : "CATEGORY",
     "name" : "SASE",
     "tenantPrefix" : "NCL",
     "systemTag" : true
-  }, {
-    "type" : "DOMAIN",
-    "name" : "Deploy",
-    "tenantPrefix" : "NCL",
-    "systemTag" : true
-  } ],
+  }],
   "imageUri" : "/opt/fmc_repository/Automation/Catalog/thumbnail/SASE/Discovery_Tunnel_FW_Policies_Shadow_IT.png",
   "description" : "",
   "fileType" : "BPMN_AUTOMATION",
@@ -23,3 +18,4 @@
   "lastModifiedDate" : "2025-04-03T12:48:17.049Z",
   "fileSyncStatus" : null
 }
+

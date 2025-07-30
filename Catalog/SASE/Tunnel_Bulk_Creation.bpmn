@@ -18,10 +18,10 @@
                 <camunda:value>PLACEHOLDER_UBIQUBE_ID</camunda:value>
               </camunda:entry>
               <camunda:entry key="serviceName">
-                <camunda:value>Process/cloudclapp-wf/SASE/EDGE/edge_tunnel_management/edge_tunnel_management</camunda:value>
+                <camunda:value>Process/cloudclapp-wf/SASE/Tunnel_Management/BulkEdgeToSASEPopsTunnelProvisioning/BulkEdgeToSASEPopsTunnelProvisioning</camunda:value>
               </camunda:entry>
               <camunda:entry key="processName">
-                <camunda:value>Process/cloudclapp-wf/SASE/EDGE/edge_tunnel_management/Process_Deploy_CPEs_Edge</camunda:value>
+                <camunda:value>Process/cloudclapp-wf/SASE/Tunnel_Management/BulkEdgeToSASEPopsTunnelProvisioning/Process_New_Job_2</camunda:value>
               </camunda:entry>
               <camunda:entry key="processType">
                 <camunda:value>CREATE</camunda:value>

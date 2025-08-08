@@ -18,10 +18,10 @@
                 <camunda:value>PLACEHOLDER_UBIQUBE_ID</camunda:value>
               </camunda:entry>
               <camunda:entry key="serviceName">
-                <camunda:value>Process/workflows/Whitelisting/Whitelisting</camunda:value>
+                <camunda:value>Process/cloudclapp-wf/SASE/Whitelisting/Process/workflows/Whitelisting/Whitelisting</camunda:value>
               </camunda:entry>
               <camunda:entry key="processName">
-                <camunda:value>Process/workflows/Whitelisting/Process_Create_Whitelisting</camunda:value>
+                <camunda:value>Process/cloudclapp-wf/SASE/Whitelisting/Process/workflows/Whitelisting/Process_Create_Whitelisting</camunda:value>
               </camunda:entry>
               <camunda:entry key="processType">
                 <camunda:value>CREATE</camunda:value>
@@ -90,3 +90,5 @@
     </bpmndi:BPMNPlane>
   </bpmndi:BPMNDiagram>
 </bpmn:definitions>
+
+

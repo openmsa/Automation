@@ -1,5 +1,5 @@
 {
-  "uri" : "Automation/local/003/Import_CPE_Inventory_and_Create_Tunnels.bpmn",
+  "uri" : "Automation/Catalog/SASE/Import_CPE_Inventory_and_Create_Tunnels.bpmn",
   "displayName" : "Import CPE Inventory and Create Tunnels",
   "fileOwner" : "NCL",
   "defaultTags" : [ {

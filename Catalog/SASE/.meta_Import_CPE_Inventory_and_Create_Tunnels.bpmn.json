@@ -1,0 +1,67 @@
+{
+  "uri" : "Automation/Catalog/SASE/Import_CPE_Inventory_and_Create_Tunnels.bpmn",
+  "displayName" : "Import CPE Inventory and Create Tunnels",
+  "fileOwner" : "NCL",
+  "defaultTags" : [ {
+    "type" : "INTEGRATION",
+    "name" : "Zscaler ZIA",
+    "tenantPrefix" : "NCL",
+    "systemTag" : true,
+    "applications" : null
+  }, {
+    "type" : "DOMAIN",
+    "name" : "Deploy",
+    "tenantPrefix" : "NCL",
+    "systemTag" : true,
+    "applications" : null
+  }, {
+    "type" : "INTEGRATION",
+    "name" : "Cisco IOS",
+    "tenantPrefix" : "NCL",
+    "systemTag" : true,
+    "applications" : null
+  }, {
+    "type" : "CATEGORY",
+    "name" : "SASE",
+    "tenantPrefix" : "NCL",
+    "systemTag" : true,
+    "applications" : null
+  }, {
+    "type" : "INTEGRATION",
+    "name" : "PaloAlto Prisma SDWAN",
+    "tenantPrefix" : "NCL",
+    "systemTag" : true,
+    "applications" : null
+  }, {
+    "type" : "INTEGRATION",
+    "name" : "PaloAlto Prisma Access",
+    "tenantPrefix" : "NCL",
+    "systemTag" : true,
+    "applications" : null
+  }, {
+    "type" : "INTEGRATION",
+    "name" : "Fortigate",
+    "tenantPrefix" : "NCL",
+    "systemTag" : true,
+    "applications" : null
+  }, {
+    "type" : "INTEGRATION",
+    "name" : "Netskope",
+    "tenantPrefix" : "NCL",
+    "systemTag" : true,
+    "applications" : null
+  } ],
+  "imageUri" : null,
+  "description" : "Import CPE Inventory and Create Tunnels",
+  "fileType" : "BPMN_AUTOMATION",
+  "directoryRoot" : "AUTOMATION",
+  "fileStatus" : "ACTIVE",
+  "extraData" : null,
+  "createdDate" : "2025-08-28T09:42:19.143Z",
+  "lastModifiedDate" : "2025-09-22T10:15:12.19Z",
+  "metaCreatedDate" : "2025-09-22T10:15:12.271286733Z",
+  "metaLastModifiedDate" : "2025-09-22T10:15:12.271287701Z",
+  "fileSyncStatus" : null,
+  "topologyEnabled" : true,
+  "stepByStep" : true
+}

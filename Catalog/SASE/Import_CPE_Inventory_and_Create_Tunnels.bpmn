@@ -5,7 +5,7 @@
       <bpmn:outgoing>Flow_1xz9xek</bpmn:outgoing>
     </bpmn:startEvent>
     <bpmn:endEvent id="EndEvent_1" name="">
-      <bpmn:incoming>Flow_0p5dwgx</bpmn:incoming>
+      <bpmn:incoming>Flow_00ixeh2</bpmn:incoming>
     </bpmn:endEvent>
     <bpmn:sequenceFlow id="Flow_1xz9xek" sourceRef="StartEvent_1" targetRef="ServiceTask_1756374000675" />
     <bpmn:sequenceFlow id="Flow_1u3q2k5" sourceRef="ServiceTask_1756374000675" targetRef="ServiceTask_1756374076294" />
@@ -61,7 +61,7 @@
       <bpmn:incoming>Flow_1xz9xek</bpmn:incoming>
       <bpmn:outgoing>Flow_1u3q2k5</bpmn:outgoing>
     </bpmn:serviceTask>
-    <bpmn:sequenceFlow id="Flow_0p5dwgx" sourceRef="ServiceTask_1756374076294" targetRef="EndEvent_1" />
+    <bpmn:sequenceFlow id="Flow_0p5dwgx" sourceRef="ServiceTask_1756374076294" targetRef="ServiceTask_1759516996701" />
     <bpmn:serviceTask id="ServiceTask_1756374076294" name="Create Tunnel (Bulk Edge To SASE-Pops Tunnel Provisioning)" camunda:type="external" camunda:topic="msa_workflow">
       <bpmn:extensionElements>
         <camunda:inputOutput>
@@ -124,12 +124,58 @@
       <bpmn:incoming>Flow_1u3q2k5</bpmn:incoming>
       <bpmn:outgoing>Flow_0p5dwgx</bpmn:outgoing>
     </bpmn:serviceTask>
+    <bpmn:sequenceFlow id="Flow_00ixeh2" sourceRef="ServiceTask_1759516996701" targetRef="EndEvent_1" />
+    <bpmn:serviceTask id="ServiceTask_1759516996701" name="Create/Trigger Global Topology Tunnel Update (Global Topology Tunnel Update)" camunda:type="external" camunda:topic="msa_workflow">
+      <bpmn:extensionElements>
+        <camunda:inputOutput>
+          <camunda:inputParameter name="workflow_data">
+            <camunda:map>
+              <camunda:entry key="ubiqubeId">
+                <camunda:value>PLACEHOLDER_UBIQUBE_ID</camunda:value>
+              </camunda:entry>
+              <camunda:entry key="serviceName">
+                <camunda:value>Process/cloudclapp-wf/SASE/Global_Topology_Tunnel_Update/Global_Topology_Tunnel_Update</camunda:value>
+              </camunda:entry>
+              <camunda:entry key="processName">
+                <camunda:value>Process/cloudclapp-wf/SASE/Global_Topology_Tunnel_Update/Process_Create_Trigger_Global_Topology_Tunnel_Update</camunda:value>
+              </camunda:entry>
+              <camunda:entry key="processType">
+                <camunda:value>CREATE</camunda:value>
+              </camunda:entry>
+              <camunda:entry key="processVariables" />
+              <camunda:entry key="resumeOnFail">
+                <camunda:value>false</camunda:value>
+              </camunda:entry>
+              <camunda:entry key="processExecutor">
+                <camunda:value>PLACEHOLDER_EXECUTOR_ID</camunda:value>
+              </camunda:entry>
+            </camunda:map>
+          </camunda:inputParameter>
+          <camunda:inputParameter name="msa_workflow_data">
+            <camunda:map>
+              <camunda:entry key="type">
+                <camunda:value>MSA_WORKFLOW</camunda:value>
+              </camunda:entry>
+              <camunda:entry key="data" />
+              <camunda:entry key="extraProps">
+                <camunda:map>
+                  <camunda:entry key="cloudVendor" />
+                  <camunda:entry key="cloudService" />
+                </camunda:map>
+              </camunda:entry>
+            </camunda:map>
+          </camunda:inputParameter>
+        </camunda:inputOutput>
+      </bpmn:extensionElements>
+      <bpmn:incoming>Flow_0p5dwgx</bpmn:incoming>
+      <bpmn:outgoing>Flow_00ixeh2</bpmn:outgoing>
+    </bpmn:serviceTask>
   </bpmn:process>
   <bpmndi:BPMNDiagram id="BPMNDiagram_1">
     <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="PLACEHOLDER_PROCESS_ID">
       <bpmndi:BPMNEdge id="Flow_0p5dwgx_di" bpmnElement="Flow_0p5dwgx">
         <di:waypoint x="670" y="118" />
-        <di:waypoint x="1000" y="118" />
+        <di:waypoint x="840" y="118" />
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="Flow_1u3q2k5_di" bpmnElement="Flow_1u3q2k5">
         <di:waypoint x="290" y="118" />
@@ -139,17 +185,24 @@
         <di:waypoint x="136" y="118" />
         <di:waypoint x="190" y="118" />
       </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_00ixeh2_di" bpmnElement="Flow_00ixeh2">
+        <di:waypoint x="940" y="118" />
+        <di:waypoint x="1102" y="118" />
+      </bpmndi:BPMNEdge>
       <bpmndi:BPMNShape id="_BPMNShape_StartEvent_2" bpmnElement="StartEvent_1">
         <dc:Bounds x="100" y="100" width="36" height="36" />
-      </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="Event_0rpe2j4_di" bpmnElement="EndEvent_1">
-        <dc:Bounds x="1000" y="100" width="36" height="36" />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="ServiceTask_1756374044524_di" bpmnElement="ServiceTask_1756374000675">
         <dc:Bounds x="190" y="78" width="100" height="80" />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="ServiceTask_1756374111392_di" bpmnElement="ServiceTask_1756374076294">
         <dc:Bounds x="570" y="78" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Event_0rpe2j4_di" bpmnElement="EndEvent_1">
+        <dc:Bounds x="1102" y="100" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="ServiceTask_1759517206378_di" bpmnElement="ServiceTask_1759516996701">
+        <dc:Bounds x="840" y="78" width="100" height="80" />
       </bpmndi:BPMNShape>
     </bpmndi:BPMNPlane>
   </bpmndi:BPMNDiagram>

@@ -3,28 +3,35 @@
   "displayName" : "Routes Updates",
   "fileOwner" : "NCL",
   "defaultTags" : [ {
-    "type" : "DOMAIN",
-    "name" : "Run",
-    "tenantPrefix" : "NCL",
-    "systemTag" : true
-  }, {
     "type" : "CATEGORY",
     "name" : "SASE",
     "tenantPrefix" : "NCL",
-    "systemTag" : true
+    "systemTag" : true,
+    "applications" : null
+  }, {
+    "type" : "DOMAIN",
+    "name" : "Run",
+    "tenantPrefix" : "NCL",
+    "systemTag" : true,
+    "applications" : null
   }, {
     "type" : "DOMAIN",
     "name" : "Security",
     "tenantPrefix" : "NCL",
-    "systemTag" : true
+    "systemTag" : true,
+    "applications" : null
   } ],
   "imageUri" : "/opt/fmc_repository/Automation/Catalog/thumbnail/SASE/Routes_Updates.png",
   "description" : "",
   "fileType" : "BPMN_AUTOMATION",
   "directoryRoot" : "AUTOMATION",
-  "tenantAccess" : [ "003", "NCL" ],
+  "fileStatus" : "ACTIVE",
   "extraData" : null,
   "createdDate" : "2024-11-15T08:41:22.192Z",
-  "lastModifiedDate" : "2025-04-03T12:48:08.921Z",
-  "fileSyncStatus" : null
+  "lastModifiedDate" : "2025-10-09T08:52:35.943Z",
+  "metaCreatedDate" : "2025-10-09T08:52:35.951231444Z",
+  "metaLastModifiedDate" : "2025-10-09T08:52:35.951232284Z",
+  "fileSyncStatus" : null,
+  "topologyEnabled" : false,
+  "stepByStep" : true
 }

@@ -3,33 +3,41 @@
   "displayName" : "Apps Connectors Updates",
   "fileOwner" : "NCL",
   "defaultTags" : [ {
+    "type" : "INTEGRATION",
+    "name" : "Netskope",
+    "tenantPrefix" : "NCL",
+    "systemTag" : true,
+    "applications" : null
+  }, {
     "type" : "CATEGORY",
     "name" : "SASE",
     "tenantPrefix" : "NCL",
-    "systemTag" : true
-  }, {
-    "type" : "DOMAIN",
-    "name" : "Run",
-    "tenantPrefix" : "NCL",
-    "systemTag" : true
+    "systemTag" : true,
+    "applications" : null
   }, {
     "type" : "INTEGRATION",
     "name" : "Zscaler",
     "tenantPrefix" : "NCL",
-    "systemTag" : false
+    "systemTag" : true,
+    "applications" : null
   }, {
-    "type" : "INTEGRATION",
-    "name" : "Netskope",
+    "type" : "DOMAIN",
+    "name" : "Run",
     "tenantPrefix" : "NCL",
-    "systemTag" : false
+    "systemTag" : true,
+    "applications" : null
   } ],
   "imageUri" : "/opt/fmc_repository/Automation/Catalog/thumbnail/SASE/Apps_Connectors_Updates.png",
   "description" : "",
   "fileType" : "BPMN_AUTOMATION",
   "directoryRoot" : "AUTOMATION",
-  "tenantAccess" : [ "003", "NCL" ],
+  "fileStatus" : "ACTIVE",
   "extraData" : null,
   "createdDate" : "2024-11-15T08:41:22.192Z",
-  "lastModifiedDate" : "2025-04-03T12:47:53.271Z",
-  "fileSyncStatus" : null
+  "lastModifiedDate" : "2025-10-09T09:08:37.326Z",
+  "metaCreatedDate" : "2025-10-09T09:08:37.336157092Z",
+  "metaLastModifiedDate" : "2025-10-09T09:08:37.336158462Z",
+  "fileSyncStatus" : null,
+  "topologyEnabled" : false,
+  "stepByStep" : false
 }

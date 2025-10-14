@@ -1,0 +1,43 @@
+{
+  "uri" : "Automation/local/003/ZTNA_SWAP_-__App_Connectors_.bpmn",
+  "displayName" : "ZTNA SWAP - (App Connectors)",
+  "fileOwner" : "003",
+  "defaultTags" : [ {
+    "type" : "INTEGRATION",
+    "name" : "Zscaler ZPA",
+    "tenantPrefix" : "NCL",
+    "systemTag" : true,
+    "applications" : null
+  }, {
+    "type" : "INTEGRATION",
+    "name" : "Netskope",
+    "tenantPrefix" : "NCL",
+    "systemTag" : true,
+    "applications" : null
+  }, {
+    "type" : "CATEGORY",
+    "name" : "Migration",
+    "tenantPrefix" : "NCL",
+    "systemTag" : true,
+    "applications" : null
+  }, {
+    "type" : "DOMAIN",
+    "name" : "Migrate",
+    "tenantPrefix" : "NCL",
+    "systemTag" : true,
+    "applications" : null
+  } ],
+  "imageUri" : null,
+  "description" : "ZTNA SWAP (App Connectors)  Applications Definition",
+  "fileType" : "BPMN_AUTOMATION",
+  "directoryRoot" : "AUTOMATION",
+  "fileStatus" : "ACTIVE",
+  "extraData" : { },
+  "createdDate" : "2025-09-16T15:15:08.409036993Z",
+  "lastModifiedDate" : "2025-09-16T15:15:08.409037117Z",
+  "metaCreatedDate" : "2025-09-16T15:15:08.43652261Z",
+  "metaLastModifiedDate" : "2025-09-16T15:15:08.436523086Z",
+  "fileSyncStatus" : null,
+  "topologyEnabled" : false,
+  "stepByStep" : false
+}

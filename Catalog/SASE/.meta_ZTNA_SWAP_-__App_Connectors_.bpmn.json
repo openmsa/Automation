@@ -1,10 +1,10 @@
 {
-  "uri" : "Automation/local/003/ZTNA_SWAP_-__App_Connectors_.bpmn",
+  "uri" : "Automation/Catalog/ZTNA_SWAP_-__App_Connectors_.bpmn",
   "displayName" : "ZTNA SWAP - (App Connectors)",
-  "fileOwner" : "003",
+  "fileOwner" : "NCL",
   "defaultTags" : [ {
     "type" : "INTEGRATION",
-    "name" : "Zscaler ZPA",
+    "name" : "Zscaler",
     "tenantPrefix" : "NCL",
     "systemTag" : true,
     "applications" : null

@@ -21,7 +21,7 @@
                 <camunda:value>Process/cloudclapp-wf/SASE/Whitelisting/Whitelisting</camunda:value>
               </camunda:entry>
               <camunda:entry key="processName">
-                <camunda:value>Process/cloudclapp-wf/Whitelisting/Process_Create_Whitelisting</camunda:value>
+                <camunda:value>Process/cloudclapp-wf/SASE/Whitelisting/Process_Create_Whitelisting</camunda:value>
               </camunda:entry>
               <camunda:entry key="processType">
                 <camunda:value>CREATE</camunda:value>
@@ -29,14 +29,10 @@
               <camunda:entry key="processVariables">
                 <camunda:map>
                   <camunda:entry key="sase_vendor" />
-                  <camunda:entry key="edge_device" />
                   <camunda:entry key="push_policy">
                     <camunda:value>false</camunda:value>
                   </camunda:entry>
                   <camunda:entry key="policy_name" />
-                  <camunda:entry key="test">
-                    <camunda:value>false</camunda:value>
-                  </camunda:entry>
                   <camunda:entry key="" />
                 </camunda:map>
               </camunda:entry>
@@ -70,13 +66,13 @@
   </bpmn:process>
   <bpmndi:BPMNDiagram id="BPMNDiagram_1">
     <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="PLACEHOLDER_PROCESS_ID">
-      <bpmndi:BPMNEdge id="Flow_0d2e7xn_di" bpmnElement="Flow_0d2e7xn">
-        <di:waypoint x="136" y="118" />
-        <di:waypoint x="190" y="118" />
-      </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="Flow_15x77yr_di" bpmnElement="Flow_15x77yr">
         <di:waypoint x="290" y="118" />
         <di:waypoint x="1000" y="118" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0d2e7xn_di" bpmnElement="Flow_0d2e7xn">
+        <di:waypoint x="136" y="118" />
+        <di:waypoint x="190" y="118" />
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNShape id="_BPMNShape_StartEvent_2" bpmnElement="StartEvent_1">
         <dc:Bounds x="100" y="100" width="36" height="36" />
@@ -84,7 +80,7 @@
       <bpmndi:BPMNShape id="Event_0rpe2j4_di" bpmnElement="EndEvent_1">
         <dc:Bounds x="1000" y="100" width="36" height="36" />
       </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="ServiceTask_1751275024389_di" bpmnElement="ServiceTask_1751275016069">
+      <bpmndi:BPMNShape id="ServiceTask_1762422144823_di" bpmnElement="ServiceTask_1751275016069">
         <dc:Bounds x="190" y="78" width="100" height="80" />
       </bpmndi:BPMNShape>
     </bpmndi:BPMNPlane>

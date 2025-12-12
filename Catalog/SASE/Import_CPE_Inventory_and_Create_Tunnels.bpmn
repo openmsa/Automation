@@ -8,7 +8,7 @@
       <bpmn:incoming>Flow_0p5dwgx</bpmn:incoming>
     </bpmn:endEvent>
     <bpmn:sequenceFlow id="Flow_1xz9xek" sourceRef="StartEvent_1" targetRef="ServiceTask_1756374000675" />
-    <bpmn:sequenceFlow id="Flow_1u3q2k5" sourceRef="ServiceTask_1756374000675" targetRef="ServiceTask_1756374076294" />
+    <bpmn:sequenceFlow id="Flow_1u3q2k5" sourceRef="ServiceTask_1756374000675" targetRef="ServiceTask_1765556749330" />
     <bpmn:serviceTask id="ServiceTask_1756374000675" name="Import CPE Inventory (CPE Inventory Management)" camunda:type="external" camunda:topic="msa_workflow">
       <bpmn:extensionElements>
         <camunda:inputOutput>
@@ -121,8 +121,57 @@
           </camunda:inputParameter>
         </camunda:inputOutput>
       </bpmn:extensionElements>
-      <bpmn:incoming>Flow_1u3q2k5</bpmn:incoming>
+      <bpmn:incoming>Flow_12apmum</bpmn:incoming>
       <bpmn:outgoing>Flow_0p5dwgx</bpmn:outgoing>
+    </bpmn:serviceTask>
+    <bpmn:sequenceFlow id="Flow_12apmum" sourceRef="ServiceTask_1765556749330" targetRef="ServiceTask_1756374076294" />
+    <bpmn:serviceTask id="ServiceTask_1765556749330" name="List CPE Inventory (CPE Inventory Management)" camunda:type="external" camunda:topic="msa_workflow">
+      <bpmn:extensionElements>
+        <camunda:inputOutput>
+          <camunda:inputParameter name="workflow_data">
+            <camunda:map>
+              <camunda:entry key="ubiqubeId">
+                <camunda:value>PLACEHOLDER_UBIQUBE_ID</camunda:value>
+              </camunda:entry>
+              <camunda:entry key="serviceName">
+                <camunda:value>Process/cloudclapp-wf/SASE/Managed_Entity_Bulk_Creation_With_Group/Managed_Entity_Bulk_Creation_With_Group</camunda:value>
+              </camunda:entry>
+              <camunda:entry key="serviceInstanceId">
+                <camunda:value>${JSON(ServiceTask_1756374000675).prop("serviceId").value()}</camunda:value>
+              </camunda:entry>
+              <camunda:entry key="processName">
+                <camunda:value>Process/cloudclapp-wf/SASE/Managed_Entity_Bulk_Creation_With_Group/Process_List_CPE_Inventory</camunda:value>
+              </camunda:entry>
+              <camunda:entry key="processType">
+                <camunda:value>UPDATE</camunda:value>
+              </camunda:entry>
+              <camunda:entry key="processVariables" />
+              <camunda:entry key="resumeOnFail">
+                <camunda:value>false</camunda:value>
+              </camunda:entry>
+              <camunda:entry key="processExecutor">
+                <camunda:value>PLACEHOLDER_EXECUTOR_ID</camunda:value>
+              </camunda:entry>
+            </camunda:map>
+          </camunda:inputParameter>
+          <camunda:inputParameter name="msa_workflow_data">
+            <camunda:map>
+              <camunda:entry key="type">
+                <camunda:value>MSA_WORKFLOW</camunda:value>
+              </camunda:entry>
+              <camunda:entry key="data" />
+              <camunda:entry key="extraProps">
+                <camunda:map>
+                  <camunda:entry key="cloudVendor" />
+                  <camunda:entry key="cloudService" />
+                </camunda:map>
+              </camunda:entry>
+            </camunda:map>
+          </camunda:inputParameter>
+        </camunda:inputOutput>
+      </bpmn:extensionElements>
+      <bpmn:incoming>Flow_1u3q2k5</bpmn:incoming>
+      <bpmn:outgoing>Flow_12apmum</bpmn:outgoing>
     </bpmn:serviceTask>
   </bpmn:process>
   <bpmndi:BPMNDiagram id="BPMNDiagram_1">
@@ -133,11 +182,15 @@
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="Flow_1u3q2k5_di" bpmnElement="Flow_1u3q2k5">
         <di:waypoint x="290" y="118" />
-        <di:waypoint x="570" y="118" />
+        <di:waypoint x="410" y="118" />
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="Flow_1xz9xek_di" bpmnElement="Flow_1xz9xek">
         <di:waypoint x="136" y="118" />
         <di:waypoint x="190" y="118" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_12apmum_di" bpmnElement="Flow_12apmum">
+        <di:waypoint x="510" y="118" />
+        <di:waypoint x="570" y="118" />
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNShape id="_BPMNShape_StartEvent_2" bpmnElement="StartEvent_1">
         <dc:Bounds x="100" y="100" width="36" height="36" />
@@ -150,6 +203,9 @@
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="ServiceTask_1756374111392_di" bpmnElement="ServiceTask_1756374076294">
         <dc:Bounds x="570" y="78" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="ServiceTask_1765556772114_di" bpmnElement="ServiceTask_1765556749330">
+        <dc:Bounds x="410" y="78" width="100" height="80" />
       </bpmndi:BPMNShape>
     </bpmndi:BPMNPlane>
   </bpmndi:BPMNDiagram>

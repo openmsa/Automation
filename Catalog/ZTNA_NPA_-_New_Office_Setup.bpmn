@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:camunda="http://camunda.org/schema/1.0/bpmn" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" id="Definitions_1" targetNamespace="http://bpmn.io/schema/bpmn" exporter="Camunda Modeler" exporterVersion="4.2.0">
+  <bpmn:process id="PLACEHOLDER_PROCESS_ID" isExecutable="true">
+    <bpmn:startEvent id="StartEvent_1" name="">
+      <bpmn:outgoing>Flow_1wya0r1</bpmn:outgoing>
+    </bpmn:startEvent>
+    <bpmn:endEvent id="EndEvent_1" name="">
+      <bpmn:incoming>Flow_0xn75il</bpmn:incoming>
+    </bpmn:endEvent>
+    <bpmn:sequenceFlow id="Flow_1wya0r1" sourceRef="StartEvent_1" targetRef="ServiceTask_1765980383557" />
+    <bpmn:sequenceFlow id="Flow_1jpm31w" sourceRef="ServiceTask_1765980383557" targetRef="ServiceTask_1765980469182" />
+    <bpmn:serviceTask id="ServiceTask_1765980383557" name="Create Environment ([ENV] VM or Cluster on VMware)" camunda:type="external" camunda:topic="msa_workflow">
+      <bpmn:extensionElements>
+        <camunda:inputOutput>
+          <camunda:inputParameter name="workflow_data">
+            <camunda:map>
+              <camunda:entry key="ubiqubeId">
+                <camunda:value>PLACEHOLDER_UBIQUBE_ID</camunda:value>
+              </camunda:entry>
+              <camunda:entry key="serviceName">
+                <camunda:value>Process/cloudclapp-wf/Provision_env_on_VMware/Provision_env_on_VMware</camunda:value>
+              </camunda:entry>
+              <camunda:entry key="processName">
+                <camunda:value>Process/cloudclapp-wf/Provision_env_on_VMware/Process_Create_Environment</camunda:value>
+              </camunda:entry>
+              <camunda:entry key="processType">
+                <camunda:value>CREATE</camunda:value>
+              </camunda:entry>
+              <camunda:entry key="processVariables">
+                <camunda:map>
+                  <camunda:entry key="device">
+                    <camunda:value>000147</camunda:value>
+                  </camunda:entry>
+                  <camunda:entry key="datastore_name">
+                    <camunda:value>datastore-17</camunda:value>
+                  </camunda:entry>
+                  <camunda:entry key="network_name">
+                    <camunda:value>network-23</camunda:value>
+                  </camunda:entry>
+                  <camunda:entry key="resource_pool">
+                    <camunda:value>resgroup-15</camunda:value>
+                  </camunda:entry>
+                  <camunda:entry key="template">
+                    <camunda:value>6fc1c3f4-ea3e-401f-b3fe-0cf30632975c</camunda:value>
+                  </camunda:entry>
+                  <camunda:entry key="is_demo_env">
+                    <camunda:value>false</camunda:value>
+                  </camunda:entry>
+                  <camunda:entry key="name">
+                    <camunda:value>FreshVM1217</camunda:value>
+                  </camunda:entry>
+                  <camunda:entry key="vm_ip">
+                    <camunda:value>10.31.1.131</camunda:value>
+                  </camunda:entry>
+                  <camunda:entry key="vm_login">
+                    <camunda:value>root</camunda:value>
+                  </camunda:entry>
+                  <camunda:entry key="vm_password">
+                    <camunda:value>ubuntu</camunda:value>
+                  </camunda:entry>
+                  <camunda:entry key="vcpu_count">
+                    <camunda:value> 1</camunda:value>
+                  </camunda:entry>
+                  <camunda:entry key="memory">
+                    <camunda:value>1024</camunda:value>
+                  </camunda:entry>
+                </camunda:map>
+              </camunda:entry>
+              <camunda:entry key="resumeOnFail">
+                <camunda:value>false</camunda:value>
+              </camunda:entry>
+              <camunda:entry key="processExecutor">
+                <camunda:value>PLACEHOLDER_EXECUTOR_ID</camunda:value>
+              </camunda:entry>
+            </camunda:map>
+          </camunda:inputParameter>
+          <camunda:inputParameter name="msa_workflow_data">
+            <camunda:map>
+              <camunda:entry key="type">
+                <camunda:value>MSA_WORKFLOW</camunda:value>
+              </camunda:entry>
+              <camunda:entry key="data" />
+              <camunda:entry key="extraProps">
+                <camunda:map>
+                  <camunda:entry key="cloudVendor" />
+                  <camunda:entry key="cloudService" />
+                </camunda:map>
+              </camunda:entry>
+            </camunda:map>
+          </camunda:inputParameter>
+        </camunda:inputOutput>
+      </bpmn:extensionElements>
+      <bpmn:incoming>Flow_1wya0r1</bpmn:incoming>
+      <bpmn:outgoing>Flow_1jpm31w</bpmn:outgoing>
+    </bpmn:serviceTask>
+    <bpmn:sequenceFlow id="Flow_1f4c5gj" sourceRef="ServiceTask_1765980469182" targetRef="ServiceTask_1765980515010" />
+    <bpmn:serviceTask id="ServiceTask_1765980469182" name="Create Publisher and Broker Setup (ZTNA NPA - Publisher and Broker Setup)" camunda:type="external" camunda:topic="msa_workflow">
+      <bpmn:extensionElements>
+        <camunda:inputOutput>
+          <camunda:inputParameter name="workflow_data">
+            <camunda:map>
+              <camunda:entry key="ubiqubeId">
+                <camunda:value>PLACEHOLDER_UBIQUBE_ID</camunda:value>
+              </camunda:entry>
+              <camunda:entry key="serviceName">
+                <camunda:value>Process/cloudclapp-wf/SASE/ZTNA/ZTNA_NPA_Publisher_and_Broker_Setup/ZTNA_NPA_Publisher_and_Broker_Setup</camunda:value>
+              </camunda:entry>
+              <camunda:entry key="processName">
+                <camunda:value>Process/cloudclapp-wf/SASE/ZTNA/ZTNA_NPA_Publisher_and_Broker_Setup/Process_CREATE</camunda:value>
+              </camunda:entry>
+              <camunda:entry key="processType">
+                <camunda:value>CREATE</camunda:value>
+              </camunda:entry>
+              <camunda:entry key="processVariables">
+                <camunda:map>
+                  <camunda:entry key="sse_id" />
+                  <camunda:entry key="publisher_name">
+                    <camunda:value>publishers-opslab</camunda:value>
+                  </camunda:entry>
+                  <camunda:entry key="common_name">
+                    <camunda:value>publishers-opslab</camunda:value>
+                  </camunda:entry>
+                  <camunda:entry key="location">
+                    <camunda:value>Dublin</camunda:value>
+                  </camunda:entry>
+                  <camunda:entry key="auto_upgrade">
+                    <camunda:value>false</camunda:value>
+                  </camunda:entry>
+                  <camunda:entry key="log_level" />
+                  <camunda:entry key="PublishersToken_object_id" />
+                  <camunda:entry key="token" />
+                  <camunda:entry key="local_broker_name">
+                    <camunda:value>lbroker</camunda:value>
+                  </camunda:entry>
+                  <camunda:entry key="city">
+                    <camunda:value>Dublin</camunda:value>
+                  </camunda:entry>
+                  <camunda:entry key="region">
+                    <camunda:value>Europe</camunda:value>
+                  </camunda:entry>
+                  <camunda:entry key="country" />
+                  <camunda:entry key="latitude">
+                    <camunda:value>53.34410400</camunda:value>
+                  </camunda:entry>
+                  <camunda:entry key="longitude">
+                    <camunda:value>-6.26749370</camunda:value>
+                  </camunda:entry>
+                </camunda:map>
+              </camunda:entry>
+              <camunda:entry key="resumeOnFail">
+                <camunda:value>false</camunda:value>
+              </camunda:entry>
+              <camunda:entry key="processExecutor">
+                <camunda:value>PLACEHOLDER_EXECUTOR_ID</camunda:value>
+              </camunda:entry>
+            </camunda:map>
+          </camunda:inputParameter>
+          <camunda:inputParameter name="msa_workflow_data">
+            <camunda:map>
+              <camunda:entry key="type">
+                <camunda:value>MSA_WORKFLOW</camunda:value>
+              </camunda:entry>
+              <camunda:entry key="data" />
+              <camunda:entry key="extraProps">
+                <camunda:map>
+                  <camunda:entry key="cloudVendor" />
+                  <camunda:entry key="cloudService" />
+                </camunda:map>
+              </camunda:entry>
+            </camunda:map>
+          </camunda:inputParameter>
+        </camunda:inputOutput>
+      </bpmn:extensionElements>
+      <bpmn:incoming>Flow_1jpm31w</bpmn:incoming>
+      <bpmn:outgoing>Flow_1f4c5gj</bpmn:outgoing>
+    </bpmn:serviceTask>
+    <bpmn:sequenceFlow id="Flow_1ef8pp1" sourceRef="ServiceTask_1765980515010" targetRef="ServiceTask_1765980678871" />
+    <bpmn:serviceTask id="ServiceTask_1765980515010" name="Automated Maintenance Setup (ZTNA NPA - Automated Maintenance Setup)" camunda:type="external" camunda:topic="msa_workflow">
+      <bpmn:extensionElements>
+        <camunda:inputOutput>
+          <camunda:inputParameter name="workflow_data">
+            <camunda:map>
+              <camunda:entry key="ubiqubeId">
+                <camunda:value>PLACEHOLDER_UBIQUBE_ID</camunda:value>
+              </camunda:entry>
+              <camunda:entry key="serviceName">
+                <camunda:value>Process/cloudclapp-wf/SASE/ZTNA/ZTNA_NPA_Automated_Maintenance_Setup/ZTNA_NPA_Automated_Maintenance_Setup</camunda:value>
+              </camunda:entry>
+              <camunda:entry key="processName">
+                <camunda:value>Process/cloudclapp-wf/SASE/ZTNA/ZTNA_NPA_Automated_Maintenance_Setup/Process_CREATE</camunda:value>
+              </camunda:entry>
+              <camunda:entry key="processType">
+                <camunda:value>CREATE</camunda:value>
+              </camunda:entry>
+              <camunda:entry key="processVariables">
+                <camunda:map>
+                  <camunda:entry key="sse_id" />
+                  <camunda:entry key="name">
+                    <camunda:value>AutoM</camunda:value>
+                  </camunda:entry>
+                  <camunda:entry key="enabled">
+                    <camunda:value>false</camunda:value>
+                  </camunda:entry>
+                  <camunda:entry key="releaseType">
+                    <camunda:value>Latest</camunda:value>
+                  </camunda:entry>
+                  <camunda:entry key="dockerTag">
+                    <camunda:value>10466</camunda:value>
+                  </camunda:entry>
+                  <camunda:entry key="frequency">
+                    <camunda:value>0 10 * * SAT#4</camunda:value>
+                  </camunda:entry>
+                  <camunda:entry key="timezone">
+                    <camunda:value>US/Pacific</camunda:value>
+                  </camunda:entry>
+                </camunda:map>
+              </camunda:entry>
+              <camunda:entry key="resumeOnFail">
+                <camunda:value>false</camunda:value>
+              </camunda:entry>
+              <camunda:entry key="processExecutor">
+                <camunda:value>PLACEHOLDER_EXECUTOR_ID</camunda:value>
+              </camunda:entry>
+            </camunda:map>
+          </camunda:inputParameter>
+          <camunda:inputParameter name="msa_workflow_data">
+            <camunda:map>
+              <camunda:entry key="type">
+                <camunda:value>MSA_WORKFLOW</camunda:value>
+              </camunda:entry>
+              <camunda:entry key="data" />
+              <camunda:entry key="extraProps">
+                <camunda:map>
+                  <camunda:entry key="cloudVendor" />
+                  <camunda:entry key="cloudService" />
+                </camunda:map>
+              </camunda:entry>
+            </camunda:map>
+          </camunda:inputParameter>
+        </camunda:inputOutput>
+      </bpmn:extensionElements>
+      <bpmn:incoming>Flow_1f4c5gj</bpmn:incoming>
+      <bpmn:outgoing>Flow_1ef8pp1</bpmn:outgoing>
+    </bpmn:serviceTask>
+    <bpmn:sequenceFlow id="Flow_16tqfwa" sourceRef="ServiceTask_1765980678871" targetRef="ServiceTask_1765980727878" />
+    <bpmn:serviceTask id="ServiceTask_1765980678871" name="Create Business Application Configuration (ZTNA NPA - Business Application Configuration)" camunda:type="external" camunda:topic="msa_workflow">
+      <bpmn:extensionElements>
+        <camunda:inputOutput>
+          <camunda:inputParameter name="workflow_data">
+            <camunda:map>
+              <camunda:entry key="ubiqubeId">
+                <camunda:value>PLACEHOLDER_UBIQUBE_ID</camunda:value>
+              </camunda:entry>
+              <camunda:entry key="serviceName">
+                <camunda:value>Process/cloudclapp-wf/SASE/ZTNA/ZTNA_NPA_Business_Application_Configuration/ZTNA_NPA_Business_Application_Configuration</camunda:value>
+              </camunda:entry>
+              <camunda:entry key="processName">
+                <camunda:value>Process/cloudclapp-wf/SASE/ZTNA/ZTNA_NPA_Business_Application_Configuration/Process_CREATE</camunda:value>
+              </camunda:entry>
+              <camunda:entry key="processType">
+                <camunda:value>CREATE</camunda:value>
+              </camunda:entry>
+              <camunda:entry key="processVariables">
+                <camunda:map>
+                  <camunda:entry key="sse_id" />
+                  <camunda:entry key="use_existing_tag">
+                    <camunda:value>false</camunda:value>
+                  </camunda:entry>
+                  <camunda:entry key="tag_name" />
+                  <camunda:entry key="private_app_id" />
+                  <camunda:entry key="app_name">
+                    <camunda:value>app</camunda:value>
+                  </camunda:entry>
+                  <camunda:entry key="host" />
+                </camunda:map>
+              </camunda:entry>
+              <camunda:entry key="resumeOnFail">
+                <camunda:value>false</camunda:value>
+              </camunda:entry>
+              <camunda:entry key="processExecutor">
+                <camunda:value>PLACEHOLDER_EXECUTOR_ID</camunda:value>
+              </camunda:entry>
+            </camunda:map>
+          </camunda:inputParameter>
+          <camunda:inputParameter name="msa_workflow_data">
+            <camunda:map>
+              <camunda:entry key="type">
+                <camunda:value>MSA_WORKFLOW</camunda:value>
+              </camunda:entry>
+              <camunda:entry key="data" />
+              <camunda:entry key="extraProps">
+                <camunda:map>
+                  <camunda:entry key="cloudVendor" />
+                  <camunda:entry key="cloudService" />
+                </camunda:map>
+              </camunda:entry>
+            </camunda:map>
+          </camunda:inputParameter>
+        </camunda:inputOutput>
+      </bpmn:extensionElements>
+      <bpmn:incoming>Flow_1ef8pp1</bpmn:incoming>
+      <bpmn:outgoing>Flow_16tqfwa</bpmn:outgoing>
+    </bpmn:serviceTask>
+    <bpmn:sequenceFlow id="Flow_0xn75il" sourceRef="ServiceTask_1765980727878" targetRef="EndEvent_1" />
+    <bpmn:serviceTask id="ServiceTask_1765980727878" name="Access Policy Configuration (ZTNA NPA - Access Policy Configuration)" camunda:type="external" camunda:topic="msa_workflow">
+      <bpmn:extensionElements>
+        <camunda:inputOutput>
+          <camunda:inputParameter name="workflow_data">
+            <camunda:map>
+              <camunda:entry key="ubiqubeId">
+                <camunda:value>PLACEHOLDER_UBIQUBE_ID</camunda:value>
+              </camunda:entry>
+              <camunda:entry key="serviceName">
+                <camunda:value>Process/cloudclapp-wf/SASE/ZTNA/ZTNA_NPA_-_Access_Policy_Configuration/ZTNA_NPA_-_Access_Policy_Configuration</camunda:value>
+              </camunda:entry>
+              <camunda:entry key="processName">
+                <camunda:value>Process/cloudclapp-wf/SASE/ZTNA/ZTNA_NPA_-_Access_Policy_Configuration/Process_CREATE</camunda:value>
+              </camunda:entry>
+              <camunda:entry key="processType">
+                <camunda:value>CREATE</camunda:value>
+              </camunda:entry>
+              <camunda:entry key="processVariables">
+                <camunda:map>
+                  <camunda:entry key="sse_id" />
+                  <camunda:entry key="ruleName">
+                    <camunda:value>plcR</camunda:value>
+                  </camunda:entry>
+                  <camunda:entry key="enabled">
+                    <camunda:value>false</camunda:value>
+                  </camunda:entry>
+                  <camunda:entry key="policyType">
+                    <camunda:value>private-app</camunda:value>
+                  </camunda:entry>
+                  <camunda:entry key="userType">
+                    <camunda:value>user</camunda:value>
+                  </camunda:entry>
+                  <camunda:entry key="actionName">
+                    <camunda:value>allow</camunda:value>
+                  </camunda:entry>
+                  <camunda:entry key="useAvailablePolicyGroup">
+                    <camunda:value>false</camunda:value>
+                  </camunda:entry>
+                  <camunda:entry key="groupName" />
+                  <camunda:entry key="order" />
+                  <camunda:entry key="groupId" />
+                  <camunda:entry key="associatedGroupId" />
+                </camunda:map>
+              </camunda:entry>
+              <camunda:entry key="resumeOnFail">
+                <camunda:value>false</camunda:value>
+              </camunda:entry>
+              <camunda:entry key="processExecutor">
+                <camunda:value>PLACEHOLDER_EXECUTOR_ID</camunda:value>
+              </camunda:entry>
+            </camunda:map>
+          </camunda:inputParameter>
+          <camunda:inputParameter name="msa_workflow_data">
+            <camunda:map>
+              <camunda:entry key="type">
+                <camunda:value>MSA_WORKFLOW</camunda:value>
+              </camunda:entry>
+              <camunda:entry key="data" />
+              <camunda:entry key="extraProps">
+                <camunda:map>
+                  <camunda:entry key="cloudVendor" />
+                  <camunda:entry key="cloudService" />
+                </camunda:map>
+              </camunda:entry>
+            </camunda:map>
+          </camunda:inputParameter>
+        </camunda:inputOutput>
+      </bpmn:extensionElements>
+      <bpmn:incoming>Flow_16tqfwa</bpmn:incoming>
+      <bpmn:outgoing>Flow_0xn75il</bpmn:outgoing>
+    </bpmn:serviceTask>
+  </bpmn:process>
+  <bpmndi:BPMNDiagram id="BPMNDiagram_1">
+    <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="PLACEHOLDER_PROCESS_ID">
+      <bpmndi:BPMNEdge id="Flow_1wya0r1_di" bpmnElement="Flow_1wya0r1">
+        <di:waypoint x="136" y="118" />
+        <di:waypoint x="190" y="118" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1jpm31w_di" bpmnElement="Flow_1jpm31w">
+        <di:waypoint x="290" y="118" />
+        <di:waypoint x="320" y="118" />
+        <di:waypoint x="320" y="10" />
+        <di:waypoint x="340" y="10" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1f4c5gj_di" bpmnElement="Flow_1f4c5gj">
+        <di:waypoint x="440" y="10" />
+        <di:waypoint x="490" y="10" />
+        <di:waypoint x="490" y="118" />
+        <di:waypoint x="540" y="118" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1ef8pp1_di" bpmnElement="Flow_1ef8pp1">
+        <di:waypoint x="640" y="118" />
+        <di:waypoint x="700" y="118" />
+        <di:waypoint x="700" y="10" />
+        <di:waypoint x="760" y="10" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_16tqfwa_di" bpmnElement="Flow_16tqfwa">
+        <di:waypoint x="860" y="10" />
+        <di:waypoint x="1040" y="10" />
+        <di:waypoint x="1040" y="118" />
+        <di:waypoint x="1110" y="118" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0xn75il_di" bpmnElement="Flow_0xn75il">
+        <di:waypoint x="1210" y="118" />
+        <di:waypoint x="1250" y="118" />
+        <di:waypoint x="1250" y="130" />
+        <di:waypoint x="1292" y="130" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="_BPMNShape_StartEvent_2" bpmnElement="StartEvent_1">
+        <dc:Bounds x="100" y="100" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="ServiceTask_1765980465428_di" bpmnElement="ServiceTask_1765980383557">
+        <dc:Bounds x="190" y="78" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="ServiceTask_1765980491000_di" bpmnElement="ServiceTask_1765980469182">
+        <dc:Bounds x="340" y="-30" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="ServiceTask_1765980528025_di" bpmnElement="ServiceTask_1765980515010">
+        <dc:Bounds x="540" y="78" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="ServiceTask_1765980709123_di" bpmnElement="ServiceTask_1765980678871">
+        <dc:Bounds x="760" y="-30" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Event_0rpe2j4_di" bpmnElement="EndEvent_1">
+        <dc:Bounds x="1292" y="112" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="ServiceTask_1765980743463_di" bpmnElement="ServiceTask_1765980727878">
+        <dc:Bounds x="1110" y="78" width="100" height="80" />
+      </bpmndi:BPMNShape>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</bpmn:definitions>

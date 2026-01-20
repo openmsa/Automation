@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:camunda="http://camunda.org/schema/1.0/bpmn" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" id="Definitions_1" targetNamespace="http://bpmn.io/schema/bpmn" exporter="Camunda Modeler" exporterVersion="4.2.0">
+  <bpmn:process id="PLACEHOLDER_PROCESS_ID" isExecutable="true">
+    <bpmn:startEvent id="StartEvent_1" name="">
+      <bpmn:outgoing>Flow_0z81jxy</bpmn:outgoing>
+    </bpmn:startEvent>
+    <bpmn:endEvent id="EndEvent_1" name="">
+      <bpmn:incoming>Flow_1mpelv6</bpmn:incoming>
+    </bpmn:endEvent>
+    <bpmn:sequenceFlow id="Flow_0z81jxy" sourceRef="StartEvent_1" targetRef="ServiceTask_1766092031052" />
+    <bpmn:sequenceFlow id="Flow_1mpelv6" sourceRef="ServiceTask_1766092031052" targetRef="EndEvent_1" />
+    <bpmn:serviceTask id="ServiceTask_1766092031052" name="Create Environment ([ENV] VM or Cluster on VMware)" camunda:type="external" camunda:topic="msa_workflow">
+      <bpmn:extensionElements>
+        <camunda:inputOutput>
+          <camunda:inputParameter name="workflow_data">
+            <camunda:map>
+              <camunda:entry key="ubiqubeId">
+                <camunda:value>PLACEHOLDER_UBIQUBE_ID</camunda:value>
+              </camunda:entry>
+              <camunda:entry key="serviceName">
+                <camunda:value>Process/cloudclapp-wf/Provision_env_on_VMware/Provision_env_on_VMware</camunda:value>
+              </camunda:entry>
+              <camunda:entry key="processName">
+                <camunda:value>Process/cloudclapp-wf/Provision_env_on_VMware/Process_Create_Environment</camunda:value>
+              </camunda:entry>
+              <camunda:entry key="processType">
+                <camunda:value>CREATE</camunda:value>
+              </camunda:entry>
+              <camunda:entry key="processVariables">
+                <camunda:map>
+                  <camunda:entry key="device">
+                    <camunda:value>000147</camunda:value>
+                  </camunda:entry>
+                  <camunda:entry key="datastore_name">
+                    <camunda:value>datastore-17</camunda:value>
+                  </camunda:entry>
+                  <camunda:entry key="network_name">
+                    <camunda:value>network-23</camunda:value>
+                  </camunda:entry>
+                  <camunda:entry key="resource_pool">
+                    <camunda:value>resgroup-15</camunda:value>
+                  </camunda:entry>
+                  <camunda:entry key="template">
+                    <camunda:value>a1275b6d-b9c0-4e60-94bc-15919981c1e5</camunda:value>
+                  </camunda:entry>
+                  <camunda:entry key="is_demo_env">
+                    <camunda:value>false</camunda:value>
+                  </camunda:entry>
+                  <camunda:entry key="name">
+                    <camunda:value>FreshVMPublisher_10.31.1.123</camunda:value>
+                  </camunda:entry>
+                  <camunda:entry key="vm_ip">
+                    <camunda:value>10.31.1.123</camunda:value>
+                  </camunda:entry>
+                  <camunda:entry key="vm_login">
+                    <camunda:value>ubiqube</camunda:value>
+                  </camunda:entry>
+                  <camunda:entry key="vm_password">
+                    <camunda:value>redone</camunda:value>
+                  </camunda:entry>
+                  <camunda:entry key="vcpu_count">
+                    <camunda:value> 1</camunda:value>
+                  </camunda:entry>
+                  <camunda:entry key="memory">
+                    <camunda:value>1024</camunda:value>
+                  </camunda:entry>
+                </camunda:map>
+              </camunda:entry>
+              <camunda:entry key="resumeOnFail">
+                <camunda:value>false</camunda:value>
+              </camunda:entry>
+              <camunda:entry key="processExecutor">
+                <camunda:value>PLACEHOLDER_EXECUTOR_ID</camunda:value>
+              </camunda:entry>
+            </camunda:map>
+          </camunda:inputParameter>
+          <camunda:inputParameter name="msa_workflow_data">
+            <camunda:map>
+              <camunda:entry key="type">
+                <camunda:value>MSA_WORKFLOW</camunda:value>
+              </camunda:entry>
+              <camunda:entry key="data" />
+              <camunda:entry key="extraProps">
+                <camunda:map>
+                  <camunda:entry key="cloudVendor" />
+                  <camunda:entry key="cloudService" />
+                </camunda:map>
+              </camunda:entry>
+            </camunda:map>
+          </camunda:inputParameter>
+        </camunda:inputOutput>
+      </bpmn:extensionElements>
+      <bpmn:incoming>Flow_0z81jxy</bpmn:incoming>
+      <bpmn:outgoing>Flow_1mpelv6</bpmn:outgoing>
+    </bpmn:serviceTask>
+  </bpmn:process>
+  <bpmndi:BPMNDiagram id="BPMNDiagram_1">
+    <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="PLACEHOLDER_PROCESS_ID">
+      <bpmndi:BPMNEdge id="Flow_0z81jxy_di" bpmnElement="Flow_0z81jxy">
+        <di:waypoint x="136" y="118" />
+        <di:waypoint x="480" y="118" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1mpelv6_di" bpmnElement="Flow_1mpelv6">
+        <di:waypoint x="580" y="118" />
+        <di:waypoint x="1000" y="118" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="_BPMNShape_StartEvent_2" bpmnElement="StartEvent_1">
+        <dc:Bounds x="100" y="100" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Event_0rpe2j4_di" bpmnElement="EndEvent_1">
+        <dc:Bounds x="1000" y="100" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="ServiceTask_1766092064895_di" bpmnElement="ServiceTask_1766092031052">
+        <dc:Bounds x="480" y="78" width="100" height="80" />
+      </bpmndi:BPMNShape>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</bpmn:definitions>

@@ -1,7 +1,7 @@
 {
   "uri" : "Automation/local/000/ZTNA_VM_Deployment.bpmn",
   "displayName" : "ZTNA VM Deployment",
-  "fileOwner" : "000",
+  "fileOwner" : "NCL",
   "defaultTags" : [ {
     "type" : "DOMAIN",
     "name" : "Deploy",

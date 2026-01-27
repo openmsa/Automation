@@ -4,19 +4,7 @@
   "fileOwner" : "NCL",
   "defaultTags" : [ {
     "type" : "INTEGRATION",
-    "name" : "Zscaler ZIA",
-    "tenantPrefix" : "NCL",
-    "systemTag" : true,
-    "applications" : null
-  }, {
-    "type" : "DOMAIN",
-    "name" : "Deploy",
-    "tenantPrefix" : "NCL",
-    "systemTag" : true,
-    "applications" : null
-  }, {
-    "type" : "INTEGRATION",
-    "name" : "Cisco IOS",
+    "name" : "Fortinet",
     "tenantPrefix" : "NCL",
     "systemTag" : true,
     "applications" : null
@@ -28,39 +16,33 @@
     "applications" : null
   }, {
     "type" : "INTEGRATION",
-    "name" : "PaloAlto Prisma SDWAN",
-    "tenantPrefix" : "NCL",
-    "systemTag" : true,
-    "applications" : null
-  }, {
-    "type" : "INTEGRATION",
-    "name" : "PaloAlto Prisma Access",
-    "tenantPrefix" : "NCL",
-    "systemTag" : true,
-    "applications" : null
-  }, {
-    "type" : "INTEGRATION",
-    "name" : "Fortigate",
-    "tenantPrefix" : "NCL",
-    "systemTag" : true,
-    "applications" : null
-  }, {
-    "type" : "INTEGRATION",
     "name" : "Netskope",
+    "tenantPrefix" : "NCL",
+    "systemTag" : true,
+    "applications" : null
+  }, {
+    "type" : "DOMAIN",
+    "name" : "Deploy",
+    "tenantPrefix" : "NCL",
+    "systemTag" : true,
+    "applications" : null
+  }, {
+    "type" : "INTEGRATION",
+    "name" : "Cisco",
     "tenantPrefix" : "NCL",
     "systemTag" : true,
     "applications" : null
   } ],
   "imageUri" : null,
-  "description" : "Import CPE Inventory and Create Tunnels",
+  "description" : "Import CPE Inventory and Create Tunnels from a CSV",
   "fileType" : "BPMN_AUTOMATION",
   "directoryRoot" : "AUTOMATION",
   "fileStatus" : "ACTIVE",
-  "extraData" : null,
-  "createdDate" : "2025-08-28T09:42:19.143Z",
-  "lastModifiedDate" : "2025-09-22T10:15:12.19Z",
-  "metaCreatedDate" : "2025-09-22T10:15:12.271286733Z",
-  "metaLastModifiedDate" : "2025-09-22T10:15:12.271287701Z",
+  "extraData" : { },
+  "createdDate" : "2026-01-27T14:20:10.533224687Z",
+  "lastModifiedDate" : "2026-01-27T14:20:10.533225077Z",
+  "metaCreatedDate" : "2026-01-27T14:20:10.545378527Z",
+  "metaLastModifiedDate" : "2026-01-27T14:20:10.545379487Z",
   "fileSyncStatus" : null,
   "topologyEnabled" : true,
   "stepByStep" : true

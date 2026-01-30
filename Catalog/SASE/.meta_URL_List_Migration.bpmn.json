@@ -1,0 +1,49 @@
+{
+  "uri" : "Automation/local/002/URL_List_Migration.bpmn",
+  "displayName" : "URL List Migration",
+  "fileOwner" : "002",
+  "defaultTags" : [ {
+    "type" : "DOMAIN",
+    "name" : "Migrate",
+    "tenantPrefix" : "NCL",
+    "systemTag" : true,
+    "applications" : null
+  }, {
+    "type" : "CATEGORY",
+    "name" : "Migration",
+    "tenantPrefix" : "NCL",
+    "systemTag" : true,
+    "applications" : null
+  }, {
+    "type" : "INTEGRATION",
+    "name" : "Fortigate",
+    "tenantPrefix" : "NCL",
+    "systemTag" : true,
+    "applications" : null
+  }, {
+    "type" : "INTEGRATION",
+    "name" : "Netskope",
+    "tenantPrefix" : "NCL",
+    "systemTag" : true,
+    "applications" : null
+  }, {
+    "type" : "INTEGRATION",
+    "name" : "Fortinet",
+    "tenantPrefix" : "NCL",
+    "systemTag" : true,
+    "applications" : null
+  } ],
+  "imageUri" : null,
+  "description" : "Migrate URL List from Vendor A to Vendor B",
+  "fileType" : "BPMN_AUTOMATION",
+  "directoryRoot" : "AUTOMATION",
+  "fileStatus" : "ACTIVE",
+  "extraData" : { },
+  "createdDate" : "2026-01-14T13:20:01.719451334Z",
+  "lastModifiedDate" : "2026-01-14T13:20:01.719451454Z",
+  "metaCreatedDate" : "2026-01-14T13:20:01.725278673Z",
+  "metaLastModifiedDate" : "2026-01-14T13:20:01.725279283Z",
+  "fileSyncStatus" : null,
+  "topologyEnabled" : false,
+  "stepByStep" : true
+}

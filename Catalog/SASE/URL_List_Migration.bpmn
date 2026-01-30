@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:camunda="http://camunda.org/schema/1.0/bpmn" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" id="Definitions_1" targetNamespace="http://bpmn.io/schema/bpmn" exporter="Camunda Modeler" exporterVersion="4.2.0">
+  <bpmn:process id="PLACEHOLDER_PROCESS_ID" isExecutable="true">
+    <bpmn:startEvent id="StartEvent_1" name="">
+      <bpmn:outgoing>Flow_08cnk7o</bpmn:outgoing>
+    </bpmn:startEvent>
+    <bpmn:endEvent id="EndEvent_1" name="">
+      <bpmn:incoming>Flow_0y82lz8</bpmn:incoming>
+    </bpmn:endEvent>
+    <bpmn:sequenceFlow id="Flow_08cnk7o" sourceRef="StartEvent_1" targetRef="ServiceTask_1768396732503" />
+    <bpmn:sequenceFlow id="Flow_079ylhj" sourceRef="ServiceTask_1768396732503" targetRef="ServiceTask_1768396735380" />
+    <bpmn:sequenceFlow id="Flow_02u4bnh" sourceRef="ServiceTask_1768396735380" targetRef="ServiceTask_1768396737465" />
+    <bpmn:sequenceFlow id="Flow_0y82lz8" sourceRef="ServiceTask_1768396737465" targetRef="EndEvent_1" />
+    <bpmn:serviceTask id="ServiceTask_1768396732503" name="Migrate Import (URL List Migration)" camunda:type="external" camunda:topic="msa_workflow">
+      <bpmn:extensionElements>
+        <camunda:inputOutput>
+          <camunda:inputParameter name="workflow_data">
+            <camunda:map>
+              <camunda:entry key="ubiqubeId">
+                <camunda:value>PLACEHOLDER_UBIQUBE_ID</camunda:value>
+              </camunda:entry>
+              <camunda:entry key="serviceName">
+                <camunda:value>Process/cloudclapp-wf/SASE/URL_Migration/URL_List_Migration/URL_List_Migration</camunda:value>
+              </camunda:entry>
+              <camunda:entry key="processName">
+                <camunda:value>Process/cloudclapp-wf/SASE/URL_Migration/URL_List_Migration/Process_Migrate</camunda:value>
+              </camunda:entry>
+              <camunda:entry key="processType">
+                <camunda:value>CREATE</camunda:value>
+              </camunda:entry>
+              <camunda:entry key="processVariables">
+                <camunda:map>
+                  <camunda:entry key="source_device_id" />
+                  <camunda:entry key="dest_device_id" />
+                  <camunda:entry key="source_vendor">
+                    <camunda:value>netskope</camunda:value>
+                  </camunda:entry>
+                  <camunda:entry key="dest_vendor" />
+                </camunda:map>
+              </camunda:entry>
+              <camunda:entry key="resumeOnFail">
+                <camunda:value>false</camunda:value>
+              </camunda:entry>
+              <camunda:entry key="processExecutor">
+                <camunda:value>PLACEHOLDER_EXECUTOR_ID</camunda:value>
+              </camunda:entry>
+            </camunda:map>
+          </camunda:inputParameter>
+          <camunda:inputParameter name="msa_workflow_data">
+            <camunda:map>
+              <camunda:entry key="type">
+                <camunda:value>MSA_WORKFLOW</camunda:value>
+              </camunda:entry>
+              <camunda:entry key="data" />
+              <camunda:entry key="extraProps">
+                <camunda:map>
+                  <camunda:entry key="cloudVendor" />
+                  <camunda:entry key="cloudService" />
+                </camunda:map>
+              </camunda:entry>
+            </camunda:map>
+          </camunda:inputParameter>
+        </camunda:inputOutput>
+      </bpmn:extensionElements>
+      <bpmn:incoming>Flow_08cnk7o</bpmn:incoming>
+      <bpmn:outgoing>Flow_079ylhj</bpmn:outgoing>
+    </bpmn:serviceTask>
+    <bpmn:serviceTask id="ServiceTask_1768396735380" name="Migrate Select (URL List Migration)" camunda:type="external" camunda:topic="msa_workflow">
+      <bpmn:extensionElements>
+        <camunda:inputOutput>
+          <camunda:inputParameter name="workflow_data">
+            <camunda:map>
+              <camunda:entry key="ubiqubeId">
+                <camunda:value>PLACEHOLDER_UBIQUBE_ID</camunda:value>
+              </camunda:entry>
+              <camunda:entry key="serviceName">
+                <camunda:value>Process/cloudclapp-wf/SASE/URL_Migration/URL_List_Migration/URL_List_Migration</camunda:value>
+              </camunda:entry>
+              <camunda:entry key="serviceInstanceId">
+                <camunda:value>${JSON(ServiceTask_1768396732503).prop("serviceId").value()}</camunda:value>
+              </camunda:entry>
+              <camunda:entry key="processName">
+                <camunda:value>Process/cloudclapp-wf/SASE/URL_Migration/URL_List_Migration/Process_Migrate_Select</camunda:value>
+              </camunda:entry>
+              <camunda:entry key="processType">
+                <camunda:value>UPDATE</camunda:value>
+              </camunda:entry>
+              <camunda:entry key="processVariables" />
+              <camunda:entry key="resumeOnFail">
+                <camunda:value>false</camunda:value>
+              </camunda:entry>
+              <camunda:entry key="processExecutor">
+                <camunda:value>PLACEHOLDER_EXECUTOR_ID</camunda:value>
+              </camunda:entry>
+            </camunda:map>
+          </camunda:inputParameter>
+          <camunda:inputParameter name="msa_workflow_data">
+            <camunda:map>
+              <camunda:entry key="type">
+                <camunda:value>MSA_WORKFLOW</camunda:value>
+              </camunda:entry>
+              <camunda:entry key="data" />
+              <camunda:entry key="extraProps">
+                <camunda:map>
+                  <camunda:entry key="cloudVendor" />
+                  <camunda:entry key="cloudService" />
+                </camunda:map>
+              </camunda:entry>
+            </camunda:map>
+          </camunda:inputParameter>
+        </camunda:inputOutput>
+      </bpmn:extensionElements>
+      <bpmn:incoming>Flow_079ylhj</bpmn:incoming>
+      <bpmn:outgoing>Flow_02u4bnh</bpmn:outgoing>
+    </bpmn:serviceTask>
+    <bpmn:serviceTask id="ServiceTask_1768396737465" name="URL List Export (URL List Export)" camunda:type="external" camunda:topic="msa_workflow">
+      <bpmn:extensionElements>
+        <camunda:inputOutput>
+          <camunda:inputParameter name="workflow_data">
+            <camunda:map>
+              <camunda:entry key="ubiqubeId">
+                <camunda:value>PLACEHOLDER_UBIQUBE_ID</camunda:value>
+              </camunda:entry>
+              <camunda:entry key="serviceName">
+                <camunda:value>Process/workflows/URL_List_Export/URL_List_Export</camunda:value>
+              </camunda:entry>
+              <camunda:entry key="processName">
+                <camunda:value>Process/workflows/URL_List_Export/Process_URL_List_Export</camunda:value>
+              </camunda:entry>
+              <camunda:entry key="processType">
+                <camunda:value>CREATE</camunda:value>
+              </camunda:entry>
+              <camunda:entry key="processVariables">
+                <camunda:map>
+                  <camunda:entry key="object_id" />
+                </camunda:map>
+              </camunda:entry>
+              <camunda:entry key="resumeOnFail">
+                <camunda:value>false</camunda:value>
+              </camunda:entry>
+              <camunda:entry key="processExecutor">
+                <camunda:value>PLACEHOLDER_EXECUTOR_ID</camunda:value>
+              </camunda:entry>
+            </camunda:map>
+          </camunda:inputParameter>
+          <camunda:inputParameter name="msa_workflow_data">
+            <camunda:map>
+              <camunda:entry key="type">
+                <camunda:value>MSA_WORKFLOW</camunda:value>
+              </camunda:entry>
+              <camunda:entry key="data" />
+              <camunda:entry key="extraProps">
+                <camunda:map>
+                  <camunda:entry key="cloudVendor" />
+                  <camunda:entry key="cloudService" />
+                </camunda:map>
+              </camunda:entry>
+            </camunda:map>
+          </camunda:inputParameter>
+        </camunda:inputOutput>
+      </bpmn:extensionElements>
+      <bpmn:incoming>Flow_02u4bnh</bpmn:incoming>
+      <bpmn:outgoing>Flow_0y82lz8</bpmn:outgoing>
+    </bpmn:serviceTask>
+  </bpmn:process>
+  <bpmndi:BPMNDiagram id="BPMNDiagram_1">
+    <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="PLACEHOLDER_PROCESS_ID">
+      <bpmndi:BPMNEdge id="Flow_08cnk7o_di" bpmnElement="Flow_08cnk7o">
+        <di:waypoint x="136" y="118" />
+        <di:waypoint x="230" y="118" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_079ylhj_di" bpmnElement="Flow_079ylhj">
+        <di:waypoint x="330" y="118" />
+        <di:waypoint x="440" y="118" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_02u4bnh_di" bpmnElement="Flow_02u4bnh">
+        <di:waypoint x="540" y="118" />
+        <di:waypoint x="690" y="118" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0y82lz8_di" bpmnElement="Flow_0y82lz8">
+        <di:waypoint x="790" y="118" />
+        <di:waypoint x="1000" y="118" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="_BPMNShape_StartEvent_2" bpmnElement="StartEvent_1">
+        <dc:Bounds x="100" y="100" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Event_0rpe2j4_di" bpmnElement="EndEvent_1">
+        <dc:Bounds x="1000" y="100" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="ServiceTask_1768396761646_di" bpmnElement="ServiceTask_1768396732503">
+        <dc:Bounds x="230" y="78" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="ServiceTask_1768396771387_di" bpmnElement="ServiceTask_1768396735380">
+        <dc:Bounds x="440" y="78" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="ServiceTask_1768396778647_di" bpmnElement="ServiceTask_1768396737465">
+        <dc:Bounds x="690" y="78" width="100" height="80" />
+      </bpmndi:BPMNShape>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</bpmn:definitions>

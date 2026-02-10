@@ -5,10 +5,10 @@
       <bpmn:outgoing>Flow_1xz9xek</bpmn:outgoing>
     </bpmn:startEvent>
     <bpmn:endEvent id="EndEvent_1" name="">
-      <bpmn:incoming>Flow_0p5dwgx</bpmn:incoming>
+      <bpmn:incoming>Flow_0bw5bz2</bpmn:incoming>
     </bpmn:endEvent>
-    <bpmn:sequenceFlow id="Flow_1xz9xek" sourceRef="StartEvent_1" targetRef="ServiceTask_1756374000675" />
-    <bpmn:sequenceFlow id="Flow_1u3q2k5" sourceRef="ServiceTask_1756374000675" targetRef="ServiceTask_1765556749330" />
+    <bpmn:sequenceFlow id="Flow_1xz9xek" sourceRef="StartEvent_1" targetRef="Event_0ki6mk1" />
+    <bpmn:sequenceFlow id="Flow_1u3q2k5" sourceRef="ServiceTask_1756374000675" targetRef="Event_1yv1ve2" />
     <bpmn:serviceTask id="ServiceTask_1756374000675" name="Import CPE Inventory (CPE Inventory Management)" camunda:type="external" camunda:topic="msa_workflow">
       <bpmn:extensionElements>
         <camunda:inputOutput>
@@ -58,10 +58,9 @@
           </camunda:inputParameter>
         </camunda:inputOutput>
       </bpmn:extensionElements>
-      <bpmn:incoming>Flow_1xz9xek</bpmn:incoming>
+      <bpmn:incoming>Flow_1dg3q4g</bpmn:incoming>
       <bpmn:outgoing>Flow_1u3q2k5</bpmn:outgoing>
     </bpmn:serviceTask>
-    <bpmn:sequenceFlow id="Flow_0p5dwgx" sourceRef="ServiceTask_1756374076294" targetRef="EndEvent_1" />
     <bpmn:serviceTask id="ServiceTask_1756374076294" name="Create Tunnel (Bulk Edge To SASE-Pops Tunnel Provisioning)" camunda:type="external" camunda:topic="msa_workflow">
       <bpmn:extensionElements>
         <camunda:inputOutput>
@@ -121,10 +120,9 @@
           </camunda:inputParameter>
         </camunda:inputOutput>
       </bpmn:extensionElements>
-      <bpmn:incoming>Flow_12apmum</bpmn:incoming>
-      <bpmn:outgoing>Flow_0p5dwgx</bpmn:outgoing>
+      <bpmn:incoming>Flow_0c3ico7</bpmn:incoming>
+      <bpmn:outgoing>Flow_0bw5bz2</bpmn:outgoing>
     </bpmn:serviceTask>
-    <bpmn:sequenceFlow id="Flow_12apmum" sourceRef="ServiceTask_1765556749330" targetRef="ServiceTask_1756374076294" />
     <bpmn:serviceTask id="ServiceTask_1765556749330" name="List CPE Inventory (CPE Inventory Management)" camunda:type="external" camunda:topic="msa_workflow">
       <bpmn:extensionElements>
         <camunda:inputOutput>
@@ -170,27 +168,77 @@
           </camunda:inputParameter>
         </camunda:inputOutput>
       </bpmn:extensionElements>
-      <bpmn:incoming>Flow_1u3q2k5</bpmn:incoming>
-      <bpmn:outgoing>Flow_12apmum</bpmn:outgoing>
+      <bpmn:incoming>Flow_1vaf68x</bpmn:incoming>
+      <bpmn:outgoing>Flow_051p4ky</bpmn:outgoing>
     </bpmn:serviceTask>
+    <bpmn:intermediateCatchEvent id="Event_0ki6mk1">
+      <bpmn:extensionElements>
+        <camunda:inputOutput>
+          <camunda:inputParameter name="target_workflow">ServiceTask_1756374000675</camunda:inputParameter>
+        </camunda:inputOutput>
+      </bpmn:extensionElements>
+      <bpmn:incoming>Flow_1xz9xek</bpmn:incoming>
+      <bpmn:outgoing>Flow_1dg3q4g</bpmn:outgoing>
+      <bpmn:messageEventDefinition id="MessageEventDefinition_120fl79" messageRef="Message_120fl79" />
+    </bpmn:intermediateCatchEvent>
+    <bpmn:sequenceFlow id="Flow_1dg3q4g" sourceRef="Event_0ki6mk1" targetRef="ServiceTask_1756374000675" />
+    <bpmn:intermediateCatchEvent id="Event_1yv1ve2">
+      <bpmn:extensionElements>
+        <camunda:inputOutput>
+          <camunda:inputParameter name="target_workflow">ServiceTask_1765556749330</camunda:inputParameter>
+        </camunda:inputOutput>
+      </bpmn:extensionElements>
+      <bpmn:incoming>Flow_1u3q2k5</bpmn:incoming>
+      <bpmn:outgoing>Flow_1vaf68x</bpmn:outgoing>
+      <bpmn:messageEventDefinition id="MessageEventDefinition_1t827ve" messageRef="Message_1t827ve" />
+    </bpmn:intermediateCatchEvent>
+    <bpmn:sequenceFlow id="Flow_1vaf68x" sourceRef="Event_1yv1ve2" targetRef="ServiceTask_1765556749330" />
+    <bpmn:intermediateCatchEvent id="Event_069wmzq">
+      <bpmn:extensionElements>
+        <camunda:inputOutput>
+          <camunda:inputParameter name="target_workflow">ServiceTask_1756374076294</camunda:inputParameter>
+        </camunda:inputOutput>
+      </bpmn:extensionElements>
+      <bpmn:incoming>Flow_051p4ky</bpmn:incoming>
+      <bpmn:outgoing>Flow_0c3ico7</bpmn:outgoing>
+      <bpmn:messageEventDefinition id="MessageEventDefinition_1voy14v" messageRef="Message_1voy14v" />
+    </bpmn:intermediateCatchEvent>
+    <bpmn:sequenceFlow id="Flow_051p4ky" sourceRef="ServiceTask_1765556749330" targetRef="Event_069wmzq" />
+    <bpmn:sequenceFlow id="Flow_0bw5bz2" sourceRef="ServiceTask_1756374076294" targetRef="EndEvent_1" />
+    <bpmn:sequenceFlow id="Flow_0c3ico7" sourceRef="Event_069wmzq" targetRef="ServiceTask_1756374076294" />
   </bpmn:process>
+  <bpmn:message id="Message_120fl79" name="Message_120fl79" />
+  <bpmn:message id="Message_1t827ve" name="Message_1t827ve" />
+  <bpmn:message id="Message_1voy14v" name="Message_1voy14v" />
   <bpmndi:BPMNDiagram id="BPMNDiagram_1">
     <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="PLACEHOLDER_PROCESS_ID">
-      <bpmndi:BPMNEdge id="Flow_0p5dwgx_di" bpmnElement="Flow_0p5dwgx">
-        <di:waypoint x="670" y="118" />
+      <bpmndi:BPMNEdge id="Flow_0c3ico7_di" bpmnElement="Flow_0c3ico7">
+        <di:waypoint x="638" y="118" />
+        <di:waypoint x="780" y="118" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0bw5bz2_di" bpmnElement="Flow_0bw5bz2">
+        <di:waypoint x="880" y="118" />
         <di:waypoint x="1000" y="118" />
       </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_051p4ky_di" bpmnElement="Flow_051p4ky">
+        <di:waypoint x="540" y="118" />
+        <di:waypoint x="602" y="118" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1vaf68x_di" bpmnElement="Flow_1vaf68x">
+        <di:waypoint x="388" y="118" />
+        <di:waypoint x="440" y="118" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1dg3q4g_di" bpmnElement="Flow_1dg3q4g">
+        <di:waypoint x="208" y="118" />
+        <di:waypoint x="230" y="118" />
+      </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="Flow_1u3q2k5_di" bpmnElement="Flow_1u3q2k5">
-        <di:waypoint x="290" y="118" />
-        <di:waypoint x="410" y="118" />
+        <di:waypoint x="330" y="118" />
+        <di:waypoint x="352" y="118" />
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="Flow_1xz9xek_di" bpmnElement="Flow_1xz9xek">
         <di:waypoint x="136" y="118" />
-        <di:waypoint x="190" y="118" />
-      </bpmndi:BPMNEdge>
-      <bpmndi:BPMNEdge id="Flow_12apmum_di" bpmnElement="Flow_12apmum">
-        <di:waypoint x="510" y="118" />
-        <di:waypoint x="570" y="118" />
+        <di:waypoint x="172" y="118" />
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNShape id="_BPMNShape_StartEvent_2" bpmnElement="StartEvent_1">
         <dc:Bounds x="100" y="100" width="36" height="36" />
@@ -199,13 +247,22 @@
         <dc:Bounds x="1000" y="100" width="36" height="36" />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="ServiceTask_1756374044524_di" bpmnElement="ServiceTask_1756374000675">
-        <dc:Bounds x="190" y="78" width="100" height="80" />
+        <dc:Bounds x="230" y="78" width="100" height="80" />
       </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="ServiceTask_1756374111392_di" bpmnElement="ServiceTask_1756374076294">
-        <dc:Bounds x="570" y="78" width="100" height="80" />
+      <bpmndi:BPMNShape id="Event_0ki6mk1_di" bpmnElement="Event_0ki6mk1">
+        <dc:Bounds x="172" y="100" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Event_1yv1ve2_di" bpmnElement="Event_1yv1ve2">
+        <dc:Bounds x="352" y="100" width="36" height="36" />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="ServiceTask_1765556772114_di" bpmnElement="ServiceTask_1765556749330">
-        <dc:Bounds x="410" y="78" width="100" height="80" />
+        <dc:Bounds x="440" y="78" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="ServiceTask_1756374111392_di" bpmnElement="ServiceTask_1756374076294">
+        <dc:Bounds x="780" y="78" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Event_069wmzq_di" bpmnElement="Event_069wmzq">
+        <dc:Bounds x="602" y="100" width="36" height="36" />
       </bpmndi:BPMNShape>
     </bpmndi:BPMNPlane>
   </bpmndi:BPMNDiagram>

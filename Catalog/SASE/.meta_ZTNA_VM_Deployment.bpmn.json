@@ -1,5 +1,5 @@
 {
-  "uri" : "Automation/local/000/ZTNA_VM_Deployment.bpmn",
+  "uri" : "Automation/Catalog/SASE/ZTNA_VM_Deployment.bpmn",
   "displayName" : "ZTNA VM Deployment",
   "fileOwner" : "NCL",
   "defaultTags" : [ {
@@ -14,11 +14,11 @@
   "fileType" : "BPMN_AUTOMATION",
   "directoryRoot" : "AUTOMATION",
   "fileStatus" : "ACTIVE",
-  "extraData" : { },
-  "createdDate" : "2025-12-18T21:08:25.751423166Z",
-  "lastModifiedDate" : "2025-12-18T21:08:25.751423626Z",
-  "metaCreatedDate" : "2025-12-18T21:08:25.785318792Z",
-  "metaLastModifiedDate" : "2025-12-18T21:08:25.785319452Z",
+  "extraData" : null,
+  "createdDate" : "2026-01-20T20:24:58Z",
+  "lastModifiedDate" : "2026-02-10T16:38:10.068Z",
+  "metaCreatedDate" : "2026-02-10T16:38:10.071946294Z",
+  "metaLastModifiedDate" : "2026-02-10T16:38:10.071946624Z",
   "fileSyncStatus" : null,
   "topologyEnabled" : false,
   "stepByStep" : true

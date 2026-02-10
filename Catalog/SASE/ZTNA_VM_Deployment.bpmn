@@ -7,7 +7,7 @@
     <bpmn:endEvent id="EndEvent_1" name="">
       <bpmn:incoming>Flow_1mpelv6</bpmn:incoming>
     </bpmn:endEvent>
-    <bpmn:sequenceFlow id="Flow_0z81jxy" sourceRef="StartEvent_1" targetRef="ServiceTask_1766092031052" />
+    <bpmn:sequenceFlow id="Flow_0z81jxy" sourceRef="StartEvent_1" targetRef="Event_0z42l55" />
     <bpmn:sequenceFlow id="Flow_1mpelv6" sourceRef="ServiceTask_1766092031052" targetRef="EndEvent_1" />
     <bpmn:serviceTask id="ServiceTask_1766092031052" name="Create Environment ([ENV] VM or Cluster on VMware)" camunda:type="external" camunda:topic="msa_workflow">
       <bpmn:extensionElements>
@@ -59,7 +59,7 @@
                     <camunda:value>redone</camunda:value>
                   </camunda:entry>
                   <camunda:entry key="vcpu_count">
-                    <camunda:value> 1</camunda:value>
+                    <camunda:value>1</camunda:value>
                   </camunda:entry>
                   <camunda:entry key="memory">
                     <camunda:value>1024</camunda:value>
@@ -90,19 +90,35 @@
           </camunda:inputParameter>
         </camunda:inputOutput>
       </bpmn:extensionElements>
-      <bpmn:incoming>Flow_0z81jxy</bpmn:incoming>
+      <bpmn:incoming>Flow_1t17lzo</bpmn:incoming>
       <bpmn:outgoing>Flow_1mpelv6</bpmn:outgoing>
     </bpmn:serviceTask>
+    <bpmn:intermediateCatchEvent id="Event_0z42l55">
+      <bpmn:extensionElements>
+        <camunda:inputOutput>
+          <camunda:inputParameter name="target_workflow">ServiceTask_1766092031052</camunda:inputParameter>
+        </camunda:inputOutput>
+      </bpmn:extensionElements>
+      <bpmn:incoming>Flow_0z81jxy</bpmn:incoming>
+      <bpmn:outgoing>Flow_1t17lzo</bpmn:outgoing>
+      <bpmn:messageEventDefinition id="MessageEventDefinition_0fee19g" messageRef="Message_0fee19g" />
+    </bpmn:intermediateCatchEvent>
+    <bpmn:sequenceFlow id="Flow_1t17lzo" sourceRef="Event_0z42l55" targetRef="ServiceTask_1766092031052" />
   </bpmn:process>
+  <bpmn:message id="Message_0fee19g" name="Message_0fee19g" />
   <bpmndi:BPMNDiagram id="BPMNDiagram_1">
     <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="PLACEHOLDER_PROCESS_ID">
-      <bpmndi:BPMNEdge id="Flow_0z81jxy_di" bpmnElement="Flow_0z81jxy">
-        <di:waypoint x="136" y="118" />
-        <di:waypoint x="480" y="118" />
-      </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="Flow_1mpelv6_di" bpmnElement="Flow_1mpelv6">
         <di:waypoint x="580" y="118" />
         <di:waypoint x="1000" y="118" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0z81jxy_di" bpmnElement="Flow_0z81jxy">
+        <di:waypoint x="136" y="118" />
+        <di:waypoint x="282" y="118" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1t17lzo_di" bpmnElement="Flow_1t17lzo">
+        <di:waypoint x="318" y="118" />
+        <di:waypoint x="480" y="118" />
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNShape id="_BPMNShape_StartEvent_2" bpmnElement="StartEvent_1">
         <dc:Bounds x="100" y="100" width="36" height="36" />
@@ -112,6 +128,9 @@
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="ServiceTask_1766092064895_di" bpmnElement="ServiceTask_1766092031052">
         <dc:Bounds x="480" y="78" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Event_0z42l55_di" bpmnElement="Event_0z42l55">
+        <dc:Bounds x="282" y="100" width="36" height="36" />
       </bpmndi:BPMNShape>
     </bpmndi:BPMNPlane>
   </bpmndi:BPMNDiagram>

@@ -7,8 +7,8 @@
     <bpmn:endEvent id="EndEvent_1" name="">
       <bpmn:incoming>Flow_1pbc8qx</bpmn:incoming>
     </bpmn:endEvent>
-    <bpmn:sequenceFlow id="Flow_0b30sno" sourceRef="StartEvent_1" targetRef="ServiceTask_1767742016380" />
-    <bpmn:sequenceFlow id="Flow_1i6v3a7" sourceRef="ServiceTask_1767742016380" targetRef="ServiceTask_1767742055339" />
+    <bpmn:sequenceFlow id="Flow_0b30sno" sourceRef="StartEvent_1" targetRef="Event_0qu9uhh" />
+    <bpmn:sequenceFlow id="Flow_1i6v3a7" sourceRef="ServiceTask_1767742016380" targetRef="Event_0t47bzt" />
     <bpmn:serviceTask id="ServiceTask_1767742016380" name="IMPORT (ZTNA NPA Import and Deployment)" camunda:type="external" camunda:topic="msa_workflow">
       <bpmn:extensionElements>
         <camunda:inputOutput>
@@ -59,7 +59,7 @@
           </camunda:inputParameter>
         </camunda:inputOutput>
       </bpmn:extensionElements>
-      <bpmn:incoming>Flow_0b30sno</bpmn:incoming>
+      <bpmn:incoming>Flow_1r3pnst</bpmn:incoming>
       <bpmn:outgoing>Flow_1i6v3a7</bpmn:outgoing>
     </bpmn:serviceTask>
     <bpmn:serviceTask id="ServiceTask_1767742055339" name="Trigger ZTNA Deployment (ZTNA NPA Import and Deployment)" camunda:type="external" camunda:topic="msa_workflow">
@@ -105,10 +105,10 @@
           </camunda:inputParameter>
         </camunda:inputOutput>
       </bpmn:extensionElements>
-      <bpmn:incoming>Flow_1i6v3a7</bpmn:incoming>
+      <bpmn:incoming>Flow_13ionpu</bpmn:incoming>
       <bpmn:outgoing>Flow_179qms5</bpmn:outgoing>
     </bpmn:serviceTask>
-    <bpmn:sequenceFlow id="Flow_179qms5" sourceRef="ServiceTask_1767742055339" targetRef="ServiceTask_1768818099895" />
+    <bpmn:sequenceFlow id="Flow_179qms5" sourceRef="ServiceTask_1767742055339" targetRef="Event_1h0ag98" />
     <bpmn:sequenceFlow id="Flow_1pbc8qx" sourceRef="ServiceTask_1768818099895" targetRef="EndEvent_1" />
     <bpmn:serviceTask id="ServiceTask_1768818099895" name="Verification (ZTNA NPA Import and Deployment)" camunda:type="external" camunda:topic="msa_workflow">
       <bpmn:extensionElements>
@@ -155,27 +155,75 @@
           </camunda:inputParameter>
         </camunda:inputOutput>
       </bpmn:extensionElements>
-      <bpmn:incoming>Flow_179qms5</bpmn:incoming>
+      <bpmn:incoming>Flow_0hp6ftl</bpmn:incoming>
       <bpmn:outgoing>Flow_1pbc8qx</bpmn:outgoing>
     </bpmn:serviceTask>
+    <bpmn:intermediateCatchEvent id="Event_0qu9uhh">
+      <bpmn:extensionElements>
+        <camunda:inputOutput>
+          <camunda:inputParameter name="target_workflow">ServiceTask_1767742016380</camunda:inputParameter>
+        </camunda:inputOutput>
+      </bpmn:extensionElements>
+      <bpmn:incoming>Flow_0b30sno</bpmn:incoming>
+      <bpmn:outgoing>Flow_1r3pnst</bpmn:outgoing>
+      <bpmn:messageEventDefinition id="MessageEventDefinition_0xxi1zj" messageRef="Message_0xxi1zj" />
+    </bpmn:intermediateCatchEvent>
+    <bpmn:sequenceFlow id="Flow_1r3pnst" sourceRef="Event_0qu9uhh" targetRef="ServiceTask_1767742016380" />
+    <bpmn:intermediateCatchEvent id="Event_0t47bzt">
+      <bpmn:extensionElements>
+        <camunda:inputOutput>
+          <camunda:inputParameter name="target_workflow">ServiceTask_1767742055339</camunda:inputParameter>
+        </camunda:inputOutput>
+      </bpmn:extensionElements>
+      <bpmn:incoming>Flow_1i6v3a7</bpmn:incoming>
+      <bpmn:outgoing>Flow_13ionpu</bpmn:outgoing>
+      <bpmn:messageEventDefinition id="MessageEventDefinition_131nr2u" messageRef="Message_131nr2u" />
+    </bpmn:intermediateCatchEvent>
+    <bpmn:sequenceFlow id="Flow_13ionpu" sourceRef="Event_0t47bzt" targetRef="ServiceTask_1767742055339" />
+    <bpmn:intermediateCatchEvent id="Event_1h0ag98">
+      <bpmn:extensionElements>
+        <camunda:inputOutput>
+          <camunda:inputParameter name="target_workflow">ServiceTask_1768818099895</camunda:inputParameter>
+        </camunda:inputOutput>
+      </bpmn:extensionElements>
+      <bpmn:incoming>Flow_179qms5</bpmn:incoming>
+      <bpmn:outgoing>Flow_0hp6ftl</bpmn:outgoing>
+      <bpmn:messageEventDefinition id="MessageEventDefinition_0ugijm9" messageRef="Message_0ugijm9" />
+    </bpmn:intermediateCatchEvent>
+    <bpmn:sequenceFlow id="Flow_0hp6ftl" sourceRef="Event_1h0ag98" targetRef="ServiceTask_1768818099895" />
   </bpmn:process>
+  <bpmn:message id="Message_0xxi1zj" name="Message_0xxi1zj" />
+  <bpmn:message id="Message_131nr2u" name="Message_131nr2u" />
+  <bpmn:message id="Message_0ugijm9" name="Message_0ugijm9" />
   <bpmndi:BPMNDiagram id="BPMNDiagram_1">
     <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="PLACEHOLDER_PROCESS_ID">
+      <bpmndi:BPMNEdge id="Flow_1pbc8qx_di" bpmnElement="Flow_1pbc8qx">
+        <di:waypoint x="1050" y="118" />
+        <di:waypoint x="1182" y="118" />
+      </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="Flow_179qms5_di" bpmnElement="Flow_179qms5">
-        <di:waypoint x="780" y="118" />
-        <di:waypoint x="970" y="118" />
+        <di:waypoint x="720" y="118" />
+        <di:waypoint x="822" y="118" />
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="Flow_1i6v3a7_di" bpmnElement="Flow_1i6v3a7">
-        <di:waypoint x="320" y="118" />
-        <di:waypoint x="680" y="118" />
+        <di:waypoint x="420" y="118" />
+        <di:waypoint x="502" y="118" />
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="Flow_0b30sno_di" bpmnElement="Flow_0b30sno">
         <di:waypoint x="136" y="118" />
-        <di:waypoint x="220" y="118" />
+        <di:waypoint x="202" y="118" />
       </bpmndi:BPMNEdge>
-      <bpmndi:BPMNEdge id="Flow_1pbc8qx_di" bpmnElement="Flow_1pbc8qx">
-        <di:waypoint x="1070" y="118" />
-        <di:waypoint x="1182" y="118" />
+      <bpmndi:BPMNEdge id="Flow_1r3pnst_di" bpmnElement="Flow_1r3pnst">
+        <di:waypoint x="238" y="118" />
+        <di:waypoint x="320" y="118" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_13ionpu_di" bpmnElement="Flow_13ionpu">
+        <di:waypoint x="538" y="118" />
+        <di:waypoint x="620" y="118" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0hp6ftl_di" bpmnElement="Flow_0hp6ftl">
+        <di:waypoint x="858" y="118" />
+        <di:waypoint x="950" y="118" />
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNShape id="_BPMNShape_StartEvent_2" bpmnElement="StartEvent_1">
         <dc:Bounds x="100" y="100" width="36" height="36" />
@@ -183,14 +231,23 @@
       <bpmndi:BPMNShape id="Event_0rpe2j4_di" bpmnElement="EndEvent_1">
         <dc:Bounds x="1182" y="100" width="36" height="36" />
       </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="ServiceTask_1767742036625_di" bpmnElement="ServiceTask_1767742016380">
-        <dc:Bounds x="220" y="78" width="100" height="80" />
-      </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="ServiceTask_1767742065814_di" bpmnElement="ServiceTask_1767742055339">
-        <dc:Bounds x="680" y="78" width="100" height="80" />
+        <dc:Bounds x="620" y="78" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="ServiceTask_1767742036625_di" bpmnElement="ServiceTask_1767742016380">
+        <dc:Bounds x="320" y="78" width="100" height="80" />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="ServiceTask_1768818120051_di" bpmnElement="ServiceTask_1768818099895">
-        <dc:Bounds x="970" y="78" width="100" height="80" />
+        <dc:Bounds x="950" y="78" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Event_0qu9uhh_di" bpmnElement="Event_0qu9uhh">
+        <dc:Bounds x="202" y="100" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Event_0t47bzt_di" bpmnElement="Event_0t47bzt">
+        <dc:Bounds x="502" y="100" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Event_1h0ag98_di" bpmnElement="Event_1h0ag98">
+        <dc:Bounds x="822" y="100" width="36" height="36" />
       </bpmndi:BPMNShape>
     </bpmndi:BPMNPlane>
   </bpmndi:BPMNDiagram>

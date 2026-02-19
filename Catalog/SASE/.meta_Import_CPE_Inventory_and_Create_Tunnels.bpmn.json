@@ -51,7 +51,7 @@
     "systemTag" : true,
     "applications" : null
   } ],
-  "imageUri" : null,
+  "imageUri" : "/opt/fmc_repository/Automation/Catalog/thumbnail/Shadow_IT.png",
   "description" : "Import CPE Inventory and Create Tunnels",
   "fileType" : "BPMN_AUTOMATION",
   "directoryRoot" : "AUTOMATION",

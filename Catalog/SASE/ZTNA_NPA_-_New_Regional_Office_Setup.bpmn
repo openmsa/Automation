@@ -430,7 +430,7 @@
           </camunda:inputParameter>
         </camunda:inputOutput>
       </bpmn:extensionElements>
-      <bpmn:incoming>Flow_16bkm00</bpmn:incoming>
+      <bpmn:incoming>Flow_1kfr0e5</bpmn:incoming>
       <bpmn:outgoing>Flow_0ddqfoe</bpmn:outgoing>
     </bpmn:serviceTask>
     <bpmn:sequenceFlow id="Flow_0ddqfoe" sourceRef="ServiceTask_1765911177830" targetRef="ServiceTask_1765465197493" />
@@ -444,7 +444,13 @@
     <bpmn:startEvent id="Event_0mg9ax1">
       <bpmn:outgoing>Flow_16bkm00</bpmn:outgoing>
     </bpmn:startEvent>
-    <bpmn:sequenceFlow id="Flow_16bkm00" sourceRef="Event_0mg9ax1" targetRef="ServiceTask_1765911177830" />
+    <bpmn:sequenceFlow id="Flow_16bkm00" sourceRef="Event_0mg9ax1" targetRef="Event_0wk2gvi" />
+    <bpmn:intermediateCatchEvent id="Event_0wk2gvi">
+      <bpmn:incoming>Flow_16bkm00</bpmn:incoming>
+      <bpmn:outgoing>Flow_1kfr0e5</bpmn:outgoing>
+      <bpmn:messageEventDefinition id="MessageEventDefinition_08ryjdc" messageRef="Message_08ryjdc" />
+    </bpmn:intermediateCatchEvent>
+    <bpmn:sequenceFlow id="Flow_1kfr0e5" sourceRef="Event_0wk2gvi" targetRef="ServiceTask_1765911177830" />
     <bpmn:group id="Group_1rr8rr4" categoryValueRef="CategoryValue_0z3qpwx" />
     <bpmn:group id="Group_1j1mzh5" categoryValueRef="CategoryValue_00tzaem" />
     <bpmn:group id="Group_0sjsxh1" categoryValueRef="CategoryValue_02w1l5z" />
@@ -462,13 +468,13 @@
   <bpmn:category id="Category_1moauxf">
     <bpmn:categoryValue id="CategoryValue_1e6lu5v" value="Phase 4: Access Policy Configuration" />
   </bpmn:category>
+  <bpmn:message id="Message_08ryjdc" name="Message_08ryjdc" />
   <bpmndi:BPMNDiagram id="BPMNDiagram_1">
     <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="PLACEHOLDER_PROCESS_ID">
       <bpmndi:BPMNEdge id="Flow_16bkm00_di" bpmnElement="Flow_16bkm00">
         <di:waypoint x="98" y="300" />
         <di:waypoint x="144" y="300" />
-        <di:waypoint x="144" y="140" />
-        <di:waypoint x="190" y="140" />
+        <di:waypoint x="144" y="238" />
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="Flow_0fbf6w7_di" bpmnElement="Flow_0fbf6w7">
         <di:waypoint x="800" y="430" />
@@ -496,17 +502,16 @@
         <di:waypoint x="290" y="140" />
         <di:waypoint x="360" y="140" />
       </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1kfr0e5_di" bpmnElement="Flow_1kfr0e5">
+        <di:waypoint x="144" y="202" />
+        <di:waypoint x="144" y="140" />
+        <di:waypoint x="190" y="140" />
+      </bpmndi:BPMNEdge>
       <bpmndi:BPMNShape id="ServiceTask_1765825992364_di" bpmnElement="ServiceTask_1765465197493">
         <dc:Bounds x="360" y="100" width="100" height="80" />
       </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="ServiceTask_1765911241912_di" bpmnElement="ServiceTask_1765911177830">
-        <dc:Bounds x="190" y="100" width="100" height="80" />
-      </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="ServiceTask_1765826104564_di" bpmnElement="ServiceTask_1765465312134">
         <dc:Bounds x="270" y="390" width="100" height="80" />
-      </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="Event_0mg9ax1_di" bpmnElement="Event_0mg9ax1">
-        <dc:Bounds x="62" y="282" width="36" height="36" />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="ServiceTask_1765826197730_di" bpmnElement="ServiceTask_1765805365843">
         <dc:Bounds x="700" y="100" width="100" height="80" />
@@ -514,8 +519,17 @@
       <bpmndi:BPMNShape id="ServiceTask_1765826231456_di" bpmnElement="ServiceTask_1765465545694">
         <dc:Bounds x="700" y="390" width="100" height="80" />
       </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="ServiceTask_1765911241912_di" bpmnElement="ServiceTask_1765911177830">
+        <dc:Bounds x="190" y="100" width="100" height="80" />
+      </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Event_15ttspn_di" bpmnElement="Event_15ttspn">
         <dc:Bounds x="1032" y="267" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Event_0mg9ax1_di" bpmnElement="Event_0mg9ax1">
+        <dc:Bounds x="62" y="282" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Event_0wk2gvi_di" bpmnElement="Event_0wk2gvi">
+        <dc:Bounds x="126" y="202" width="36" height="36" />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Group_1rr8rr4_di" bpmnElement="Group_1rr8rr4">
         <dc:Bounds x="170" y="-10" width="340" height="270" />

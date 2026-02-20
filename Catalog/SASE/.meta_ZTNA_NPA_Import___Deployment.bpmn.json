@@ -21,7 +21,7 @@
     "systemTag" : true,
     "applications" : null
   } ],
-  "imageUri" : "/opt/fmc_repository/Automation/Catalog/thumbnail/ZTNA_NPA_Import_Deployment.png",
+  "imageUri" : "/opt/fmc_repository/Automation/Catalog/thumbnail/SASE/ZTNA_NPA_Import_Deployment.png",
   "description" : "ZTNA NPA Import & Deployment for transforming legacy private network access into identity-based, application-level Zero Trust access within a SASE platform.",
   "fileType" : "BPMN_AUTOMATION",
   "directoryRoot" : "AUTOMATION",

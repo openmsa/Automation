@@ -21,7 +21,7 @@
     "systemTag" : true,
     "applications" : null
   } ],
-  "imageUri" : "/opt/fmc_repository/Automation/Catalog/thumbnail/ZTNA_VM_Deployment.png",
+  "imageUri" : "/opt/fmc_repository/Automation/Catalog/thumbnail/SASE/ZTNA_VM_Deployment.png",
   "description" : "The ZTNA process deployment involves importing legacy access rules into a cloud-native framework and utilizing automated \"OpsKits\" to install lightweight virtual machine connectors that establish secure, inside-out connectivity to the SASE fabric.",
   "fileType" : "BPMN_AUTOMATION",
   "directoryRoot" : "AUTOMATION",

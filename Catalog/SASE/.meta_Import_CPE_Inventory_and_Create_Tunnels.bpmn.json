@@ -51,7 +51,7 @@
     "systemTag" : false,
     "applications" : null
   } ],
-  "imageUri" : "/opt/fmc_repository/Automation/Catalog/thumbnail/Import_CPE_Inventory_and_Create_Tunnels.png",
+  "imageUri" : "/opt/fmc_repository/Automation/Catalog/thumbnail/SASE/Import_CPE_Inventory_and_Create_Tunnels.png",
   "description" : "Import CPE Inventory and Create Tunnels",
   "fileType" : "BPMN_AUTOMATION",
   "directoryRoot" : "AUTOMATION",

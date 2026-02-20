@@ -4,6 +4,24 @@
   "fileOwner" : "NCL",
   "defaultTags" : [ {
     "type" : "INTEGRATION",
+    "name" : "Zscaler ZIA",
+    "tenantPrefix" : "NCL",
+    "systemTag" : false,
+    "applications" : null
+  }, {
+    "type" : "INTEGRATION",
+    "name" : "Netskope",
+    "tenantPrefix" : "NCL",
+    "systemTag" : true,
+    "applications" : null
+  }, {
+    "type" : "INTEGRATION",
+    "name" : "Cisco IOS",
+    "tenantPrefix" : "NCL",
+    "systemTag" : false,
+    "applications" : null
+  }, {
+    "type" : "INTEGRATION",
     "name" : "Fortigate",
     "tenantPrefix" : "NCL",
     "systemTag" : true,
@@ -22,33 +40,15 @@
     "applications" : null
   }, {
     "type" : "INTEGRATION",
-    "name" : "Netskope",
+    "name" : "PaloAlto Prisma SDWAN",
     "tenantPrefix" : "NCL",
-    "systemTag" : true,
+    "systemTag" : false,
     "applications" : null
   }, {
     "type" : "DOMAIN",
     "name" : "Deploy",
     "tenantPrefix" : "NCL",
     "systemTag" : true,
-    "applications" : null
-  }, {
-    "type" : "INTEGRATION",
-    "name" : "Cisco IOS",
-    "tenantPrefix" : "NCL",
-    "systemTag" : false,
-    "applications" : null
-  }, {
-    "type" : "INTEGRATION",
-    "name" : "PaloAlto Prisma SDWAN",
-    "tenantPrefix" : "NCL",
-    "systemTag" : false,
-    "applications" : null
-  }, {
-    "type" : "INTEGRATION",
-    "name" : "Zscaler ZIA",
-    "tenantPrefix" : "NCL",
-    "systemTag" : false,
     "applications" : null
   } ],
   "imageUri" : "/opt/fmc_repository/Automation/Catalog/thumbnail/SASE/Import_CPE_Inventory_and_Create_Tunnels.png",
@@ -58,9 +58,9 @@
   "fileStatus" : "ACTIVE",
   "extraData" : null,
   "createdDate" : "2025-08-28T09:42:19.143Z",
-  "lastModifiedDate" : "2026-02-20T14:57:47.647Z",
-  "metaCreatedDate" : "2026-02-20T14:57:47.651074892Z",
-  "metaLastModifiedDate" : "2026-02-20T14:57:47.651075342Z",
+  "lastModifiedDate" : "2026-02-10T16:39:43.297Z",
+  "metaCreatedDate" : "2026-02-10T16:39:43.300193451Z",
+  "metaLastModifiedDate" : "2026-02-10T16:39:43.300193891Z",
   "fileSyncStatus" : null,
   "topologyEnabled" : true,
   "stepByStep" : true

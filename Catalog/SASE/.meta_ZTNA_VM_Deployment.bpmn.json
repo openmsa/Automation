@@ -3,6 +3,18 @@
   "displayName" : "ZTNA VM Deployment",
   "fileOwner" : "NCL",
   "defaultTags" : [ {
+    "type" : "INTEGRATION",
+    "name" : "Netskope",
+    "tenantPrefix" : "NCL",
+    "systemTag" : true,
+    "applications" : null
+  }, {
+    "type" : "CATEGORY",
+    "name" : "SASE",
+    "tenantPrefix" : "NCL",
+    "systemTag" : true,
+    "applications" : null
+  }, {
     "type" : "DOMAIN",
     "name" : "Deploy",
     "tenantPrefix" : "NCL",

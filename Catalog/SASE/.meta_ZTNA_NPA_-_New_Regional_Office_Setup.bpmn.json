@@ -1,0 +1,31 @@
+{
+  "uri" : "Automation/local/000/ZTNA_NPA_-_New_Regional_Office_Setup.bpmn",
+  "displayName" : "ZTNA NPA - New Regional Office Setup",
+  "fileOwner" : "000",
+  "defaultTags" : [ {
+    "type" : "CATEGORY",
+    "name" : "SASE",
+    "tenantPrefix" : "NCL",
+    "systemTag" : true,
+    "applications" : null
+  }, {
+    "type" : "INTEGRATION",
+    "name" : "Netskope",
+    "tenantPrefix" : "NCL",
+    "systemTag" : true,
+    "applications" : null
+  } ],
+  "imageUri" : null,
+  "description" : "Your company is opening a new office in a new location. You need to deploy complete NPA infrastructure, configure applications for local access, and ensure compliance with regional security policies.",
+  "fileType" : "BPMN_AUTOMATION",
+  "directoryRoot" : "AUTOMATION",
+  "fileStatus" : "ACTIVE",
+  "extraData" : null,
+  "createdDate" : "2025-12-11T14:26:04.151Z",
+  "lastModifiedDate" : "2026-02-20T10:57:38.22Z",
+  "metaCreatedDate" : "2026-02-20T10:57:38.228342956Z",
+  "metaLastModifiedDate" : "2026-02-20T10:57:38.228346266Z",
+  "fileSyncStatus" : null,
+  "topologyEnabled" : false,
+  "stepByStep" : false
+}

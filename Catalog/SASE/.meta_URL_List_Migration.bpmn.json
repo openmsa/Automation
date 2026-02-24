@@ -33,7 +33,7 @@
     "systemTag" : true,
     "applications" : null
   } ],
-  "imageUri" : null,
+  "imageUri" : "/opt/fmc_repository/Automation/Catalog/thumbnail/SASE/URL_List_Migration.png",
   "description" : "Migrate URL List from Vendor A to Vendor B",
   "fileType" : "BPMN_AUTOMATION",
   "directoryRoot" : "AUTOMATION",

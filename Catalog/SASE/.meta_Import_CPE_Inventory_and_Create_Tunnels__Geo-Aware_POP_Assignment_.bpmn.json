@@ -1,0 +1,61 @@
+{
+  "uri" : "Automation/Catalog/SASE/Import_CPE_Inventory_and_Create_Tunnels__Geo-Aware_POP_Assignment_.bpmn",
+  "displayName" : "Import CPE Inventory and Create Tunnels (Geo-Aware POP Assignment)",
+  "fileOwner" : "NCL",
+  "defaultTags" : [ {
+    "type" : "INTEGRATION",
+    "name" : "Cisco",
+    "tenantPrefix" : "NCL",
+    "systemTag" : true,
+    "applications" : null
+  }, {
+    "type" : "INTEGRATION",
+    "name" : "Fortinet",
+    "tenantPrefix" : "NCL",
+    "systemTag" : true,
+    "applications" : null
+  }, {
+    "type" : "CATEGORY",
+    "name" : "SASE",
+    "tenantPrefix" : "NCL",
+    "systemTag" : true,
+    "applications" : null
+  }, {
+    "type" : "INTEGRATION",
+    "name" : "Linux",
+    "tenantPrefix" : "NCL",
+    "systemTag" : true,
+    "applications" : null
+  }, {
+    "type" : "INTEGRATION",
+    "name" : "PaloAlto",
+    "tenantPrefix" : "NCL",
+    "systemTag" : true,
+    "applications" : null
+  }, {
+    "type" : "DOMAIN",
+    "name" : "Deploy",
+    "tenantPrefix" : "NCL",
+    "systemTag" : true,
+    "applications" : null
+  }, {
+    "type" : "INTEGRATION",
+    "name" : "Netskope",
+    "tenantPrefix" : "NCL",
+    "systemTag" : true,
+    "applications" : null
+  } ],
+  "imageUri" : null,
+  "description" : "Import CPE Inventory and Create Tunnels (Geo-Aware POP Assignment)",
+  "fileType" : "BPMN_AUTOMATION",
+  "directoryRoot" : "AUTOMATION",
+  "fileStatus" : "ACTIVE",
+  "extraData" : { },
+  "createdDate" : "2026-02-24T07:34:36.522540564Z",
+  "lastModifiedDate" : "2026-02-24T07:34:36.522540824Z",
+  "metaCreatedDate" : "2026-02-24T07:34:36.543261424Z",
+  "metaLastModifiedDate" : "2026-02-24T07:34:36.543271184Z",
+  "fileSyncStatus" : null,
+  "topologyEnabled" : true,
+  "stepByStep" : true
+}

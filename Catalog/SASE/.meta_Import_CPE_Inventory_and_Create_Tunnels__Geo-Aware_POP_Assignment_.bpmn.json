@@ -45,7 +45,7 @@
     "systemTag" : true,
     "applications" : null
   } ],
-  "imageUri" : null,
+  "imageUri" : "/opt/fmc_repository/Automation/Catalog/thumbnail/SASE/Import_CPE_Inventory_and_Create_Tunnels_Geo-Aware_POP_Assignment.png",
   "description" : "Import CPE Inventory and Create Tunnels (Geo-Aware POP Assignment)",
   "fileType" : "BPMN_AUTOMATION",
   "directoryRoot" : "AUTOMATION",

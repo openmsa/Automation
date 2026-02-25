@@ -39,7 +39,7 @@
     "systemTag" : true,
     "applications" : null
   } ],
-  "imageUri" : null,
+  "imageUri" : "/opt/fmc_repository/Automation/Catalog/thumbnail/SASE/Import_CPE_Inventory.png",
   "description" : "Import CPE inventory with groups",
   "fileType" : "BPMN_AUTOMATION",
   "directoryRoot" : "AUTOMATION",

@@ -34,13 +34,7 @@
     "applications" : null
   }, {
     "type" : "INTEGRATION",
-    "name" : "PaloAlto Prisma Access",
-    "tenantPrefix" : "NCL",
-    "systemTag" : false,
-    "applications" : null
-  }, {
-    "type" : "INTEGRATION",
-    "name" : "PaloAlto Prisma SDWAN",
+    "name" : "PaloAlto",
     "tenantPrefix" : "NCL",
     "systemTag" : false,
     "applications" : null

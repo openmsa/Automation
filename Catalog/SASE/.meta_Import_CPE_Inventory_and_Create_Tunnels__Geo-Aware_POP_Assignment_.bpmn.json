@@ -1,6 +1,6 @@
 {
   "uri" : "Automation/Catalog/SASE/Import_CPE_Inventory_and_Create_Tunnels__Geo-Aware_POP_Assignment_.bpmn",
-  "displayName" : "Import CPE Inventory and Create Tunnels (Geo-Aware POP Assignment)",
+  "displayName" : "Import CPE Inventory and Create Tunnels (Geo POP Assignment)",
   "fileOwner" : "NCL",
   "defaultTags" : [ {
     "type" : "INTEGRATION",

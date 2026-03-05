@@ -1,22 +1,16 @@
 {
   "uri" : "Automation/Catalog/SASE/Import_CPE_Inventory_and_Create_Tunnels__Geo-Aware_POP_Assignment_.bpmn",
-  "displayName" : "Import CPE Inventory and Create Tunnels (Geo POP Assignment)",
+  "displayName" : "SDWAN/Edge Onboarding & Geo-Tunneling",
   "fileOwner" : "NCL",
   "defaultTags" : [ {
-    "type" : "INTEGRATION",
-    "name" : "Cisco",
-    "tenantPrefix" : "NCL",
-    "systemTag" : true,
-    "applications" : null
-  }, {
-    "type" : "INTEGRATION",
-    "name" : "Fortinet",
-    "tenantPrefix" : "NCL",
-    "systemTag" : true,
-    "applications" : null
-  }, {
     "type" : "CATEGORY",
     "name" : "SASE",
+    "tenantPrefix" : "NCL",
+    "systemTag" : true,
+    "applications" : null
+  }, {
+    "type" : "INTEGRATION",
+    "name" : "Netskope",
     "tenantPrefix" : "NCL",
     "systemTag" : true,
     "applications" : null
@@ -28,7 +22,13 @@
     "applications" : null
   }, {
     "type" : "INTEGRATION",
-    "name" : "PaloAlto",
+    "name" : "Fortinet",
+    "tenantPrefix" : "NCL",
+    "systemTag" : true,
+    "applications" : null
+  }, {
+    "type" : "INTEGRATION",
+    "name" : "Cisco",
     "tenantPrefix" : "NCL",
     "systemTag" : true,
     "applications" : null
@@ -40,7 +40,7 @@
     "applications" : null
   }, {
     "type" : "INTEGRATION",
-    "name" : "Netskope",
+    "name" : "PaloAlto",
     "tenantPrefix" : "NCL",
     "systemTag" : true,
     "applications" : null
@@ -50,11 +50,11 @@
   "fileType" : "BPMN_AUTOMATION",
   "directoryRoot" : "AUTOMATION",
   "fileStatus" : "ACTIVE",
-  "extraData" : { },
-  "createdDate" : "2026-02-24T07:34:36.522540564Z",
-  "lastModifiedDate" : "2026-02-24T07:34:36.522540824Z",
-  "metaCreatedDate" : "2026-02-24T07:34:36.543261424Z",
-  "metaLastModifiedDate" : "2026-02-24T07:34:36.543271184Z",
+  "extraData" : null,
+  "createdDate" : "2026-02-24T07:34:36.522Z",
+  "lastModifiedDate" : "2026-03-05T22:35:44.512Z",
+  "metaCreatedDate" : "2026-03-05T22:35:44.517939056Z",
+  "metaLastModifiedDate" : "2026-03-05T22:35:44.517940096Z",
   "fileSyncStatus" : null,
   "topologyEnabled" : true,
   "stepByStep" : true

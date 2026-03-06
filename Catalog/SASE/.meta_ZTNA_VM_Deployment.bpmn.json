@@ -1,6 +1,6 @@
 {
   "uri" : "Automation/Catalog/SASE/ZTNA_VM_Deployment.bpmn",
-  "displayName" : "ZTNA VM Deployment",
+  "displayName" : "ZTNA Private Access - VM Deployment",
   "fileOwner" : "NCL",
   "defaultTags" : [ {
     "type" : "DOMAIN",

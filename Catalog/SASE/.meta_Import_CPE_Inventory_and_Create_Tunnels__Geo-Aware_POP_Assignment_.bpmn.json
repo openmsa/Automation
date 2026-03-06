@@ -1,6 +1,6 @@
 {
   "uri" : "Automation/local/000/Import_CPE_Inventory_and_Create_Tunnels__Geo-Aware_POP_Assignment_.bpmn",
-  "displayName" : "Import CPE Inventory and Create Tunnels (Geo POP Assignment)",
+  "displayName" : "SDWAN/Edge Onboarding & Geo-Tunneling",
   "fileOwner" : "NCL",
   "defaultTags" : [ {
     "type" : "INTEGRATION",

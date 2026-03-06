@@ -1,6 +1,6 @@
 {
   "uri" : "Automation/Catalog/SASE/Import_CPE_Inventory_and_Create_Tunnels__Geo-Aware_POP_Assignment_.bpmn",
-  "displayName" : "SDWAN/Edge Onboarding & Geo-Tunneling",
+  "displayName" : "SDWAN/CPE Onboarding & Geo-Tunneling",
   "fileOwner" : "NCL",
   "defaultTags" : [ {
     "type" : "CATEGORY",

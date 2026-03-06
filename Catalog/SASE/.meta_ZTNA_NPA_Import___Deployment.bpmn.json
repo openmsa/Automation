@@ -1,6 +1,6 @@
 {
   "uri" : "Automation/Catalog/SASE/ZTNA_NPA_Import___Deployment.bpmn",
-  "displayName" : "ZTNA NPA Import & Deployment",
+  "displayName" : "ZTNA Private Access - Bulk Provisioning",
   "fileOwner" : "NCL",
   "defaultTags" : [ {
     "type" : "INTEGRATION",

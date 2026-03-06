@@ -1,6 +1,6 @@
 {
   "uri" : "Automation/Catalog/SASE/Import_CPE_Inventory_and_Create_Tunnels.bpmn",
-  "displayName" : "SDWAN/Edge Onboarding & Tunneling",
+  "displayName" : "SDWAN/CPE Onboarding & Tunneling",
   "fileOwner" : "NCL",
   "defaultTags" : [ {
     "type" : "INTEGRATION",

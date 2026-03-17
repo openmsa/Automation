@@ -3,14 +3,14 @@
   "displayName" : "SDWAN/CPE Onboarding & Geo-Tunneling",
   "fileOwner" : "NCL",
   "defaultTags" : [ {
-    "type" : "CATEGORY",
-    "name" : "SASE",
+    "type" : "INTEGRATION",
+    "name" : "Netskope",
     "tenantPrefix" : "NCL",
     "systemTag" : true,
     "applications" : null
   }, {
     "type" : "INTEGRATION",
-    "name" : "Netskope",
+    "name" : "PaloAlto",
     "tenantPrefix" : "NCL",
     "systemTag" : true,
     "applications" : null
@@ -33,14 +33,14 @@
     "systemTag" : true,
     "applications" : null
   }, {
-    "type" : "DOMAIN",
-    "name" : "Deploy",
+    "type" : "CATEGORY",
+    "name" : "SASE",
     "tenantPrefix" : "NCL",
     "systemTag" : true,
     "applications" : null
   }, {
-    "type" : "INTEGRATION",
-    "name" : "PaloAlto",
+    "type" : "DOMAIN",
+    "name" : "Deploy",
     "tenantPrefix" : "NCL",
     "systemTag" : true,
     "applications" : null
@@ -52,9 +52,9 @@
   "fileStatus" : "ACTIVE",
   "extraData" : null,
   "createdDate" : "2026-02-24T07:34:36.522Z",
-  "lastModifiedDate" : "2026-03-05T22:35:44.512Z",
-  "metaCreatedDate" : "2026-03-05T22:35:44.517939056Z",
-  "metaLastModifiedDate" : "2026-03-05T22:35:44.517940096Z",
+  "lastModifiedDate" : "2026-03-17T19:37:15.836Z",
+  "metaCreatedDate" : "2026-03-17T19:37:15.840564153Z",
+  "metaLastModifiedDate" : "2026-03-17T19:37:15.840567663Z",
   "fileSyncStatus" : null,
   "topologyEnabled" : true,
   "stepByStep" : true

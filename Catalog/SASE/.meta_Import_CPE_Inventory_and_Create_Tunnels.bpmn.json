@@ -4,12 +4,6 @@
   "fileOwner" : "NCL",
   "defaultTags" : [ {
     "type" : "INTEGRATION",
-    "name" : "Fortigate",
-    "tenantPrefix" : "NCL",
-    "systemTag" : true,
-    "applications" : null
-  }, {
-    "type" : "INTEGRATION",
     "name" : "Netskope",
     "tenantPrefix" : "NCL",
     "systemTag" : true,
@@ -22,9 +16,9 @@
     "applications" : null
   }, {
     "type" : "INTEGRATION",
-    "name" : "Zscaler ZIA",
+    "name" : "Fortigate",
     "tenantPrefix" : "NCL",
-    "systemTag" : false,
+    "systemTag" : true,
     "applications" : null
   }, {
     "type" : "INTEGRATION",
@@ -44,6 +38,12 @@
     "tenantPrefix" : "NCL",
     "systemTag" : true,
     "applications" : null
+  }, {
+    "type" : "INTEGRATION",
+    "name" : "Zscaler ZIA",
+    "tenantPrefix" : "NCL",
+    "systemTag" : false,
+    "applications" : null
   } ],
   "imageUri" : "/opt/fmc_repository/Automation/Catalog/thumbnail/SASE/Import_CPE_Inventory_and_Create_Tunnels.png",
   "description" : "Import CPE Inventory and Create Tunnels",
@@ -52,10 +52,10 @@
   "fileStatus" : "ACTIVE",
   "extraData" : null,
   "createdDate" : "2025-08-28T09:42:19.143Z",
-  "lastModifiedDate" : "2026-03-17T20:03:16.912Z",
-  "metaCreatedDate" : "2026-03-17T20:03:16.916373722Z",
-  "metaLastModifiedDate" : "2026-03-17T20:03:16.916374532Z",
+  "lastModifiedDate" : "2026-03-27T21:41:48.178Z",
+  "metaCreatedDate" : "2026-03-27T21:41:48.183225395Z",
+  "metaLastModifiedDate" : "2026-03-27T21:41:48.183226165Z",
   "fileSyncStatus" : null,
-  "topologyEnabled" : true,
+  "topologyEnabled" : false,
   "stepByStep" : true
 }

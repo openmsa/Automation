@@ -3,12 +3,6 @@
   "displayName" : "SDWAN/CPE Onboarding & Geo-Tunneling",
   "fileOwner" : "NCL",
   "defaultTags" : [ {
-    "type" : "CATEGORY",
-    "name" : "SASE",
-    "tenantPrefix" : "NCL",
-    "systemTag" : true,
-    "applications" : null
-  }, {
     "type" : "INTEGRATION",
     "name" : "Netskope",
     "tenantPrefix" : "NCL",
@@ -16,7 +10,25 @@
     "applications" : null
   }, {
     "type" : "INTEGRATION",
+    "name" : "PaloAlto",
+    "tenantPrefix" : "NCL",
+    "systemTag" : true,
+    "applications" : null
+  }, {
+    "type" : "INTEGRATION",
     "name" : "Linux",
+    "tenantPrefix" : "NCL",
+    "systemTag" : true,
+    "applications" : null
+  }, {
+    "type" : "CATEGORY",
+    "name" : "SASE",
+    "tenantPrefix" : "NCL",
+    "systemTag" : true,
+    "applications" : null
+  }, {
+    "type" : "DOMAIN",
+    "name" : "Deploy",
     "tenantPrefix" : "NCL",
     "systemTag" : true,
     "applications" : null
@@ -32,18 +44,6 @@
     "tenantPrefix" : "NCL",
     "systemTag" : true,
     "applications" : null
-  }, {
-    "type" : "DOMAIN",
-    "name" : "Deploy",
-    "tenantPrefix" : "NCL",
-    "systemTag" : true,
-    "applications" : null
-  }, {
-    "type" : "INTEGRATION",
-    "name" : "PaloAlto",
-    "tenantPrefix" : "NCL",
-    "systemTag" : true,
-    "applications" : null
   } ],
   "imageUri" : "/opt/fmc_repository/Automation/Catalog/thumbnail/SASE/Import_CPE_Inventory_and_Create_Tunnels_Geo-Aware_POP_Assignment.png",
   "description" : "Import CPE Inventory and Create Tunnels (Geo-Aware POP Assignment)",
@@ -52,9 +52,9 @@
   "fileStatus" : "ACTIVE",
   "extraData" : null,
   "createdDate" : "2026-02-24T07:34:36.522Z",
-  "lastModifiedDate" : "2026-03-05T22:35:44.512Z",
-  "metaCreatedDate" : "2026-03-05T22:35:44.517939056Z",
-  "metaLastModifiedDate" : "2026-03-05T22:35:44.517940096Z",
+  "lastModifiedDate" : "2026-03-27T20:44:06.048Z",
+  "metaCreatedDate" : "2026-03-27T20:44:06.054405964Z",
+  "metaLastModifiedDate" : "2026-03-27T20:44:06.054406894Z",
   "fileSyncStatus" : null,
   "topologyEnabled" : true,
   "stepByStep" : true

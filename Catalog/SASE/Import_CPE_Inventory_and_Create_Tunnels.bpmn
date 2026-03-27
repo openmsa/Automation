@@ -7,9 +7,45 @@
     <bpmn:endEvent id="EndEvent_1" name="">
       <bpmn:incoming>Flow_0bw5bz2</bpmn:incoming>
     </bpmn:endEvent>
-    <bpmn:sequenceFlow id="Flow_1xz9xek" sourceRef="StartEvent_1" targetRef="Event_0ki6mk1" />
+    <bpmn:sequenceFlow id="Flow_1xz9xek" sourceRef="StartEvent_1" targetRef="Event_0etf6bq" />
     <bpmn:sequenceFlow id="Flow_1u3q2k5" sourceRef="ServiceTask_1756374000675" targetRef="Event_1yv1ve2" />
-    <bpmn:serviceTask id="ServiceTask_1756374000675" name="Import CPE Inventory (CPE Inventory Management)" camunda:type="external" camunda:topic="msa_workflow">
+    <bpmn:intermediateCatchEvent id="Event_0ki6mk1">
+      <bpmn:extensionElements>
+        <camunda:inputOutput>
+          <camunda:inputParameter name="target_workflow">ServiceTask_1756374000675</camunda:inputParameter>
+        </camunda:inputOutput>
+      </bpmn:extensionElements>
+      <bpmn:incoming>Flow_0mtoxfh</bpmn:incoming>
+      <bpmn:outgoing>Flow_1dg3q4g</bpmn:outgoing>
+      <bpmn:messageEventDefinition id="MessageEventDefinition_120fl79" messageRef="Message_120fl79" />
+    </bpmn:intermediateCatchEvent>
+    <bpmn:sequenceFlow id="Flow_1dg3q4g" sourceRef="Event_0ki6mk1" targetRef="ServiceTask_1756374000675" />
+    <bpmn:intermediateCatchEvent id="Event_1yv1ve2">
+      <bpmn:extensionElements>
+        <camunda:inputOutput>
+          <camunda:inputParameter name="target_workflow">ServiceTask_1765556749330</camunda:inputParameter>
+        </camunda:inputOutput>
+      </bpmn:extensionElements>
+      <bpmn:incoming>Flow_1u3q2k5</bpmn:incoming>
+      <bpmn:outgoing>Flow_1vaf68x</bpmn:outgoing>
+      <bpmn:messageEventDefinition id="MessageEventDefinition_1t827ve" messageRef="Message_1t827ve" />
+    </bpmn:intermediateCatchEvent>
+    <bpmn:sequenceFlow id="Flow_1vaf68x" sourceRef="Event_1yv1ve2" targetRef="ServiceTask_1765556749330" />
+    <bpmn:intermediateCatchEvent id="Event_069wmzq">
+      <bpmn:extensionElements>
+        <camunda:inputOutput>
+          <camunda:inputParameter name="target_workflow">ServiceTask_1756374076294</camunda:inputParameter>
+        </camunda:inputOutput>
+      </bpmn:extensionElements>
+      <bpmn:incoming>Flow_051p4ky</bpmn:incoming>
+      <bpmn:outgoing>Flow_0c3ico7</bpmn:outgoing>
+      <bpmn:messageEventDefinition id="MessageEventDefinition_1voy14v" messageRef="Message_1voy14v" />
+    </bpmn:intermediateCatchEvent>
+    <bpmn:sequenceFlow id="Flow_051p4ky" sourceRef="ServiceTask_1765556749330" targetRef="Event_069wmzq" />
+    <bpmn:sequenceFlow id="Flow_0bw5bz2" sourceRef="ServiceTask_1756374076294" targetRef="EndEvent_1" />
+    <bpmn:sequenceFlow id="Flow_0c3ico7" sourceRef="Event_069wmzq" targetRef="ServiceTask_1756374076294" />
+    <bpmn:sequenceFlow id="Flow_0mtoxfh" sourceRef="ServiceTask_1774647156558" targetRef="Event_0ki6mk1" />
+    <bpmn:serviceTask id="ServiceTask_1774647156558" name="Data Loading (SDWAN/CPE Inventory Management)" camunda:type="external" camunda:topic="msa_workflow">
       <bpmn:extensionElements>
         <camunda:inputOutput>
           <camunda:inputParameter name="workflow_data">
@@ -21,7 +57,7 @@
                 <camunda:value>Process/cloudclapp-wf/SASE/Managed_Entity_Bulk_Creation_With_Group/Managed_Entity_Bulk_Creation_With_Group</camunda:value>
               </camunda:entry>
               <camunda:entry key="processName">
-                <camunda:value>Process/cloudclapp-wf/SASE/Managed_Entity_Bulk_Creation_With_Group/Process_Import_CPEs</camunda:value>
+                <camunda:value>Process/cloudclapp-wf/SASE/Managed_Entity_Bulk_Creation_With_Group/Process_Data_Loading</camunda:value>
               </camunda:entry>
               <camunda:entry key="processType">
                 <camunda:value>CREATE</camunda:value>
@@ -32,68 +68,20 @@
                   <camunda:entry key="allow_duplicate_ips">
                     <camunda:value>false</camunda:value>
                   </camunda:entry>
-                </camunda:map>
-              </camunda:entry>
-              <camunda:entry key="resumeOnFail">
-                <camunda:value>false</camunda:value>
-              </camunda:entry>
-              <camunda:entry key="processExecutor">
-                <camunda:value>PLACEHOLDER_EXECUTOR_ID</camunda:value>
-              </camunda:entry>
-            </camunda:map>
-          </camunda:inputParameter>
-          <camunda:inputParameter name="msa_workflow_data">
-            <camunda:map>
-              <camunda:entry key="type">
-                <camunda:value>MSA_WORKFLOW</camunda:value>
-              </camunda:entry>
-              <camunda:entry key="data" />
-              <camunda:entry key="extraProps">
-                <camunda:map>
-                  <camunda:entry key="cloudVendor" />
-                  <camunda:entry key="cloudService" />
-                </camunda:map>
-              </camunda:entry>
-            </camunda:map>
-          </camunda:inputParameter>
-        </camunda:inputOutput>
-      </bpmn:extensionElements>
-      <bpmn:incoming>Flow_1dg3q4g</bpmn:incoming>
-      <bpmn:outgoing>Flow_1u3q2k5</bpmn:outgoing>
-    </bpmn:serviceTask>
-    <bpmn:serviceTask id="ServiceTask_1756374076294" name="Create Tunnel (Bulk Edge To SASE-Pops Tunnel Provisioning)" camunda:type="external" camunda:topic="msa_workflow">
-      <bpmn:extensionElements>
-        <camunda:inputOutput>
-          <camunda:inputParameter name="workflow_data">
-            <camunda:map>
-              <camunda:entry key="ubiqubeId">
-                <camunda:value>PLACEHOLDER_UBIQUBE_ID</camunda:value>
-              </camunda:entry>
-              <camunda:entry key="serviceName">
-                <camunda:value>Process/cloudclapp-wf/SASE/Tunnel_Management/BulkEdgeToSASEPopsTunnelProvisioning/BulkEdgeToSASEPopsTunnelProvisioning</camunda:value>
-              </camunda:entry>
-              <camunda:entry key="processName">
-                <camunda:value>Process/cloudclapp-wf/SASE/Tunnel_Management/BulkEdgeToSASEPopsTunnelProvisioning/Process_New_Job</camunda:value>
-              </camunda:entry>
-              <camunda:entry key="processType">
-                <camunda:value>CREATE</camunda:value>
-              </camunda:entry>
-              <camunda:entry key="processVariables">
-                <camunda:map>
+                  <camunda:entry key="pop_geolocation">
+                    <camunda:value>false</camunda:value>
+                  </camunda:entry>
+                  <camunda:entry key="sse_provider" />
+                  <camunda:entry key="pop_country_specific" />
+                  <camunda:entry key="inventory_me" />
                   <camunda:entry key="group" />
                   <camunda:entry key="city" />
                   <camunda:entry key="country" />
                   <camunda:entry key="custom" />
-                  <camunda:entry key="sse_provider" />
-                  <camunda:entry key="inventory_me" />
-                  <camunda:entry key="tunnel_type" />
-                  <camunda:entry key="sse_pop_1" />
-                  <camunda:entry key="sse_pop_2" />
-                  <camunda:entry key="encryption" />
-                  <camunda:entry key="bw" />
-                  <camunda:entry key="failover">
+                  <camunda:entry key="force_cleanup">
                     <camunda:value>false</camunda:value>
                   </camunda:entry>
+                  <camunda:entry key="clean_input" />
                 </camunda:map>
               </camunda:entry>
               <camunda:entry key="resumeOnFail">
@@ -120,10 +108,21 @@
           </camunda:inputParameter>
         </camunda:inputOutput>
       </bpmn:extensionElements>
-      <bpmn:incoming>Flow_0c3ico7</bpmn:incoming>
-      <bpmn:outgoing>Flow_0bw5bz2</bpmn:outgoing>
+      <bpmn:incoming>Flow_0x2i1zn</bpmn:incoming>
+      <bpmn:outgoing>Flow_0mtoxfh</bpmn:outgoing>
     </bpmn:serviceTask>
-    <bpmn:serviceTask id="ServiceTask_1765556749330" name="List CPE Inventory (CPE Inventory Management)" camunda:type="external" camunda:topic="msa_workflow">
+    <bpmn:intermediateCatchEvent id="Event_0etf6bq">
+      <bpmn:extensionElements>
+        <camunda:inputOutput>
+          <camunda:inputParameter name="target_workflow">ServiceTask_1774647156558</camunda:inputParameter>
+        </camunda:inputOutput>
+      </bpmn:extensionElements>
+      <bpmn:incoming>Flow_1xz9xek</bpmn:incoming>
+      <bpmn:outgoing>Flow_0x2i1zn</bpmn:outgoing>
+      <bpmn:messageEventDefinition id="MessageEventDefinition_12mo5q5" messageRef="Message_12mo5q5" />
+    </bpmn:intermediateCatchEvent>
+    <bpmn:sequenceFlow id="Flow_0x2i1zn" sourceRef="Event_0etf6bq" targetRef="ServiceTask_1774647156558" />
+    <bpmn:serviceTask id="ServiceTask_1765556749330" name="List SDWAN/CPE Inventory (SDWAN/CPE Inventory Management)" camunda:type="external" camunda:topic="msa_workflow">
       <bpmn:extensionElements>
         <camunda:inputOutput>
           <camunda:inputParameter name="workflow_data">
@@ -135,7 +134,7 @@
                 <camunda:value>Process/cloudclapp-wf/SASE/Managed_Entity_Bulk_Creation_With_Group/Managed_Entity_Bulk_Creation_With_Group</camunda:value>
               </camunda:entry>
               <camunda:entry key="serviceInstanceId">
-                <camunda:value>${JSON(ServiceTask_1756374000675).prop("serviceId").value()}</camunda:value>
+                <camunda:value>${JSON(ServiceTask_1774647156558).prop("serviceId").value()}</camunda:value>
               </camunda:entry>
               <camunda:entry key="processName">
                 <camunda:value>Process/cloudclapp-wf/SASE/Managed_Entity_Bulk_Creation_With_Group/Process_List_CPE_Inventory</camunda:value>
@@ -171,98 +170,209 @@
       <bpmn:incoming>Flow_1vaf68x</bpmn:incoming>
       <bpmn:outgoing>Flow_051p4ky</bpmn:outgoing>
     </bpmn:serviceTask>
-    <bpmn:intermediateCatchEvent id="Event_0ki6mk1">
+    <bpmn:serviceTask id="ServiceTask_1756374076294" name="Tunnel Provisioning (Bulk Edge To SASE-Pops Tunnel Provisioning)" camunda:type="external" camunda:topic="msa_workflow">
       <bpmn:extensionElements>
         <camunda:inputOutput>
-          <camunda:inputParameter name="target_workflow">ServiceTask_1756374000675</camunda:inputParameter>
+          <camunda:inputParameter name="workflow_data">
+            <camunda:map>
+              <camunda:entry key="ubiqubeId">
+                <camunda:value>PLACEHOLDER_UBIQUBE_ID</camunda:value>
+              </camunda:entry>
+              <camunda:entry key="serviceName">
+                <camunda:value>Process/cloudclapp-wf/SASE/Tunnel_Management/BulkEdgeToSASEPopsTunnelProvisioning/BulkEdgeToSASEPopsTunnelProvisioning</camunda:value>
+              </camunda:entry>
+              <camunda:entry key="processName">
+                <camunda:value>Process/cloudclapp-wf/SASE/Tunnel_Management/BulkEdgeToSASEPopsTunnelProvisioning/Process_New_Job</camunda:value>
+              </camunda:entry>
+              <camunda:entry key="processType">
+                <camunda:value>CREATE</camunda:value>
+              </camunda:entry>
+              <camunda:entry key="processVariables">
+                <camunda:map>
+                  <camunda:entry key="pop_geolocation">
+                    <camunda:value>true</camunda:value>
+                  </camunda:entry>
+                  <camunda:entry key="sse_provider" />
+                  <camunda:entry key="tunnel_type" />
+                  <camunda:entry key="sse_pop_1" />
+                  <camunda:entry key="sse_pop_2" />
+                  <camunda:entry key="group" />
+                  <camunda:entry key="inventory_me" />
+                  <camunda:entry key="city" />
+                  <camunda:entry key="country" />
+                  <camunda:entry key="custom" />
+                  <camunda:entry key="encryption" />
+                  <camunda:entry key="bw" />
+                  <camunda:entry key="failover">
+                    <camunda:value>false</camunda:value>
+                  </camunda:entry>
+                </camunda:map>
+              </camunda:entry>
+              <camunda:entry key="resumeOnFail">
+                <camunda:value>false</camunda:value>
+              </camunda:entry>
+              <camunda:entry key="processExecutor">
+                <camunda:value>PLACEHOLDER_EXECUTOR_ID</camunda:value>
+              </camunda:entry>
+            </camunda:map>
+          </camunda:inputParameter>
+          <camunda:inputParameter name="msa_workflow_data">
+            <camunda:map>
+              <camunda:entry key="type">
+                <camunda:value>MSA_WORKFLOW</camunda:value>
+              </camunda:entry>
+              <camunda:entry key="data" />
+              <camunda:entry key="extraProps">
+                <camunda:map>
+                  <camunda:entry key="cloudVendor" />
+                  <camunda:entry key="cloudService" />
+                </camunda:map>
+              </camunda:entry>
+            </camunda:map>
+          </camunda:inputParameter>
         </camunda:inputOutput>
       </bpmn:extensionElements>
-      <bpmn:incoming>Flow_1xz9xek</bpmn:incoming>
-      <bpmn:outgoing>Flow_1dg3q4g</bpmn:outgoing>
-      <bpmn:messageEventDefinition id="MessageEventDefinition_120fl79" messageRef="Message_120fl79" />
-    </bpmn:intermediateCatchEvent>
-    <bpmn:sequenceFlow id="Flow_1dg3q4g" sourceRef="Event_0ki6mk1" targetRef="ServiceTask_1756374000675" />
-    <bpmn:intermediateCatchEvent id="Event_1yv1ve2">
+      <bpmn:incoming>Flow_0c3ico7</bpmn:incoming>
+      <bpmn:outgoing>Flow_0bw5bz2</bpmn:outgoing>
+    </bpmn:serviceTask>
+    <bpmn:serviceTask id="ServiceTask_1756374000675" name="SDWAN/CPE Onboarding - default (SDWAN/CPE Inventory Management)" camunda:type="external" camunda:topic="msa_workflow">
       <bpmn:extensionElements>
         <camunda:inputOutput>
-          <camunda:inputParameter name="target_workflow">ServiceTask_1765556749330</camunda:inputParameter>
+          <camunda:inputParameter name="workflow_data">
+            <camunda:map>
+              <camunda:entry key="ubiqubeId">
+                <camunda:value>PLACEHOLDER_UBIQUBE_ID</camunda:value>
+              </camunda:entry>
+              <camunda:entry key="serviceName">
+                <camunda:value>Process/cloudclapp-wf/SASE/Managed_Entity_Bulk_Creation_With_Group/Managed_Entity_Bulk_Creation_With_Group</camunda:value>
+              </camunda:entry>
+              <camunda:entry key="processName">
+                <camunda:value>Process/cloudclapp-wf/SASE/Managed_Entity_Bulk_Creation_With_Group/Process_Import_CPEs</camunda:value>
+              </camunda:entry>
+              <camunda:entry key="processType">
+                <camunda:value>CREATE</camunda:value>
+              </camunda:entry>
+              <camunda:entry key="processVariables">
+                <camunda:map>
+                  <camunda:entry key="csv_file" />
+                  <camunda:entry key="allow_duplicate_ips">
+                    <camunda:value>false</camunda:value>
+                  </camunda:entry>
+                  <camunda:entry key="pop_geolocation">
+                    <camunda:value>false</camunda:value>
+                  </camunda:entry>
+                  <camunda:entry key="sse_provider" />
+                  <camunda:entry key="pop_country_specific" />
+                  <camunda:entry key="inventory_me" />
+                  <camunda:entry key="group" />
+                  <camunda:entry key="city" />
+                  <camunda:entry key="country" />
+                  <camunda:entry key="custom" />
+                  <camunda:entry key="force_cleanup">
+                    <camunda:value>false</camunda:value>
+                  </camunda:entry>
+                  <camunda:entry key="clean_input" />
+                </camunda:map>
+              </camunda:entry>
+              <camunda:entry key="resumeOnFail">
+                <camunda:value>false</camunda:value>
+              </camunda:entry>
+              <camunda:entry key="processExecutor">
+                <camunda:value>PLACEHOLDER_EXECUTOR_ID</camunda:value>
+              </camunda:entry>
+            </camunda:map>
+          </camunda:inputParameter>
+          <camunda:inputParameter name="msa_workflow_data">
+            <camunda:map>
+              <camunda:entry key="type">
+                <camunda:value>MSA_WORKFLOW</camunda:value>
+              </camunda:entry>
+              <camunda:entry key="data" />
+              <camunda:entry key="extraProps">
+                <camunda:map>
+                  <camunda:entry key="cloudVendor" />
+                  <camunda:entry key="cloudService" />
+                </camunda:map>
+              </camunda:entry>
+            </camunda:map>
+          </camunda:inputParameter>
         </camunda:inputOutput>
       </bpmn:extensionElements>
-      <bpmn:incoming>Flow_1u3q2k5</bpmn:incoming>
-      <bpmn:outgoing>Flow_1vaf68x</bpmn:outgoing>
-      <bpmn:messageEventDefinition id="MessageEventDefinition_1t827ve" messageRef="Message_1t827ve" />
-    </bpmn:intermediateCatchEvent>
-    <bpmn:sequenceFlow id="Flow_1vaf68x" sourceRef="Event_1yv1ve2" targetRef="ServiceTask_1765556749330" />
-    <bpmn:intermediateCatchEvent id="Event_069wmzq">
-      <bpmn:extensionElements>
-        <camunda:inputOutput>
-          <camunda:inputParameter name="target_workflow">ServiceTask_1756374076294</camunda:inputParameter>
-        </camunda:inputOutput>
-      </bpmn:extensionElements>
-      <bpmn:incoming>Flow_051p4ky</bpmn:incoming>
-      <bpmn:outgoing>Flow_0c3ico7</bpmn:outgoing>
-      <bpmn:messageEventDefinition id="MessageEventDefinition_1voy14v" messageRef="Message_1voy14v" />
-    </bpmn:intermediateCatchEvent>
-    <bpmn:sequenceFlow id="Flow_051p4ky" sourceRef="ServiceTask_1765556749330" targetRef="Event_069wmzq" />
-    <bpmn:sequenceFlow id="Flow_0bw5bz2" sourceRef="ServiceTask_1756374076294" targetRef="EndEvent_1" />
-    <bpmn:sequenceFlow id="Flow_0c3ico7" sourceRef="Event_069wmzq" targetRef="ServiceTask_1756374076294" />
+      <bpmn:incoming>Flow_1dg3q4g</bpmn:incoming>
+      <bpmn:outgoing>Flow_1u3q2k5</bpmn:outgoing>
+    </bpmn:serviceTask>
   </bpmn:process>
   <bpmn:message id="Message_120fl79" name="Message_120fl79" />
   <bpmn:message id="Message_1t827ve" name="Message_1t827ve" />
   <bpmn:message id="Message_1voy14v" name="Message_1voy14v" />
+  <bpmn:message id="Message_12mo5q5" name="Message_12mo5q5" />
   <bpmndi:BPMNDiagram id="BPMNDiagram_1">
     <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="PLACEHOLDER_PROCESS_ID">
+      <bpmndi:BPMNEdge id="Flow_0x2i1zn_di" bpmnElement="Flow_0x2i1zn">
+        <di:waypoint x="228" y="118" />
+        <di:waypoint x="280" y="118" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0mtoxfh_di" bpmnElement="Flow_0mtoxfh">
+        <di:waypoint x="380" y="118" />
+        <di:waypoint x="422" y="118" />
+      </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="Flow_0c3ico7_di" bpmnElement="Flow_0c3ico7">
-        <di:waypoint x="638" y="118" />
-        <di:waypoint x="780" y="118" />
+        <di:waypoint x="1058" y="118" />
+        <di:waypoint x="1110" y="118" />
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="Flow_0bw5bz2_di" bpmnElement="Flow_0bw5bz2">
-        <di:waypoint x="880" y="118" />
-        <di:waypoint x="1000" y="118" />
+        <di:waypoint x="1210" y="118" />
+        <di:waypoint x="1392" y="118" />
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="Flow_051p4ky_di" bpmnElement="Flow_051p4ky">
-        <di:waypoint x="540" y="118" />
-        <di:waypoint x="602" y="118" />
+        <di:waypoint x="900" y="118" />
+        <di:waypoint x="1022" y="118" />
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="Flow_1vaf68x_di" bpmnElement="Flow_1vaf68x">
-        <di:waypoint x="388" y="118" />
-        <di:waypoint x="440" y="118" />
+        <di:waypoint x="728" y="118" />
+        <di:waypoint x="800" y="118" />
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="Flow_1dg3q4g_di" bpmnElement="Flow_1dg3q4g">
-        <di:waypoint x="208" y="118" />
-        <di:waypoint x="230" y="118" />
+        <di:waypoint x="458" y="118" />
+        <di:waypoint x="520" y="118" />
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="Flow_1u3q2k5_di" bpmnElement="Flow_1u3q2k5">
-        <di:waypoint x="330" y="118" />
-        <di:waypoint x="352" y="118" />
+        <di:waypoint x="620" y="118" />
+        <di:waypoint x="692" y="118" />
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="Flow_1xz9xek_di" bpmnElement="Flow_1xz9xek">
         <di:waypoint x="136" y="118" />
-        <di:waypoint x="172" y="118" />
+        <di:waypoint x="192" y="118" />
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNShape id="_BPMNShape_StartEvent_2" bpmnElement="StartEvent_1">
         <dc:Bounds x="100" y="100" width="36" height="36" />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Event_0rpe2j4_di" bpmnElement="EndEvent_1">
-        <dc:Bounds x="1000" y="100" width="36" height="36" />
-      </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="ServiceTask_1756374044524_di" bpmnElement="ServiceTask_1756374000675">
-        <dc:Bounds x="230" y="78" width="100" height="80" />
+        <dc:Bounds x="1392" y="100" width="36" height="36" />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Event_0ki6mk1_di" bpmnElement="Event_0ki6mk1">
-        <dc:Bounds x="172" y="100" width="36" height="36" />
+        <dc:Bounds x="422" y="100" width="36" height="36" />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Event_1yv1ve2_di" bpmnElement="Event_1yv1ve2">
-        <dc:Bounds x="352" y="100" width="36" height="36" />
-      </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="ServiceTask_1765556772114_di" bpmnElement="ServiceTask_1765556749330">
-        <dc:Bounds x="440" y="78" width="100" height="80" />
-      </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="ServiceTask_1756374111392_di" bpmnElement="ServiceTask_1756374076294">
-        <dc:Bounds x="780" y="78" width="100" height="80" />
+        <dc:Bounds x="692" y="100" width="36" height="36" />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Event_069wmzq_di" bpmnElement="Event_069wmzq">
-        <dc:Bounds x="602" y="100" width="36" height="36" />
+        <dc:Bounds x="1022" y="100" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="ServiceTask_1774647169966_di" bpmnElement="ServiceTask_1774647156558">
+        <dc:Bounds x="280" y="78" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Event_0etf6bq_di" bpmnElement="Event_0etf6bq">
+        <dc:Bounds x="192" y="100" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="ServiceTask_1774647286310_di" bpmnElement="ServiceTask_1765556749330">
+        <dc:Bounds x="800" y="78" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="ServiceTask_1774647300632_di" bpmnElement="ServiceTask_1756374076294">
+        <dc:Bounds x="1110" y="78" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="ServiceTask_1774647683540_di" bpmnElement="ServiceTask_1756374000675">
+        <dc:Bounds x="520" y="78" width="100" height="80" />
       </bpmndi:BPMNShape>
     </bpmndi:BPMNPlane>
   </bpmndi:BPMNDiagram>
